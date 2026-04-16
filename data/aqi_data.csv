@@ -1,31 +1,2017 @@
-date,city,pm2_5,pm10,no2,co,aqi
-2025-01-01,Delhi,182,295,68,1.9,312
-2025-01-02,Delhi,176,288,65,1.8,304
-2025-01-03,Delhi,168,279,63,1.7,291
-2025-01-01,Mumbai,92,148,41,1.1,162
-2025-01-02,Mumbai,88,142,39,1.0,155
-2025-01-03,Mumbai,95,151,43,1.1,168
-2025-01-01,Bengaluru,54,89,29,0.7,96
-2025-01-02,Bengaluru,58,93,31,0.8,102
-2025-01-03,Bengaluru,56,91,30,0.8,99
-2025-01-01,Chennai,71,118,34,0.9,128
-2025-01-02,Chennai,74,121,35,0.9,133
-2025-01-03,Chennai,69,115,33,0.8,124
-2025-01-01,Kolkata,110,172,48,1.2,191
-2025-01-02,Kolkata,114,178,49,1.3,198
-2025-01-03,Kolkata,108,169,47,1.2,186
-2025-01-01,Hyderabad,82,134,38,1.0,146
-2025-01-02,Hyderabad,79,129,37,0.9,141
-2025-01-03,Hyderabad,85,137,39,1.0,149
-2025-01-04,Delhi,171,281,64,1.8,297
-2025-01-04,Mumbai,90,145,40,1.0,159
-2025-01-04,Bengaluru,60,95,32,0.8,105
-2025-01-04,Chennai,73,119,35,0.9,131
-2025-01-04,Kolkata,112,175,48,1.2,194
-2025-01-04,Hyderabad,83,135,38,1.0,147
-2025-01-05,Delhi,165,274,62,1.7,286
-2025-01-05,Mumbai,87,140,39,1.0,153
-2025-01-05,Bengaluru,57,92,30,0.8,100
-2025-01-05,Chennai,70,116,34,0.8,126
-2025-01-05,Kolkata,107,168,46,1.2,184
-2025-01-05,Hyderabad,80,131,37,0.9,143
+date,state,zone,capital,season,rainfall_mm,temperature_c,pm2_5,pm10,no2,so2,co,o3,aqi,dominant_pollutant
+2020-01-01,Andhra Pradesh,South,Amaravati,Winter,13.5,25.2,61.2,111.6,26.7,10.5,0.84,23.4,102,PM10
+2020-02-01,Andhra Pradesh,South,Amaravati,Winter,22.8,26.8,60.4,101.5,28.4,9.2,0.66,25.4,91,PM10
+2020-03-01,Andhra Pradesh,South,Amaravati,Summer,22.3,29.3,59.4,93.1,29.4,9.7,0.79,29.8,65,PM10
+2020-04-01,Andhra Pradesh,South,Amaravati,Summer,28,33.5,51.4,89.3,17.7,12,0.68,22.9,66,PM10
+2020-05-01,Andhra Pradesh,South,Amaravati,Summer,26.3,33.6,34.8,93.1,18.6,10.2,0.73,30.6,57,PM10
+2020-06-01,Andhra Pradesh,South,Amaravati,Monsoon,87.6,32.7,47.5,56.5,18.5,12.4,0.79,27.5,39,PM10
+2020-07-01,Andhra Pradesh,South,Amaravati,Monsoon,87.5,33.7,32.2,68.7,15.1,6.9,0.58,22.7,35,PM10
+2020-08-01,Andhra Pradesh,South,Amaravati,Monsoon,99.1,29.2,42.2,61,11.6,9.4,0.69,25,35,PM10
+2020-09-01,Andhra Pradesh,South,Amaravati,Monsoon,62,30.4,41,82.9,20.4,10.9,0.66,22.2,58,PM10
+2020-10-01,Andhra Pradesh,South,Amaravati,Post-Monsoon,33,30.1,45.5,89.1,29,10.4,0.7,26.9,62,PM10
+2020-11-01,Andhra Pradesh,South,Amaravati,Post-Monsoon,15.7,27.9,60.2,103.2,29.9,9.4,0.83,24.8,76,PM10
+2020-12-01,Andhra Pradesh,South,Amaravati,Winter,4,23.3,64.6,112.7,31.8,12,0.86,22.8,109,PM10
+2021-01-01,Andhra Pradesh,South,Amaravati,Winter,23.4,26.2,62,118.3,27.5,10.4,0.89,23.5,97,PM10
+2021-02-01,Andhra Pradesh,South,Amaravati,Winter,10.2,27.5,62.1,104.7,28.9,12.5,0.81,26.2,89,PM10
+2021-03-01,Andhra Pradesh,South,Amaravati,Summer,4,28.8,57.5,91.2,26.1,10.3,0.75,28.8,60,PM10
+2021-04-01,Andhra Pradesh,South,Amaravati,Summer,21.1,32,59.9,91.5,21,8.5,0.74,31.8,63,PM10
+2021-05-01,Andhra Pradesh,South,Amaravati,Summer,38.7,34.7,47.7,81.9,19.3,11,0.63,28,52,PM10
+2021-06-01,Andhra Pradesh,South,Amaravati,Monsoon,74.7,32.6,38.5,54.7,18.4,9.4,0.51,27.8,40,PM10
+2021-07-01,Andhra Pradesh,South,Amaravati,Monsoon,97.4,31.2,31.4,76.4,17.7,9.7,0.58,24.7,35,PM10
+2021-08-01,Andhra Pradesh,South,Amaravati,Monsoon,82.2,29.2,34.2,69.5,18.4,6.4,0.64,21.3,38,PM10
+2021-09-01,Andhra Pradesh,South,Amaravati,Monsoon,65.8,30.2,48.1,59.2,20.5,10.9,0.69,27.4,47,PM10
+2021-10-01,Andhra Pradesh,South,Amaravati,Post-Monsoon,32.5,30.3,56.4,80,23,11.9,0.66,29.3,66,PM10
+2021-11-01,Andhra Pradesh,South,Amaravati,Post-Monsoon,14.9,28.6,59.1,112,33.2,10.5,0.76,19.5,74,PM10
+2021-12-01,Andhra Pradesh,South,Amaravati,Winter,10.4,25.6,57.8,96.4,29.2,14.2,0.9,24.3,86,PM10
+2022-01-01,Andhra Pradesh,South,Amaravati,Winter,15.5,25,62.2,96.2,31.3,10.4,0.7,22.6,101,PM10
+2022-02-01,Andhra Pradesh,South,Amaravati,Winter,5,26.2,57.9,109.2,32.2,12.8,0.68,25.5,90,PM10
+2022-03-01,Andhra Pradesh,South,Amaravati,Summer,20.6,28.7,55.7,81.3,28.3,12.8,0.72,27.7,72,PM10
+2022-04-01,Andhra Pradesh,South,Amaravati,Summer,16,31.8,47.4,87.7,26.6,11.4,0.71,32,61,PM10
+2022-05-01,Andhra Pradesh,South,Amaravati,Summer,10.7,35.1,39.6,79.6,17.6,12.9,0.62,32.6,57,PM10
+2022-06-01,Andhra Pradesh,South,Amaravati,Monsoon,78.3,32.7,32.1,78.5,24,9.3,0.71,26.5,42,PM10
+2022-07-01,Andhra Pradesh,South,Amaravati,Monsoon,97.5,30.5,35.8,73.6,18.7,10.4,0.66,22.4,37,PM10
+2022-08-01,Andhra Pradesh,South,Amaravati,Monsoon,86,29.9,39,65.8,15.3,8.8,0.64,21.3,47,PM10
+2022-09-01,Andhra Pradesh,South,Amaravati,Monsoon,77.3,29.8,41.4,68.2,19.8,8.8,0.75,25.5,41,PM10
+2022-10-01,Andhra Pradesh,South,Amaravati,Post-Monsoon,19.4,28.4,42.5,97.4,30.1,7.7,0.65,22.5,64,PM10
+2022-11-01,Andhra Pradesh,South,Amaravati,Post-Monsoon,34.4,27.9,58.8,84.1,26.9,9.6,0.77,24,62,PM10
+2022-12-01,Andhra Pradesh,South,Amaravati,Winter,13.8,26.2,66,117.8,28.6,9.5,0.82,26.8,90,PM10
+2023-01-01,Andhra Pradesh,South,Amaravati,Winter,11.4,25,64.8,114.5,26.7,12,0.83,24,95,PM10
+2023-02-01,Andhra Pradesh,South,Amaravati,Winter,9.6,26.3,59.4,112.4,27.4,8.2,0.83,27,90,PM10
+2023-03-01,Andhra Pradesh,South,Amaravati,Summer,8.9,30.2,53.7,93.4,28.1,9.7,0.65,27.3,65,PM10
+2023-04-01,Andhra Pradesh,South,Amaravati,Summer,24.3,30.1,57.2,87.6,24.5,11.4,0.68,32.8,69,PM10
+2023-05-01,Andhra Pradesh,South,Amaravati,Summer,32.7,35.1,46.6,74.6,23.2,8.3,0.69,31.8,64,PM10
+2023-06-01,Andhra Pradesh,South,Amaravati,Monsoon,71.7,31.9,35.6,70.2,15.8,10.4,0.67,24,37,PM10
+2023-07-01,Andhra Pradesh,South,Amaravati,Monsoon,79.6,29.4,36.9,70.7,15,8.6,0.59,22.6,40,PM10
+2023-08-01,Andhra Pradesh,South,Amaravati,Monsoon,91.9,29,34.8,74.3,19.5,10,0.62,21.6,48,PM10
+2023-09-01,Andhra Pradesh,South,Amaravati,Monsoon,66.7,29.3,38.1,62.6,22,8.7,0.59,22.6,35,PM10
+2023-10-01,Andhra Pradesh,South,Amaravati,Post-Monsoon,14.1,30,54.4,88.3,23,10.1,0.7,25.2,75,PM10
+2023-11-01,Andhra Pradesh,South,Amaravati,Post-Monsoon,23.7,29.1,56.3,86.3,21.8,11,0.9,24.7,58,PM10
+2023-12-01,Andhra Pradesh,South,Amaravati,Winter,7.3,25.4,69,101.2,27,11.4,0.78,24.5,103,PM10
+2024-01-01,Andhra Pradesh,South,Amaravati,Winter,19.1,22,58.3,105.5,27.1,6,0.68,21.7,97,PM10
+2024-02-01,Andhra Pradesh,South,Amaravati,Winter,4,27,54.9,117.6,23.7,11.9,0.73,27.1,86,PM10
+2024-03-01,Andhra Pradesh,South,Amaravati,Summer,22,31,50.9,98.9,25.8,10.5,0.76,29.4,63,PM10
+2024-04-01,Andhra Pradesh,South,Amaravati,Summer,17.2,32.8,52.1,81.8,24.2,9.8,0.64,30.4,71,PM10
+2024-05-01,Andhra Pradesh,South,Amaravati,Summer,22,34.7,53.2,84.1,20.5,8.1,0.66,33,66,PM10
+2024-06-01,Andhra Pradesh,South,Amaravati,Monsoon,59.4,33,40.4,73.9,19,7.5,0.56,26.5,35,PM10
+2024-07-01,Andhra Pradesh,South,Amaravati,Monsoon,92.6,31.7,38.4,63.2,14.7,9.6,0.58,19.6,42,PM10
+2024-08-01,Andhra Pradesh,South,Amaravati,Monsoon,81.6,30.4,33.3,71.3,16.8,10.6,0.66,21.8,35,PM10
+2024-09-01,Andhra Pradesh,South,Amaravati,Monsoon,67.8,31.7,34.2,69.8,22.6,9.7,0.76,25.7,43,PM10
+2024-10-01,Andhra Pradesh,South,Amaravati,Post-Monsoon,43.1,30.5,45.7,76.3,16.7,11.4,0.64,26.5,58,PM10
+2024-11-01,Andhra Pradesh,South,Amaravati,Post-Monsoon,15.6,27.4,50.7,106.2,24.5,9.6,0.73,25.5,80,PM10
+2024-12-01,Andhra Pradesh,South,Amaravati,Winter,4,25.8,57.5,103.5,30.4,12.4,0.79,24.4,99,PM10
+2025-01-01,Andhra Pradesh,South,Amaravati,Winter,31.5,23.9,62.1,111,25.9,14.6,0.75,25.5,98,PM10
+2025-02-01,Andhra Pradesh,South,Amaravati,Winter,9.6,28.1,49.1,111.1,20.3,11.4,0.78,26.8,85,PM10
+2025-03-01,Andhra Pradesh,South,Amaravati,Summer,10.1,30.1,50.9,92.8,23.8,11.6,0.64,27.7,73,PM10
+2025-04-01,Andhra Pradesh,South,Amaravati,Summer,12.7,34.8,51.8,78.9,20.7,10.7,0.72,29.6,62,PM10
+2025-05-01,Andhra Pradesh,South,Amaravati,Summer,27.3,35.2,50,81.8,17.9,5.7,0.74,34.1,78,PM10
+2025-06-01,Andhra Pradesh,South,Amaravati,Monsoon,81.2,32.5,42.6,71.6,21.2,8.4,0.52,26.3,37,PM10
+2025-07-01,Andhra Pradesh,South,Amaravati,Monsoon,76.6,29.9,41.4,67.9,17.1,9.2,0.58,24.6,35,PM10
+2025-08-01,Andhra Pradesh,South,Amaravati,Monsoon,96.1,30.7,34.9,69.2,19.3,9.5,0.63,22.6,37,PM10
+2025-09-01,Andhra Pradesh,South,Amaravati,Monsoon,63.8,27.6,38,70.7,17.5,7.9,0.64,22.2,40,PM10
+2025-10-01,Andhra Pradesh,South,Amaravati,Post-Monsoon,22.3,29.3,42.7,89.5,23.4,7.8,0.61,28.3,54,PM10
+2025-11-01,Andhra Pradesh,South,Amaravati,Post-Monsoon,4,26,51.5,95.7,24.3,7.4,0.72,25.4,80,PM10
+2025-12-01,Andhra Pradesh,South,Amaravati,Winter,4,25.2,54.8,112.4,27,14.1,0.89,23.3,104,PM10
+2020-01-01,Arunachal Pradesh,Northeast,Itanagar,Winter,36.7,11,31.1,47.2,15.3,5.6,0.52,18.9,54,PM10
+2020-02-01,Arunachal Pradesh,Northeast,Itanagar,Winter,27.1,14.7,22.1,55.5,15,5.7,0.36,22.1,50,PM10
+2020-03-01,Arunachal Pradesh,Northeast,Itanagar,Summer,22.2,17.1,28.7,42.9,12.4,5,0.43,24.5,35,PM10
+2020-04-01,Arunachal Pradesh,Northeast,Itanagar,Summer,58.5,20.6,15.6,37.2,11.9,3.9,0.42,20.7,35,PM10
+2020-05-01,Arunachal Pradesh,Northeast,Itanagar,Summer,68,23.2,20.9,43.6,7.7,2.8,0.4,23.5,35,PM10
+2020-06-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,191,21.9,12.8,30.6,8.4,5.7,0.24,17.8,35,PM10
+2020-07-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,243,20.8,14.4,30.8,6,7,0.35,15.9,35,PM10
+2020-08-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,216.6,19.4,12.5,30.7,6,5.4,0.21,12,35,PM10
+2020-09-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,167.1,20.2,25.3,42.1,7.8,2.1,0.31,16.7,35,PM10
+2020-10-01,Arunachal Pradesh,Northeast,Itanagar,Post-Monsoon,72.7,19.2,26.1,39.2,12,3.9,0.38,18.7,35,PM10
+2020-11-01,Arunachal Pradesh,Northeast,Itanagar,Post-Monsoon,71.1,16.5,33.7,56.1,16.4,6.2,0.34,18.3,35,PM10
+2020-12-01,Arunachal Pradesh,Northeast,Itanagar,Winter,39.2,14.1,33,56.5,16.5,4,0.41,17,52,PM10
+2021-01-01,Arunachal Pradesh,Northeast,Itanagar,Winter,31.7,11.8,30.6,48.1,12.6,6.4,0.4,15.5,38,PM10
+2021-02-01,Arunachal Pradesh,Northeast,Itanagar,Winter,38.1,17.7,28.3,58.8,15.6,6.6,0.45,17.6,53,PM10
+2021-03-01,Arunachal Pradesh,Northeast,Itanagar,Summer,23.3,17.1,26.7,54.6,9.5,3.8,0.36,24.1,35,PM10
+2021-04-01,Arunachal Pradesh,Northeast,Itanagar,Summer,46.2,21.6,20.3,42.4,9.6,2,0.35,23.9,35,PM10
+2021-05-01,Arunachal Pradesh,Northeast,Itanagar,Summer,79.4,23.9,24,50.3,12.2,5.7,0.45,26.5,35,PM10
+2021-06-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,192,22.4,17.3,22,7.7,3.8,0.3,19.8,35,PM10
+2021-07-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,248.9,20.1,24.9,32.2,9.6,5.8,0.22,17.3,35,PM10
+2021-08-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,219.3,19.8,14.5,29.4,11.3,5.4,0.29,18.2,35,PM10
+2021-09-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,152.2,19.6,19.1,35.1,11.4,4.2,0.37,14,35,PM10
+2021-10-01,Arunachal Pradesh,Northeast,Itanagar,Post-Monsoon,84.3,19.9,20.6,35.7,6,2,0.36,21.3,35,PM10
+2021-11-01,Arunachal Pradesh,Northeast,Itanagar,Post-Monsoon,41.8,18.5,14.5,46.3,12.9,4.3,0.44,18.6,35,PM10
+2021-12-01,Arunachal Pradesh,Northeast,Itanagar,Winter,25.9,13.4,30.7,53.5,13.7,3.4,0.35,14.9,41,PM10
+2022-01-01,Arunachal Pradesh,Northeast,Itanagar,Winter,30,14,27.8,55.4,7.4,2,0.33,15.4,49,PM10
+2022-02-01,Arunachal Pradesh,Northeast,Itanagar,Winter,4,16.6,27.1,47.9,15.2,4.1,0.31,20.4,45,PM10
+2022-03-01,Arunachal Pradesh,Northeast,Itanagar,Summer,33.4,17.9,26.7,34.4,8.8,4.3,0.39,22.1,35,PM10
+2022-04-01,Arunachal Pradesh,Northeast,Itanagar,Summer,34.4,22.1,21,40.6,11.4,4.9,0.27,25.3,35,PM10
+2022-05-01,Arunachal Pradesh,Northeast,Itanagar,Summer,81.9,21.8,29.4,47.6,7.1,4.1,0.26,22,35,PM10
+2022-06-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,194.4,22.7,18.5,23.9,8.4,4.2,0.28,20.4,35,PM10
+2022-07-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,241.1,17.7,12.8,26.2,6.3,4.6,0.28,16.6,35,PM10
+2022-08-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,204.4,19.9,18.5,27.9,8.7,3.1,0.36,15.4,35,PM10
+2022-09-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,172.5,20.6,18,26.1,9.9,3,0.32,18.2,35,PM10
+2022-10-01,Arunachal Pradesh,Northeast,Itanagar,Post-Monsoon,71.9,19.2,16.6,39.5,16.1,3.4,0.29,17.4,35,PM10
+2022-11-01,Arunachal Pradesh,Northeast,Itanagar,Post-Monsoon,40.9,17.5,27.6,47.3,16.1,2,0.3,17,35,PM10
+2022-12-01,Arunachal Pradesh,Northeast,Itanagar,Winter,23.3,13.8,27.5,54.1,16.3,5.1,0.41,16.2,43,PM10
+2023-01-01,Arunachal Pradesh,Northeast,Itanagar,Winter,19.1,10.3,29.8,44.7,11.2,5.4,0.32,14.3,40,PM10
+2023-02-01,Arunachal Pradesh,Northeast,Itanagar,Winter,24.5,15.2,22,46.6,11.5,2.3,0.46,16.7,39,PM10
+2023-03-01,Arunachal Pradesh,Northeast,Itanagar,Summer,42.2,19.1,22.1,47.5,8.8,7.1,0.28,20.5,35,PM10
+2023-04-01,Arunachal Pradesh,Northeast,Itanagar,Summer,44.6,24,21.3,29.4,7.8,2.3,0.32,17.4,35,PM10
+2023-05-01,Arunachal Pradesh,Northeast,Itanagar,Summer,52,22.1,24.8,31.4,9.9,4.1,0.33,26.4,35,PM10
+2023-06-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,192.4,22,17.5,22,9.4,3.6,0.25,20.6,35,PM10
+2023-07-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,229.1,21.7,18,31.5,9,2.5,0.2,16.8,35,PM10
+2023-08-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,224.3,18,14.5,30.5,11,3,0.2,18,35,PM10
+2023-09-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,182.3,20.3,13.9,28.7,6.1,5.3,0.3,20.5,35,PM10
+2023-10-01,Arunachal Pradesh,Northeast,Itanagar,Post-Monsoon,85.7,17.5,23.8,42.7,12,2.9,0.34,18.9,35,PM10
+2023-11-01,Arunachal Pradesh,Northeast,Itanagar,Post-Monsoon,39.8,17,19.6,58.5,12.5,4.3,0.26,19.6,35,PM10
+2023-12-01,Arunachal Pradesh,Northeast,Itanagar,Winter,25.9,14.7,30.3,60.6,15.1,4.9,0.43,14.8,54,PM10
+2024-01-01,Arunachal Pradesh,Northeast,Itanagar,Winter,31.1,14.2,29.4,60.1,13.4,4.2,0.38,15.3,43,PM10
+2024-02-01,Arunachal Pradesh,Northeast,Itanagar,Winter,29.2,15.7,25.4,45.2,11.1,4.3,0.42,19.2,46,PM10
+2024-03-01,Arunachal Pradesh,Northeast,Itanagar,Summer,23.2,17.8,19.6,37.8,7.3,3.4,0.32,22.5,35,PM10
+2024-04-01,Arunachal Pradesh,Northeast,Itanagar,Summer,27.6,23.8,22,43.3,8.5,2.7,0.3,21.9,35,PM10
+2024-05-01,Arunachal Pradesh,Northeast,Itanagar,Summer,75.9,25.6,24.7,26.3,11.3,3.6,0.21,24.7,35,PM10
+2024-06-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,216.7,21.6,20.5,22.1,12.8,2.9,0.2,18,35,PM10
+2024-07-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,244,16.8,18.3,24,6.6,2.6,0.2,19,35,PM10
+2024-08-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,230.2,18,17.4,33.6,11.1,4,0.31,18.6,35,PM10
+2024-09-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,174,20.1,18.6,25.1,15.2,2,0.32,19.6,35,PM10
+2024-10-01,Arunachal Pradesh,Northeast,Itanagar,Post-Monsoon,83,19.7,27.3,34.6,12.8,3.7,0.27,22.3,35,PM10
+2024-11-01,Arunachal Pradesh,Northeast,Itanagar,Post-Monsoon,56.7,15.5,24.5,35.4,11.8,3.4,0.32,16,35,PM10
+2024-12-01,Arunachal Pradesh,Northeast,Itanagar,Winter,36.3,13.6,19,52.9,14.8,4.6,0.46,13.8,50,PM10
+2025-01-01,Arunachal Pradesh,Northeast,Itanagar,Winter,16.7,14.8,30.3,60.1,14.5,4.9,0.38,18,49,PM10
+2025-02-01,Arunachal Pradesh,Northeast,Itanagar,Winter,34,14.1,27.3,43.3,15.5,4.4,0.45,21,50,PM10
+2025-03-01,Arunachal Pradesh,Northeast,Itanagar,Summer,35.8,18.6,21.5,32.2,13.1,4.9,0.3,20.4,35,PM10
+2025-04-01,Arunachal Pradesh,Northeast,Itanagar,Summer,39.8,22.2,26.3,41,12.4,2,0.36,21.2,35,PM10
+2025-05-01,Arunachal Pradesh,Northeast,Itanagar,Summer,77.5,25.2,21.3,36.8,10.8,4.8,0.28,23.2,35,PM10
+2025-06-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,196.6,20.2,16.9,26.5,6,2,0.22,20.7,35,PM10
+2025-07-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,231.2,18.9,16,40,10.3,2.8,0.2,18,35,PM10
+2025-08-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,216.8,19,27,24.9,9.9,2,0.29,16.9,35,PM2.5
+2025-09-01,Arunachal Pradesh,Northeast,Itanagar,Monsoon,151.8,19.1,28.6,31.8,9.6,2,0.28,18.6,35,PM10
+2025-10-01,Arunachal Pradesh,Northeast,Itanagar,Post-Monsoon,63.8,20.5,17.9,40.8,10.1,4.5,0.21,16.6,35,PM10
+2025-11-01,Arunachal Pradesh,Northeast,Itanagar,Post-Monsoon,49.6,16.7,29.2,43.1,9.9,2,0.33,16.2,35,PM10
+2025-12-01,Arunachal Pradesh,Northeast,Itanagar,Winter,20.9,14.5,24.1,62.7,12.8,3.7,0.41,18.3,52,PM10
+2020-01-01,Assam,Northeast,Dispur,Winter,44.8,18.2,43.3,78.7,18,7.6,0.62,19.4,70,PM10
+2020-02-01,Assam,Northeast,Dispur,Winter,31.5,20.5,39.9,67.3,16.3,8.4,0.6,22,65,PM10
+2020-03-01,Assam,Northeast,Dispur,Summer,17.7,24.1,42.3,67.7,16,5.1,0.64,26,45,PM10
+2020-04-01,Assam,Northeast,Dispur,Summer,32.9,27.1,31.1,57,21.3,3.5,0.51,25.2,35,PM10
+2020-05-01,Assam,Northeast,Dispur,Summer,83.4,27.6,24.6,51.2,17.6,6.1,0.48,30.6,35,PM10
+2020-06-01,Assam,Northeast,Dispur,Monsoon,211.6,28.4,22.7,49.8,11.2,6,0.58,17.8,35,PM10
+2020-07-01,Assam,Northeast,Dispur,Monsoon,275,24.1,33.4,44.5,13.7,5.3,0.37,22.1,35,PM10
+2020-08-01,Assam,Northeast,Dispur,Monsoon,237.8,25.3,28.1,47.4,11,6.1,0.45,20.4,35,PM10
+2020-09-01,Assam,Northeast,Dispur,Monsoon,195.7,25.3,19.8,56.9,14.7,5.2,0.45,20.8,35,PM10
+2020-10-01,Assam,Northeast,Dispur,Post-Monsoon,102.1,25.4,27.2,51.6,7,8.8,0.48,21.8,35,PM10
+2020-11-01,Assam,Northeast,Dispur,Post-Monsoon,35.8,17.3,39.6,85.9,20.9,6.5,0.66,22.6,46,PM10
+2020-12-01,Assam,Northeast,Dispur,Winter,20.2,18.5,48.1,87.3,19.2,8.4,0.56,15.8,67,PM10
+2021-01-01,Assam,Northeast,Dispur,Winter,44.7,19.5,48,81.5,19.2,6.8,0.61,23.1,67,PM10
+2021-02-01,Assam,Northeast,Dispur,Winter,45.9,20.8,41.7,76.3,18.5,7.8,0.53,24.4,68,PM10
+2021-03-01,Assam,Northeast,Dispur,Summer,40.7,24.6,42.1,59.1,19.8,3.5,0.45,26.7,39,PM10
+2021-04-01,Assam,Northeast,Dispur,Summer,45.7,25.4,26.8,45.1,8.9,4.7,0.46,27.4,35,PM10
+2021-05-01,Assam,Northeast,Dispur,Summer,71.6,27.9,40.4,57.7,14.7,7,0.48,26.6,49,PM10
+2021-06-01,Assam,Northeast,Dispur,Monsoon,232.2,26.1,24.1,46.6,13.5,7.2,0.55,24.9,35,PM10
+2021-07-01,Assam,Northeast,Dispur,Monsoon,273.8,25.2,31.8,43.6,12.8,8,0.47,21.3,35,PM10
+2021-08-01,Assam,Northeast,Dispur,Monsoon,256.8,26.1,21,61.7,13.3,4.9,0.35,18.1,35,PM10
+2021-09-01,Assam,Northeast,Dispur,Monsoon,185.6,26,25.2,45.7,17.4,7.3,0.49,19.9,35,PM10
+2021-10-01,Assam,Northeast,Dispur,Post-Monsoon,76,24.8,37.8,63.5,20.4,8.5,0.52,21.1,48,PM10
+2021-11-01,Assam,Northeast,Dispur,Post-Monsoon,38.7,21.1,39.9,62.1,19,9.4,0.54,20,35,PM10
+2021-12-01,Assam,Northeast,Dispur,Winter,28.6,19.8,46.5,73.9,15.8,9.5,0.64,22.2,59,PM10
+2022-01-01,Assam,Northeast,Dispur,Winter,43.2,19.1,38.3,70.6,23,6.2,0.54,16.8,64,PM10
+2022-02-01,Assam,Northeast,Dispur,Winter,32.6,20.1,41.7,71.3,20.3,4.4,0.58,21.6,68,PM10
+2022-03-01,Assam,Northeast,Dispur,Summer,55.9,23.5,43.3,61.7,21.9,8,0.5,24.5,37,PM10
+2022-04-01,Assam,Northeast,Dispur,Summer,50.7,28.2,33.6,66.8,15.8,4.6,0.53,28.3,37,PM10
+2022-05-01,Assam,Northeast,Dispur,Summer,95.3,26.6,30.2,64.4,20.6,6.2,0.44,25.6,35,PM10
+2022-06-01,Assam,Northeast,Dispur,Monsoon,216,27,25.1,57,11.1,6.2,0.43,21.7,35,PM10
+2022-07-01,Assam,Northeast,Dispur,Monsoon,273,25,30.9,51.3,11,5.7,0.34,20.2,35,PM10
+2022-08-01,Assam,Northeast,Dispur,Monsoon,273.1,23.6,22,41.8,11.5,5.8,0.41,20.3,35,PM10
+2022-09-01,Assam,Northeast,Dispur,Monsoon,195.6,24.1,33.3,50.6,14.2,6,0.53,20.5,35,PM10
+2022-10-01,Assam,Northeast,Dispur,Post-Monsoon,75.9,23.1,39.3,60.2,19.1,6.6,0.5,22.8,35,PM10
+2022-11-01,Assam,Northeast,Dispur,Post-Monsoon,36.2,22.5,35.8,69.8,19.5,7.2,0.5,19.9,37,PM10
+2022-12-01,Assam,Northeast,Dispur,Winter,31,19.5,40.2,72.9,22.6,5.9,0.55,16.4,70,PM10
+2023-01-01,Assam,Northeast,Dispur,Winter,50.8,18.4,39,72.7,19.8,6.2,0.58,23,48,PM10
+2023-02-01,Assam,Northeast,Dispur,Winter,23.9,18.1,43.9,75.7,18.1,6.7,0.61,18.7,56,PM10
+2023-03-01,Assam,Northeast,Dispur,Summer,23,24.1,42.6,62.4,18,6.8,0.54,21.5,39,PM10
+2023-04-01,Assam,Northeast,Dispur,Summer,41.3,27.6,39.9,61.8,13.3,10.8,0.48,26.8,39,PM10
+2023-05-01,Assam,Northeast,Dispur,Summer,69.4,28.5,36.1,60,16.7,8.2,0.57,29.3,42,PM10
+2023-06-01,Assam,Northeast,Dispur,Monsoon,223.9,27.2,23.2,57,16.4,5.8,0.46,24.7,35,PM10
+2023-07-01,Assam,Northeast,Dispur,Monsoon,262.3,24.9,19.8,45.5,10.1,4.7,0.42,21.6,35,PM10
+2023-08-01,Assam,Northeast,Dispur,Monsoon,230.4,25.4,21.1,32.5,11.4,3.2,0.53,18.4,35,PM10
+2023-09-01,Assam,Northeast,Dispur,Monsoon,187.7,26.6,25.3,61.3,10.6,6.1,0.45,20.6,35,PM10
+2023-10-01,Assam,Northeast,Dispur,Post-Monsoon,84.7,25.9,30.8,65.8,15.9,7.4,0.48,20.5,40,PM10
+2023-11-01,Assam,Northeast,Dispur,Post-Monsoon,54.7,21.8,39.8,73.8,22.9,5.8,0.59,19,40,PM10
+2023-12-01,Assam,Northeast,Dispur,Winter,17.5,17.9,41.6,72.6,21.1,7.8,0.53,18.7,61,PM10
+2024-01-01,Assam,Northeast,Dispur,Winter,44.5,16.9,44.5,88.1,18.3,5.3,0.46,17,67,PM10
+2024-02-01,Assam,Northeast,Dispur,Winter,30.1,18.2,43.2,65.2,16.4,6.7,0.33,19.1,55,PM10
+2024-03-01,Assam,Northeast,Dispur,Summer,14.7,26.2,26.7,66.8,14.4,7.3,0.54,27.6,35,PM10
+2024-04-01,Assam,Northeast,Dispur,Summer,56.1,29.4,28.9,71.6,17.3,6.2,0.59,24.5,36,PM10
+2024-05-01,Assam,Northeast,Dispur,Summer,84.3,27.9,32.3,60.6,16.3,6.9,0.43,28,44,PM10
+2024-06-01,Assam,Northeast,Dispur,Monsoon,236.7,26.6,22.4,40.2,14.7,7.7,0.53,21.5,35,PM10
+2024-07-01,Assam,Northeast,Dispur,Monsoon,268.1,25,25.9,31.2,9.8,4.3,0.44,21.4,35,PM10
+2024-08-01,Assam,Northeast,Dispur,Monsoon,240.4,22.5,26.2,50.2,11.1,3.6,0.35,20,35,PM10
+2024-09-01,Assam,Northeast,Dispur,Monsoon,196.9,24.5,30.8,37.5,13.3,6.2,0.48,16.7,35,PM10
+2024-10-01,Assam,Northeast,Dispur,Post-Monsoon,67.1,23.9,33.5,63.4,14.1,4.9,0.48,20.4,35,PM10
+2024-11-01,Assam,Northeast,Dispur,Post-Monsoon,62.6,22.9,45.2,71.7,15.1,7.8,0.56,20.5,49,PM10
+2024-12-01,Assam,Northeast,Dispur,Winter,41.1,19,42.8,71.8,22.3,7.9,0.58,21.9,70,PM10
+2025-01-01,Assam,Northeast,Dispur,Winter,42.3,18.3,38.4,78.5,18.2,7.7,0.52,20.5,53,PM10
+2025-02-01,Assam,Northeast,Dispur,Winter,38,19.5,30.1,69.6,19.2,5.3,0.45,23.1,59,PM10
+2025-03-01,Assam,Northeast,Dispur,Summer,27,25.7,38.8,64,14.5,7.2,0.5,19.7,37,PM10
+2025-04-01,Assam,Northeast,Dispur,Summer,25,25.7,30.2,70.5,15.5,3.7,0.52,26.3,40,PM10
+2025-05-01,Assam,Northeast,Dispur,Summer,92.5,28.5,21.7,40.3,8.8,5.7,0.46,26.1,35,PM10
+2025-06-01,Assam,Northeast,Dispur,Monsoon,230.4,25.2,22.8,52,20.6,6.9,0.38,19.8,35,PM10
+2025-07-01,Assam,Northeast,Dispur,Monsoon,253.7,26.1,24.1,35,11.5,2.9,0.36,20.9,35,PM10
+2025-08-01,Assam,Northeast,Dispur,Monsoon,273.6,23.1,24.9,30.7,16.4,5.5,0.42,21.7,35,PM10
+2025-09-01,Assam,Northeast,Dispur,Monsoon,187.2,26.1,20.6,57.5,11.8,8.4,0.43,17.5,35,PM10
+2025-10-01,Assam,Northeast,Dispur,Post-Monsoon,82.2,24.4,25.9,71.3,14.7,7.4,0.42,19.3,37,PM10
+2025-11-01,Assam,Northeast,Dispur,Post-Monsoon,62.9,22,44.5,71.6,19.1,8.2,0.57,19.1,47,PM10
+2025-12-01,Assam,Northeast,Dispur,Winter,24.3,19.1,40.9,75.9,20.3,6.1,0.65,20.1,61,PM10
+2020-01-01,Bihar,East,Patna,Winter,20,21.1,99.5,169.1,38.2,15.3,1.07,24.6,135,PM10
+2020-02-01,Bihar,East,Patna,Winter,30.2,22.5,95.4,172.7,39.7,11.2,1.19,28.8,138,PM10
+2020-03-01,Bihar,East,Patna,Summer,5.6,27.9,87.6,152.9,36,14.6,0.97,34.7,104,PM10
+2020-04-01,Bihar,East,Patna,Summer,41.6,29.5,74.7,138.2,36.4,14,1.01,34,98,PM10
+2020-05-01,Bihar,East,Patna,Summer,48.5,30.5,86.4,133.3,34.6,10.8,0.96,31.9,97,PM10
+2020-06-01,Bihar,East,Patna,Monsoon,85.3,28.2,69,122.3,34.1,11.3,0.79,29.9,74,PM10
+2020-07-01,Bihar,East,Patna,Monsoon,140.2,27.1,58.7,93.9,19.6,12.7,0.83,24.9,60,PM10
+2020-08-01,Bihar,East,Patna,Monsoon,96.7,27.2,60,105.3,21.3,14.1,0.83,26.5,55,PM10
+2020-09-01,Bihar,East,Patna,Monsoon,96,28.9,69.1,111.2,25.6,10.2,0.96,26.7,63,PM10
+2020-10-01,Bihar,East,Patna,Post-Monsoon,39.2,28.4,78.7,131.4,38.1,11.9,0.97,27.5,93,PM10
+2020-11-01,Bihar,East,Patna,Post-Monsoon,30,23.6,92.3,172.3,39.7,11.7,1.25,25.3,115,PM10
+2020-12-01,Bihar,East,Patna,Winter,12,21.1,105.3,186.3,37,13.4,1.13,25.5,142,PM10
+2021-01-01,Bihar,East,Patna,Winter,18.3,20.9,92.4,172.4,44.7,11.6,1.1,23.8,137,PM10
+2021-02-01,Bihar,East,Patna,Winter,4,24.1,96.7,163.9,40.3,14,1.19,29.7,144,PM10
+2021-03-01,Bihar,East,Patna,Summer,27,27,89.1,148,37.7,13.9,1.03,30.8,94,PM10
+2021-04-01,Bihar,East,Patna,Summer,17.6,28.6,80.1,134.7,33.6,11.5,0.9,36.1,99,PM10
+2021-05-01,Bihar,East,Patna,Summer,41.1,32.1,79.2,143.4,28.8,10.7,0.91,37.9,107,PM10
+2021-06-01,Bihar,East,Patna,Monsoon,98.1,30,58,118.9,28.3,12.8,0.9,28.4,65,PM10
+2021-07-01,Bihar,East,Patna,Monsoon,119.8,29,55.2,107,24.3,8.3,0.86,24.8,52,PM10
+2021-08-01,Bihar,East,Patna,Monsoon,118.6,26.8,62.5,100,23.3,10.9,0.91,21.9,70,PM10
+2021-09-01,Bihar,East,Patna,Monsoon,93.6,27.3,64.2,109.8,23.9,11.3,0.88,26.8,66,PM10
+2021-10-01,Bihar,East,Patna,Post-Monsoon,28.6,25.6,76.1,137.5,29,10.7,0.98,28.7,93,PM10
+2021-11-01,Bihar,East,Patna,Post-Monsoon,24.1,23.6,98.5,157.1,38.1,10.3,1.01,24.7,112,PM10
+2021-12-01,Bihar,East,Patna,Winter,7.1,19.4,96.5,174.5,43.2,11.7,1.11,23.9,148,PM10
+2022-01-01,Bihar,East,Patna,Winter,22.1,21.6,92.9,167,37.1,11.3,1.1,24.2,125,PM10
+2022-02-01,Bihar,East,Patna,Winter,18.8,25.2,87,164.9,44.5,14.6,1.07,29.1,118,PM10
+2022-03-01,Bihar,East,Patna,Summer,30.8,26.2,84.2,147.8,31.6,15.6,0.98,30.3,93,PM10
+2022-04-01,Bihar,East,Patna,Summer,24.9,30,73.3,133.9,34.2,12.6,0.93,32,88,PM10
+2022-05-01,Bihar,East,Patna,Summer,48.4,33.1,72.7,126.7,29,13.6,0.93,36,92,PM10
+2022-06-01,Bihar,East,Patna,Monsoon,92.7,28.5,67.7,109.6,24.8,8.7,0.77,26.5,68,PM10
+2022-07-01,Bihar,East,Patna,Monsoon,103.9,28.2,61.5,98.9,29.3,13.4,0.94,22.6,65,PM10
+2022-08-01,Bihar,East,Patna,Monsoon,114.6,27,53.9,102.1,23.1,11.2,0.87,24.6,65,PM10
+2022-09-01,Bihar,East,Patna,Monsoon,88.3,27.3,57.4,113.5,25.2,13.9,0.84,26.7,51,PM10
+2022-10-01,Bihar,East,Patna,Post-Monsoon,56.1,27.5,73.7,139.3,37.6,14,0.94,28.2,95,PM10
+2022-11-01,Bihar,East,Patna,Post-Monsoon,14.4,25,91.5,151.4,39.4,11.8,1.04,27.1,114,PM10
+2022-12-01,Bihar,East,Patna,Winter,4,20.9,96,177.3,45.2,12.5,1.06,27.9,141,PM10
+2023-01-01,Bihar,East,Patna,Winter,33,20.5,98.1,185.6,33.9,13.3,1.12,24,139,PM10
+2023-02-01,Bihar,East,Patna,Winter,7.5,22.7,89.8,157.1,39.2,12.3,1.11,27.4,118,PM10
+2023-03-01,Bihar,East,Patna,Summer,32.9,26.5,81.8,145.1,35,13.5,1.01,29.8,103,PM10
+2023-04-01,Bihar,East,Patna,Summer,20.4,31.5,80.6,145.6,26.6,14.6,0.96,31.9,92,PM10
+2023-05-01,Bihar,East,Patna,Summer,40.6,31.5,66.5,131.2,31.7,9.9,0.94,35.1,97,PM10
+2023-06-01,Bihar,East,Patna,Monsoon,94,30.3,70.1,111,27.8,7.8,0.88,27.2,72,PM10
+2023-07-01,Bihar,East,Patna,Monsoon,115.5,27,58,110.4,23.3,10.6,0.86,25.5,65,PM10
+2023-08-01,Bihar,East,Patna,Monsoon,114.9,27.1,57.6,96.3,23.6,10.2,0.78,23.5,56,PM10
+2023-09-01,Bihar,East,Patna,Monsoon,82.3,28.7,68.8,114,26.7,7,0.88,24.8,67,PM10
+2023-10-01,Bihar,East,Patna,Post-Monsoon,44.1,29.6,82.5,121.7,35.1,14.3,1.02,28.2,94,PM10
+2023-11-01,Bihar,East,Patna,Post-Monsoon,17.8,23.3,93.9,159.1,37.8,11.2,1.05,26,116,PM10
+2023-12-01,Bihar,East,Patna,Winter,25.7,20.6,98.5,170.3,42.6,15.1,1.08,24.1,134,PM10
+2024-01-01,Bihar,East,Patna,Winter,17.4,21.3,101.7,166.8,37.3,10.8,1.06,24.9,124,PM10
+2024-02-01,Bihar,East,Patna,Winter,25.6,21.6,86.2,156.1,40.9,11.3,0.99,25.8,124,PM10
+2024-03-01,Bihar,East,Patna,Summer,26.2,24.8,87.5,137.6,32.5,12.1,0.9,26.7,91,PM10
+2024-04-01,Bihar,East,Patna,Summer,28.8,30.8,75.9,131.3,33.7,11.7,0.96,37.9,100,PM10
+2024-05-01,Bihar,East,Patna,Summer,42.3,32.2,79.9,122.5,30.9,9.1,0.97,35.3,96,PM10
+2024-06-01,Bihar,East,Patna,Monsoon,99,30.2,60.3,117.4,29.7,13.8,0.84,29.1,73,PM10
+2024-07-01,Bihar,East,Patna,Monsoon,109.4,28.4,59.3,101.4,17.6,6.4,0.81,23.4,63,PM10
+2024-08-01,Bihar,East,Patna,Monsoon,104.6,24.3,54.4,100.2,20.3,12.3,0.86,20.4,60,PM10
+2024-09-01,Bihar,East,Patna,Monsoon,49.7,27.9,65.1,109.4,24.5,9.7,0.75,28.3,60,PM10
+2024-10-01,Bihar,East,Patna,Post-Monsoon,26.9,26.9,76.5,140.5,31,11.8,0.96,31.1,96,PM10
+2024-11-01,Bihar,East,Patna,Post-Monsoon,4,23.9,97.4,143.1,39,11.1,0.97,27.4,110,PM10
+2024-12-01,Bihar,East,Patna,Winter,6.4,23.9,87.5,167.1,42.5,12.8,1.05,25.4,118,PM10
+2025-01-01,Bihar,East,Patna,Winter,40.8,22.3,89.4,161.6,37.3,11.7,1.1,25.7,136,PM10
+2025-02-01,Bihar,East,Patna,Winter,24.1,22.2,88.7,164.4,39.2,11.7,1.09,29.3,133,PM10
+2025-03-01,Bihar,East,Patna,Summer,28.8,27.5,86.4,136.3,31.8,10.3,1.06,29.3,108,PM10
+2025-04-01,Bihar,East,Patna,Summer,21.7,29.6,76.4,129.4,34.2,13,1.02,35,96,PM10
+2025-05-01,Bihar,East,Patna,Summer,42.3,34.7,73.3,140.9,30,14,0.93,33.9,95,PM10
+2025-06-01,Bihar,East,Patna,Monsoon,113.2,27.7,59.2,110.2,30.8,11.3,0.8,27.8,52,PM10
+2025-07-01,Bihar,East,Patna,Monsoon,116.3,27.7,57,98,27.6,8.8,0.7,22.5,66,PM10
+2025-08-01,Bihar,East,Patna,Monsoon,109.2,26.1,64.4,106.3,25.4,12.4,0.83,27.8,62,PM10
+2025-09-01,Bihar,East,Patna,Monsoon,85.5,28.3,57.3,117.3,24.1,12.3,0.83,26.8,66,PM10
+2025-10-01,Bihar,East,Patna,Post-Monsoon,33.9,27.5,73.7,121.5,33.7,11.7,0.76,26.8,91,PM10
+2025-11-01,Bihar,East,Patna,Post-Monsoon,16.3,24.8,88.4,144.2,35.7,12.8,1.1,26.8,107,PM10
+2025-12-01,Bihar,East,Patna,Winter,5.5,23.3,98.4,165.9,37.5,13.5,1.03,23.9,132,PM10
+2020-01-01,Chhattisgarh,Central,Raipur,Winter,8.7,21.4,67.3,123.6,26.2,16,0.8,21.2,92,PM10
+2020-02-01,Chhattisgarh,Central,Raipur,Winter,19.8,23.6,70.8,115.9,24,15.1,0.89,26,106,PM10
+2020-03-01,Chhattisgarh,Central,Raipur,Summer,17.8,26.5,54.9,102.9,22.2,15.9,0.88,24.4,75,PM10
+2020-04-01,Chhattisgarh,Central,Raipur,Summer,12.9,30.8,63.3,87,25.1,12.7,0.7,28.4,87,PM10
+2020-05-01,Chhattisgarh,Central,Raipur,Summer,35.9,32.2,48.8,89.5,22.3,15.9,0.73,29.9,56,PM10
+2020-06-01,Chhattisgarh,Central,Raipur,Monsoon,109.9,30.1,50,79.3,21.8,11.2,0.75,25.9,48,PM10
+2020-07-01,Chhattisgarh,Central,Raipur,Monsoon,130.1,30.4,34.5,60.1,20.7,10,0.63,22.9,49,PM10
+2020-08-01,Chhattisgarh,Central,Raipur,Monsoon,112.2,29.1,36.6,77.5,19.5,9.8,0.73,18.5,40,PM10
+2020-09-01,Chhattisgarh,Central,Raipur,Monsoon,88.2,28.6,46.5,88.9,21.2,11.1,0.65,21.6,58,PM10
+2020-10-01,Chhattisgarh,Central,Raipur,Post-Monsoon,34.8,27.7,54.4,91.8,21.7,14,0.73,22.6,83,PM10
+2020-11-01,Chhattisgarh,Central,Raipur,Post-Monsoon,30.5,26.4,62.5,113.7,25.1,15,0.9,22.9,78,PM10
+2020-12-01,Chhattisgarh,Central,Raipur,Winter,5.5,24.1,75.8,107.6,33.7,15.9,0.76,21.9,92,PM10
+2021-01-01,Chhattisgarh,Central,Raipur,Winter,12.4,22.1,67.7,128.1,28.3,16.2,0.81,21.6,102,PM10
+2021-02-01,Chhattisgarh,Central,Raipur,Winter,28.5,25.6,65,121.7,25,12.2,0.83,25.6,97,PM10
+2021-03-01,Chhattisgarh,Central,Raipur,Summer,13.2,30.5,58.7,91.5,21.5,14.4,0.69,25.6,68,PM10
+2021-04-01,Chhattisgarh,Central,Raipur,Summer,20.2,31.5,56.3,89.5,24.4,7.2,0.67,28.5,69,PM10
+2021-05-01,Chhattisgarh,Central,Raipur,Summer,47.9,34.4,48.5,83.1,18.5,11.8,0.61,28,62,PM10
+2021-06-01,Chhattisgarh,Central,Raipur,Monsoon,97.8,28.2,49.6,80.4,15.2,14,0.76,28.7,48,PM10
+2021-07-01,Chhattisgarh,Central,Raipur,Monsoon,125.2,28.2,42.6,61.7,17.9,12.2,0.65,23.4,48,PM10
+2021-08-01,Chhattisgarh,Central,Raipur,Monsoon,105.7,29,35.2,74.2,14.9,13.8,0.67,23.4,41,PM10
+2021-09-01,Chhattisgarh,Central,Raipur,Monsoon,90.4,29.3,51.5,80.9,20.9,13.2,0.69,23.7,48,PM10
+2021-10-01,Chhattisgarh,Central,Raipur,Post-Monsoon,42.3,28.8,49.7,98.8,24.9,15.7,0.79,25.1,73,PM10
+2021-11-01,Chhattisgarh,Central,Raipur,Post-Monsoon,34.1,26.8,67.4,118.6,30.6,16.4,0.81,23.1,74,PM10
+2021-12-01,Chhattisgarh,Central,Raipur,Winter,35.9,24,74,127,26.9,11.6,0.88,22,104,PM10
+2022-01-01,Chhattisgarh,Central,Raipur,Winter,20.7,22.2,65,122.5,28,14.1,0.85,24.4,111,PM10
+2022-02-01,Chhattisgarh,Central,Raipur,Winter,19.4,25.4,57.1,110,28.8,13.1,0.9,24.7,88,PM10
+2022-03-01,Chhattisgarh,Central,Raipur,Summer,13.1,27.9,57.8,119.1,27.2,14,0.73,23,72,PM10
+2022-04-01,Chhattisgarh,Central,Raipur,Summer,30.2,32,57.4,100.8,24.7,10.3,0.92,29.8,79,PM10
+2022-05-01,Chhattisgarh,Central,Raipur,Summer,30.9,34.2,50.8,94.4,22.6,15.8,0.8,29.8,70,PM10
+2022-06-01,Chhattisgarh,Central,Raipur,Monsoon,94.5,29.6,46.4,79,22.3,11,0.64,25,51,PM10
+2022-07-01,Chhattisgarh,Central,Raipur,Monsoon,112.1,28.2,39.1,69.1,20.6,13,0.71,21.7,39,PM10
+2022-08-01,Chhattisgarh,Central,Raipur,Monsoon,100.3,29.8,41.7,64.9,20,11.2,0.71,16.8,48,PM10
+2022-09-01,Chhattisgarh,Central,Raipur,Monsoon,94,27.4,47.2,75.6,18.9,11.7,0.75,23.5,42,PM10
+2022-10-01,Chhattisgarh,Central,Raipur,Post-Monsoon,41,27.3,57.9,94.8,28.2,13.8,0.7,22.2,77,PM10
+2022-11-01,Chhattisgarh,Central,Raipur,Post-Monsoon,30.6,25,64.4,109.2,27.9,14,0.77,26.6,72,PM10
+2022-12-01,Chhattisgarh,Central,Raipur,Winter,8.8,23.4,66.6,123.2,28.9,15.6,0.77,22.3,97,PM10
+2023-01-01,Chhattisgarh,Central,Raipur,Winter,26.8,23.7,71.4,120.9,26.3,13.6,0.88,22.5,90,PM10
+2023-02-01,Chhattisgarh,Central,Raipur,Winter,21.1,25.3,68.8,105,26.4,13.4,0.89,28.5,89,PM10
+2023-03-01,Chhattisgarh,Central,Raipur,Summer,4,26.3,56.3,104.5,20.3,12.2,0.67,22.4,71,PM10
+2023-04-01,Chhattisgarh,Central,Raipur,Summer,19.9,33.4,51.2,103.6,19.2,12.9,0.85,35.7,66,PM10
+2023-05-01,Chhattisgarh,Central,Raipur,Summer,32.6,33,52.4,95.8,21.7,13.6,0.75,28.8,66,PM10
+2023-06-01,Chhattisgarh,Central,Raipur,Monsoon,86.4,31.4,42.2,85.6,19.7,11.7,0.65,23.4,46,PM10
+2023-07-01,Chhattisgarh,Central,Raipur,Monsoon,136,28.8,45.1,75.4,9.5,13,0.56,21.6,47,PM10
+2023-08-01,Chhattisgarh,Central,Raipur,Monsoon,112.9,27.8,34,77.5,20.1,10.5,0.65,17.4,39,PM10
+2023-09-01,Chhattisgarh,Central,Raipur,Monsoon,84.2,31.3,48,67,20.4,11.7,0.76,22.4,46,PM10
+2023-10-01,Chhattisgarh,Central,Raipur,Post-Monsoon,41.3,29.6,47.8,103.6,26.7,12.9,0.75,22.6,70,PM10
+2023-11-01,Chhattisgarh,Central,Raipur,Post-Monsoon,18.4,25.9,62.3,103.5,30.7,13.1,0.83,29.6,87,PM10
+2023-12-01,Chhattisgarh,Central,Raipur,Winter,12.9,23.5,62.3,118.2,22.4,12.5,0.8,20.7,102,PM10
+2024-01-01,Chhattisgarh,Central,Raipur,Winter,11.5,21,61.1,106.2,27.2,14.1,0.76,25.4,88,PM10
+2024-02-01,Chhattisgarh,Central,Raipur,Winter,7.2,22.4,57.7,109.1,28,18.1,0.88,20.9,96,PM10
+2024-03-01,Chhattisgarh,Central,Raipur,Summer,4,28.5,62.7,83.3,20.6,11.8,0.7,23.7,77,PM10
+2024-04-01,Chhattisgarh,Central,Raipur,Summer,10.9,31.8,53.8,96.3,16.1,15.1,0.71,24.3,73,PM10
+2024-05-01,Chhattisgarh,Central,Raipur,Summer,45.8,34.1,49,89.3,25.4,15.2,0.62,29.2,61,PM10
+2024-06-01,Chhattisgarh,Central,Raipur,Monsoon,93.2,33.9,46.1,82.3,18,11.4,0.69,25.4,49,PM10
+2024-07-01,Chhattisgarh,Central,Raipur,Monsoon,104.5,28.6,41.4,68.3,14.6,11.2,0.59,17.2,37,PM10
+2024-08-01,Chhattisgarh,Central,Raipur,Monsoon,100.8,26.6,45,63.1,17.6,10.7,0.64,24.1,35,PM10
+2024-09-01,Chhattisgarh,Central,Raipur,Monsoon,77.1,30.2,44.6,88.1,18.6,10.8,0.54,23,47,PM10
+2024-10-01,Chhattisgarh,Central,Raipur,Post-Monsoon,36.2,28.4,53.1,96.4,17.9,10.6,0.8,26.8,50,PM10
+2024-11-01,Chhattisgarh,Central,Raipur,Post-Monsoon,9,28.8,60.6,109.6,24.8,11.9,0.89,22.4,90,PM10
+2024-12-01,Chhattisgarh,Central,Raipur,Winter,4,24.2,59.9,132.9,28,12.6,0.81,20.8,98,PM10
+2025-01-01,Chhattisgarh,Central,Raipur,Winter,26.2,21.7,66.1,102.3,26.9,16.7,0.8,26.1,102,PM10
+2025-02-01,Chhattisgarh,Central,Raipur,Winter,24.6,22.8,67.3,106.6,23.9,12.4,0.81,22.5,102,PM10
+2025-03-01,Chhattisgarh,Central,Raipur,Summer,4,28.8,65.2,90.8,25.3,12.6,0.7,27.7,66,PM10
+2025-04-01,Chhattisgarh,Central,Raipur,Summer,28.5,31.9,55.6,86.9,20.5,8.6,0.65,30.7,68,PM10
+2025-05-01,Chhattisgarh,Central,Raipur,Summer,40.4,32.2,43.2,79.8,23.7,11.6,0.75,27.2,51,PM10
+2025-06-01,Chhattisgarh,Central,Raipur,Monsoon,108,32.5,42.7,81.9,19.1,11.3,0.7,25.1,35,PM10
+2025-07-01,Chhattisgarh,Central,Raipur,Monsoon,125.5,30,44.2,68.8,13.6,11.1,0.69,20.3,38,PM10
+2025-08-01,Chhattisgarh,Central,Raipur,Monsoon,136.9,27.8,40.2,82,19.9,10.3,0.63,21.9,47,PM10
+2025-09-01,Chhattisgarh,Central,Raipur,Monsoon,68.3,31.2,46.6,86.7,20.1,11.9,0.52,22.8,38,PM10
+2025-10-01,Chhattisgarh,Central,Raipur,Post-Monsoon,45.6,28.7,47.1,92,23.4,11.3,0.69,29.5,62,PM10
+2025-11-01,Chhattisgarh,Central,Raipur,Post-Monsoon,32.3,26.3,65.1,106.8,28,12.5,0.85,21.6,80,PM10
+2025-12-01,Chhattisgarh,Central,Raipur,Winter,4,21.2,71,116.3,30.8,14.5,0.89,20.8,107,PM10
+2020-01-01,Goa,West,Panaji,Winter,4,23.1,30.1,56.8,13,5.1,0.51,16.4,51,PM10
+2020-02-01,Goa,West,Panaji,Winter,13.3,24.4,35.6,58.8,15.3,2,0.34,16.3,55,PM10
+2020-03-01,Goa,West,Panaji,Summer,14.9,29.3,24.7,63.9,16.4,6.5,0.36,18.6,46,PM10
+2020-04-01,Goa,West,Panaji,Summer,31.4,31.3,30.4,34.6,12.4,2.7,0.39,23.3,41,PM10
+2020-05-01,Goa,West,Panaji,Summer,49.7,35,35.9,55.6,13.1,3.7,0.37,25.4,44,PM10
+2020-06-01,Goa,West,Panaji,Monsoon,141.1,33.2,19.5,34.7,9.6,3.3,0.34,21.1,35,PM10
+2020-07-01,Goa,West,Panaji,Monsoon,163.9,28.3,14.6,37.4,6,4.4,0.38,15.3,35,PM10
+2020-08-01,Goa,West,Panaji,Monsoon,137.6,29.3,21.6,36.6,13.4,4,0.35,21.7,35,PM10
+2020-09-01,Goa,West,Panaji,Monsoon,114.6,29.8,24.1,39.3,6,4.5,0.37,18.1,35,PM10
+2020-10-01,Goa,West,Panaji,Post-Monsoon,37.2,27.9,25.6,56.2,12.1,2.9,0.52,22.3,50,PM10
+2020-11-01,Goa,West,Panaji,Post-Monsoon,22.5,26.9,33.2,58.6,19.8,5.7,0.4,20.9,49,PM10
+2020-12-01,Goa,West,Panaji,Winter,22.5,23.6,27.7,66.3,15.8,4.4,0.43,17.9,73,PM10
+2021-01-01,Goa,West,Panaji,Winter,31.3,23.1,34.4,62.8,14.8,6.1,0.49,20.7,50,PM10
+2021-02-01,Goa,West,Panaji,Winter,32.8,26.9,25.6,48.2,18.2,3.5,0.31,23.1,60,PM10
+2021-03-01,Goa,West,Panaji,Summer,19.9,28.9,21.5,63.4,14,4.4,0.49,22.7,44,PM10
+2021-04-01,Goa,West,Panaji,Summer,56.7,32.2,23,39.1,14.1,2.7,0.39,21.5,35,PM10
+2021-05-01,Goa,West,Panaji,Summer,67.7,34.2,19.6,49.9,8.4,7.2,0.49,24.9,35,PM10
+2021-06-01,Goa,West,Panaji,Monsoon,167.8,31.7,21.3,51.5,10.8,3.5,0.33,22.5,35,PM10
+2021-07-01,Goa,West,Panaji,Monsoon,154.8,30,14.8,39.2,7.4,2.3,0.21,16.3,35,PM10
+2021-08-01,Goa,West,Panaji,Monsoon,142.9,28.8,19.4,41.5,15.1,5.5,0.33,16.6,35,PM10
+2021-09-01,Goa,West,Panaji,Monsoon,118,30.7,20.5,30,8.6,2.6,0.26,17,35,PM10
+2021-10-01,Goa,West,Panaji,Post-Monsoon,53.3,28.1,28.3,32.8,6,3.2,0.35,20.8,36,PM10
+2021-11-01,Goa,West,Panaji,Post-Monsoon,16.7,26.5,26,47.2,14.2,3.8,0.43,20.9,35,PM10
+2021-12-01,Goa,West,Panaji,Winter,12.8,21.6,28.9,63.3,14.7,4,0.33,19.2,51,PM10
+2022-01-01,Goa,West,Panaji,Winter,30,21.2,38,55.1,19.1,8,0.41,20.9,64,PM10
+2022-02-01,Goa,West,Panaji,Winter,22.5,27.6,26.1,55.9,11.3,5,0.4,19.5,55,PM10
+2022-03-01,Goa,West,Panaji,Summer,17.1,28.7,19.7,53,11.3,7,0.41,19.7,43,PM10
+2022-04-01,Goa,West,Panaji,Summer,34.8,29.9,24.7,46.2,16,4.4,0.33,25.1,35,PM10
+2022-05-01,Goa,West,Panaji,Summer,60.6,34,26,46.9,9,4.1,0.38,25.9,35,PM10
+2022-06-01,Goa,West,Panaji,Monsoon,119.3,30.8,24,31.3,8.5,5.7,0.33,20.6,35,PM10
+2022-07-01,Goa,West,Panaji,Monsoon,148.3,31.4,18.2,32.3,6.7,4.9,0.29,19,35,PM10
+2022-08-01,Goa,West,Panaji,Monsoon,144.5,29.8,19.6,29.3,14.1,3,0.36,15.4,35,PM10
+2022-09-01,Goa,West,Panaji,Monsoon,134.4,30.6,20.3,45.3,6.2,5.4,0.4,20.9,35,PM10
+2022-10-01,Goa,West,Panaji,Post-Monsoon,49.8,30.2,35.9,45.9,11.1,6.7,0.43,20.8,37,PM10
+2022-11-01,Goa,West,Panaji,Post-Monsoon,30.7,24.6,28.9,57.7,14.1,5.7,0.41,22.4,44,PM10
+2022-12-01,Goa,West,Panaji,Winter,22,25.4,25.4,65.9,14.5,5.4,0.43,15.8,65,PM10
+2023-01-01,Goa,West,Panaji,Winter,23.5,25.4,24.2,67.2,12.3,7.5,0.49,20.9,61,PM10
+2023-02-01,Goa,West,Panaji,Winter,20.9,22.9,27.1,65.2,14.1,4,0.38,23.4,48,PM10
+2023-03-01,Goa,West,Panaji,Summer,13.6,28.7,24,51.9,12,4.1,0.42,22.4,47,PM10
+2023-04-01,Goa,West,Panaji,Summer,27.6,32.4,30.6,53.9,11.2,4.7,0.36,24.4,35,PM10
+2023-05-01,Goa,West,Panaji,Summer,44.1,32.9,27,45.2,10.3,2.3,0.29,26.8,35,PM10
+2023-06-01,Goa,West,Panaji,Monsoon,146.7,32.4,23.8,22,9.8,5.3,0.46,23.3,35,PM2.5
+2023-07-01,Goa,West,Panaji,Monsoon,152.8,31,13,22,9.5,2,0.26,19.3,35,PM10
+2023-08-01,Goa,West,Panaji,Monsoon,140.9,30.2,22.1,36.8,9.2,3.2,0.3,15.5,35,PM10
+2023-09-01,Goa,West,Panaji,Monsoon,99.3,29.4,21,25.9,7.7,2,0.28,17.7,35,PM10
+2023-10-01,Goa,West,Panaji,Post-Monsoon,60.9,28.5,23.7,44.5,7.4,4.6,0.44,17.9,46,PM10
+2023-11-01,Goa,West,Panaji,Post-Monsoon,20,28.1,34.6,56.8,14.3,4.7,0.43,16.8,35,PM10
+2023-12-01,Goa,West,Panaji,Winter,18.8,24.3,31.2,68.4,12.8,4.3,0.39,18,60,PM10
+2024-01-01,Goa,West,Panaji,Winter,30.2,24.6,28.1,50.3,11.9,8,0.51,23.1,53,PM10
+2024-02-01,Goa,West,Panaji,Winter,28.6,24,22.6,58.5,10.4,6.8,0.35,20.4,45,PM10
+2024-03-01,Goa,West,Panaji,Summer,6.7,28.6,29.1,55,13.5,2,0.4,19.6,44,PM10
+2024-04-01,Goa,West,Panaji,Summer,12.4,32.1,22,53.1,14.4,2.1,0.34,24.7,35,PM10
+2024-05-01,Goa,West,Panaji,Summer,49.4,33.2,20.2,25.4,12.6,2.2,0.42,26,35,O3
+2024-06-01,Goa,West,Panaji,Monsoon,141,33.9,19,26,12.7,2.8,0.27,18.9,35,PM10
+2024-07-01,Goa,West,Panaji,Monsoon,154.1,29.7,20.9,24.8,6,3.3,0.29,19.6,35,PM10
+2024-08-01,Goa,West,Panaji,Monsoon,160.1,28.7,28.9,31.3,6,4.3,0.3,15.4,35,PM10
+2024-09-01,Goa,West,Panaji,Monsoon,124.4,31.1,16.9,42.7,10.1,5.4,0.3,18.8,35,PM10
+2024-10-01,Goa,West,Panaji,Post-Monsoon,53.5,28.1,19.8,40.2,9.2,3.6,0.4,18.4,35,PM10
+2024-11-01,Goa,West,Panaji,Post-Monsoon,37.8,28.8,20.3,50.1,7.2,3,0.39,19.3,35,PM10
+2024-12-01,Goa,West,Panaji,Winter,19.3,24.7,20.9,62.5,15.7,4.5,0.49,18.9,58,PM10
+2025-01-01,Goa,West,Panaji,Winter,17.4,23.1,30.5,58.7,17.1,5.6,0.42,16.1,60,PM10
+2025-02-01,Goa,West,Panaji,Winter,15.3,25.5,30.3,47.8,13.6,7.7,0.33,15.8,56,PM10
+2025-03-01,Goa,West,Panaji,Summer,28.5,28.8,24.8,45.5,11.8,7.2,0.42,22.7,39,PM10
+2025-04-01,Goa,West,Panaji,Summer,34.6,32.4,22.4,33.9,7.8,4.8,0.37,22.1,35,PM10
+2025-05-01,Goa,West,Panaji,Summer,55.3,33.1,16.7,44.8,9.8,6.1,0.32,25.3,35,PM10
+2025-06-01,Goa,West,Panaji,Monsoon,137.5,32.9,23.4,48.1,7.7,3.1,0.38,25.3,35,PM10
+2025-07-01,Goa,West,Panaji,Monsoon,165.4,30.6,12.2,43.5,8.9,2.7,0.32,18.9,35,PM10
+2025-08-01,Goa,West,Panaji,Monsoon,142.7,29.3,18.7,37,7.3,5,0.35,16.4,35,PM10
+2025-09-01,Goa,West,Panaji,Monsoon,116.1,28.2,12,37.3,6,2,0.27,19,35,PM10
+2025-10-01,Goa,West,Panaji,Post-Monsoon,52.7,28.7,23.3,43.8,13.1,5.1,0.38,22.4,35,PM10
+2025-11-01,Goa,West,Panaji,Post-Monsoon,16.3,27.8,32.5,51.7,16.8,2.1,0.37,18.7,35,PM10
+2025-12-01,Goa,West,Panaji,Winter,23.2,22.3,36.1,56.6,13,5,0.48,15.9,62,PM10
+2020-01-01,Gujarat,West,Gandhinagar,Winter,4.7,24.9,76,144.9,28.3,14.5,0.98,25.5,117,PM10
+2020-02-01,Gujarat,West,Gandhinagar,Winter,7.3,29.2,70.1,135,38.2,14.8,0.91,30.3,108,PM10
+2020-03-01,Gujarat,West,Gandhinagar,Summer,4.8,31.5,65.3,119,33.6,14.8,0.94,27.8,89,PM10
+2020-04-01,Gujarat,West,Gandhinagar,Summer,15.1,33.3,56.7,104.2,29.4,16.9,0.87,31,66,PM10
+2020-05-01,Gujarat,West,Gandhinagar,Summer,41.8,34.8,58.3,106.7,30.3,14.9,0.79,34.7,77,PM10
+2020-06-01,Gujarat,West,Gandhinagar,Monsoon,37.4,36.7,59.7,91.1,21.5,13.7,0.77,29.1,62,PM10
+2020-07-01,Gujarat,West,Gandhinagar,Monsoon,57.5,32.3,39.4,80,14.9,12.5,0.67,23.2,50,PM10
+2020-08-01,Gujarat,West,Gandhinagar,Monsoon,79.9,32.3,38.7,80.3,23.4,12.1,0.64,21.7,35,PM10
+2020-09-01,Gujarat,West,Gandhinagar,Monsoon,57.5,33.6,45.8,93,21,12.6,0.81,27.7,57,PM10
+2020-10-01,Gujarat,West,Gandhinagar,Post-Monsoon,26.8,31.3,57.8,120.7,28.9,14.8,0.73,25.9,75,PM10
+2020-11-01,Gujarat,West,Gandhinagar,Post-Monsoon,37.6,26.9,70.4,131.6,36.5,16.1,0.94,23.6,95,PM10
+2020-12-01,Gujarat,West,Gandhinagar,Winter,4,27.7,80.5,140.6,29.1,16.6,1.02,25.8,124,PM10
+2021-01-01,Gujarat,West,Gandhinagar,Winter,4,24.7,70.6,136,33.8,15.5,0.96,27.5,110,PM10
+2021-02-01,Gujarat,West,Gandhinagar,Winter,4,26.9,71.4,121.2,31.7,14,0.97,24.5,111,PM10
+2021-03-01,Gujarat,West,Gandhinagar,Summer,21.8,32.2,66.7,122.3,30.1,15.8,0.79,31.3,84,PM10
+2021-04-01,Gujarat,West,Gandhinagar,Summer,18.2,30.9,60.9,104.9,31.1,14.8,0.95,30.8,78,PM10
+2021-05-01,Gujarat,West,Gandhinagar,Summer,19.8,36.9,53.2,111.4,21.9,12.4,0.81,30.8,65,PM10
+2021-06-01,Gujarat,West,Gandhinagar,Monsoon,46.9,35.1,43,91.7,21.4,13.9,0.78,25.5,45,PM10
+2021-07-01,Gujarat,West,Gandhinagar,Monsoon,87.9,30.8,48,77.3,13.6,11.4,0.68,24.3,46,PM10
+2021-08-01,Gujarat,West,Gandhinagar,Monsoon,75,29.9,40.2,79.1,21,12.6,0.8,26.6,59,PM10
+2021-09-01,Gujarat,West,Gandhinagar,Monsoon,47.4,30.7,53.6,98.1,23,14.8,0.82,25.5,72,PM10
+2021-10-01,Gujarat,West,Gandhinagar,Post-Monsoon,21.9,30.2,58.9,106.5,23.2,15.1,0.78,31.3,70,PM10
+2021-11-01,Gujarat,West,Gandhinagar,Post-Monsoon,8.7,28.5,67.1,124.7,32.7,13.1,0.87,27.1,85,PM10
+2021-12-01,Gujarat,West,Gandhinagar,Winter,21.6,24.9,76,135.8,33.3,15.1,0.99,21.3,103,PM10
+2022-01-01,Gujarat,West,Gandhinagar,Winter,12.3,25.9,70.5,147.1,29.8,13.8,0.94,25.1,114,PM10
+2022-02-01,Gujarat,West,Gandhinagar,Winter,24.5,26.5,69.4,129.4,32.3,14.1,0.94,31.6,110,PM10
+2022-03-01,Gujarat,West,Gandhinagar,Summer,10.4,31.9,62,112,30.3,14.9,0.74,31,79,PM10
+2022-04-01,Gujarat,West,Gandhinagar,Summer,24.9,33.3,64.5,108.7,26.3,16.9,0.79,34.4,84,PM10
+2022-05-01,Gujarat,West,Gandhinagar,Summer,41.5,37.9,57.4,88.7,24.2,11.4,0.82,34.7,70,PM10
+2022-06-01,Gujarat,West,Gandhinagar,Monsoon,69.3,34.1,51.4,80.9,17.7,14.1,0.67,30.3,50,PM10
+2022-07-01,Gujarat,West,Gandhinagar,Monsoon,77.6,32.6,49,79.5,15.5,9.6,0.73,26.4,47,PM10
+2022-08-01,Gujarat,West,Gandhinagar,Monsoon,79.5,32.7,43.9,79.8,21.1,11.7,0.71,22.9,35,PM10
+2022-09-01,Gujarat,West,Gandhinagar,Monsoon,51.3,30.2,42.1,95.1,20.7,14.9,0.82,21.6,57,PM10
+2022-10-01,Gujarat,West,Gandhinagar,Post-Monsoon,16.1,33,62.2,115.8,31.9,15.1,0.81,29,76,PM10
+2022-11-01,Gujarat,West,Gandhinagar,Post-Monsoon,30.8,29.2,65.3,133.6,30.7,13.1,0.89,27.2,83,PM10
+2022-12-01,Gujarat,West,Gandhinagar,Winter,8.3,27.2,72,125.6,32.8,17.3,1.01,23.3,107,PM10
+2023-01-01,Gujarat,West,Gandhinagar,Winter,16.9,22.7,73.5,132.5,31.5,16.2,0.87,23.6,91,PM10
+2023-02-01,Gujarat,West,Gandhinagar,Winter,13.2,28,69.1,121.7,35.9,12.8,0.93,29.3,116,PM10
+2023-03-01,Gujarat,West,Gandhinagar,Summer,15,32.9,61.4,112.9,28.3,10.8,0.8,32.1,81,PM10
+2023-04-01,Gujarat,West,Gandhinagar,Summer,8.2,34.1,58.3,109.2,28.7,15,0.87,29.1,86,PM10
+2023-05-01,Gujarat,West,Gandhinagar,Summer,11.9,36.4,61.4,94.3,26.6,16,0.91,31.6,69,PM10
+2023-06-01,Gujarat,West,Gandhinagar,Monsoon,53.8,31.5,48.5,85,25.3,13.4,0.78,30.2,58,PM10
+2023-07-01,Gujarat,West,Gandhinagar,Monsoon,81.4,33.6,41.2,69.2,21.5,13,0.72,26,53,PM10
+2023-08-01,Gujarat,West,Gandhinagar,Monsoon,74.6,31.4,41.5,84.2,22.7,10.6,0.61,21.6,42,PM10
+2023-09-01,Gujarat,West,Gandhinagar,Monsoon,58.9,32.9,43.7,70.9,24,13,0.74,26.4,51,PM10
+2023-10-01,Gujarat,West,Gandhinagar,Post-Monsoon,52.7,30.2,56.7,120,23,12.2,0.88,25.7,82,PM10
+2023-11-01,Gujarat,West,Gandhinagar,Post-Monsoon,18.2,30.2,71.2,118.5,32.1,14.4,0.88,29.7,79,PM10
+2023-12-01,Gujarat,West,Gandhinagar,Winter,4,26.1,67.1,132.6,36.1,16.1,0.93,25.5,112,PM10
+2024-01-01,Gujarat,West,Gandhinagar,Winter,13.4,23.9,77.2,136.6,33.8,15,0.95,22.9,126,PM10
+2024-02-01,Gujarat,West,Gandhinagar,Winter,4,25.8,61.3,132.3,29.8,15.4,0.88,30.4,108,PM10
+2024-03-01,Gujarat,West,Gandhinagar,Summer,23.3,30.1,66,124.3,29.5,14,0.85,30.2,83,PM10
+2024-04-01,Gujarat,West,Gandhinagar,Summer,6.2,33,59.8,110.9,28.8,11.3,0.87,34.7,86,PM10
+2024-05-01,Gujarat,West,Gandhinagar,Summer,33.7,35,57.2,103,21.2,14.7,0.68,32.4,70,PM10
+2024-06-01,Gujarat,West,Gandhinagar,Monsoon,56.1,33.7,49.8,80.4,18,11.4,0.71,26,63,PM10
+2024-07-01,Gujarat,West,Gandhinagar,Monsoon,89.2,34.6,48.1,71.1,16.7,11.8,0.65,25,35,PM10
+2024-08-01,Gujarat,West,Gandhinagar,Monsoon,58.7,30.4,47.9,77.4,19.9,12.4,0.63,20.2,54,PM10
+2024-09-01,Gujarat,West,Gandhinagar,Monsoon,63.3,31.2,50,89.6,18.3,14.1,0.74,26.5,58,PM10
+2024-10-01,Gujarat,West,Gandhinagar,Post-Monsoon,18,30.6,54.1,93.3,30,11.9,0.8,24.8,67,PM10
+2024-11-01,Gujarat,West,Gandhinagar,Post-Monsoon,21.3,28.5,66,118.5,32.2,15.1,0.83,26.9,75,PM10
+2024-12-01,Gujarat,West,Gandhinagar,Winter,4,25.4,72.6,127.3,34.2,12.8,1.01,22.9,120,PM10
+2025-01-01,Gujarat,West,Gandhinagar,Winter,17.6,23.4,68.3,124.1,28.9,15,0.78,23.5,107,PM10
+2025-02-01,Gujarat,West,Gandhinagar,Winter,4,26.3,65.3,113.2,35.5,13.5,0.86,28.2,90,PM10
+2025-03-01,Gujarat,West,Gandhinagar,Summer,6,31.3,64.3,108.1,33.1,13.5,0.83,30.8,77,PM10
+2025-04-01,Gujarat,West,Gandhinagar,Summer,20.2,35,49.5,94.3,27.3,15.3,0.78,30.6,63,PM10
+2025-05-01,Gujarat,West,Gandhinagar,Summer,16.6,35.9,46.5,100.8,22.2,13.6,0.78,34.8,67,PM10
+2025-06-01,Gujarat,West,Gandhinagar,Monsoon,71.7,31.6,49.3,106.7,18,12.9,0.68,23.9,51,PM10
+2025-07-01,Gujarat,West,Gandhinagar,Monsoon,53.6,32.6,49.7,68.7,24.2,14.5,0.65,21.5,37,PM10
+2025-08-01,Gujarat,West,Gandhinagar,Monsoon,70.7,31.5,42.6,88.9,19,12.8,0.63,24.1,49,PM10
+2025-09-01,Gujarat,West,Gandhinagar,Monsoon,54.6,30.3,47.3,75,23.9,10.8,0.69,21.7,54,PM10
+2025-10-01,Gujarat,West,Gandhinagar,Post-Monsoon,7.7,29.7,62.6,97.4,26.2,12.7,0.77,24.5,62,PM10
+2025-11-01,Gujarat,West,Gandhinagar,Post-Monsoon,24.9,28.8,70.8,114.2,27.4,12.7,0.79,27.2,82,PM10
+2025-12-01,Gujarat,West,Gandhinagar,Winter,4,25.9,69.2,139.8,33.7,18.5,0.93,27.3,104,PM10
+2020-01-01,Haryana,North,Chandigarh,Winter,19.9,19.6,100.2,159.8,39.5,15.1,1.01,27.7,151,PM10
+2020-02-01,Haryana,North,Chandigarh,Winter,15.7,25.7,86.3,145.8,34.6,15.9,1.11,26.1,140,PM10
+2020-03-01,Haryana,North,Chandigarh,Summer,22.8,25.5,86.6,154.9,28.6,15.8,0.95,28.8,101,PM10
+2020-04-01,Haryana,North,Chandigarh,Summer,15.4,29.2,76.7,126.5,31.3,14.6,0.95,31.4,104,PM10
+2020-05-01,Haryana,North,Chandigarh,Summer,17.6,32.2,67.2,127.9,31.2,11.9,0.88,34.1,89,PM10
+2020-06-01,Haryana,North,Chandigarh,Monsoon,76.4,29.1,58.3,104.6,25.8,11.5,0.85,29.4,71,PM10
+2020-07-01,Haryana,North,Chandigarh,Monsoon,97.2,28.5,61.1,91.1,23.4,10,0.83,28.3,81,PM10
+2020-08-01,Haryana,North,Chandigarh,Monsoon,77.7,25.1,57.6,95.1,29.4,11.3,0.81,25.2,75,PM10
+2020-09-01,Haryana,North,Chandigarh,Monsoon,43.8,28.8,53.5,109.9,26,12.5,0.73,26,83,PM10
+2020-10-01,Haryana,North,Chandigarh,Post-Monsoon,20.1,27.7,67.9,135.9,32.3,11.8,0.88,26.2,100,PM10
+2020-11-01,Haryana,North,Chandigarh,Post-Monsoon,27.4,25.2,89.9,147.6,42,15.5,1.07,27.7,122,PM10
+2020-12-01,Haryana,North,Chandigarh,Winter,13,20.5,94.4,165.4,47.7,14.1,1.1,29.1,145,PM10
+2021-01-01,Haryana,North,Chandigarh,Winter,13.6,18.8,93.7,155.8,41.8,14.4,1.08,29.2,141,PM10
+2021-02-01,Haryana,North,Chandigarh,Winter,18.6,24.1,88.3,158.3,35.2,12.1,1.02,28.5,130,PM10
+2021-03-01,Haryana,North,Chandigarh,Summer,9.3,23.6,75.9,132.6,33.1,11.5,0.97,31,107,PM10
+2021-04-01,Haryana,North,Chandigarh,Summer,4,31.7,85.9,133.8,31.8,12.4,0.96,35.6,112,PM10
+2021-05-01,Haryana,North,Chandigarh,Summer,17.2,30.7,77.9,126.4,28.1,16.4,1.01,35.7,108,PM10
+2021-06-01,Haryana,North,Chandigarh,Monsoon,70.5,28.4,61.7,106.4,28.1,13.2,0.79,25.4,74,PM10
+2021-07-01,Haryana,North,Chandigarh,Monsoon,85.5,26.9,61,93.8,24.5,12.6,0.82,26,79,PM10
+2021-08-01,Haryana,North,Chandigarh,Monsoon,85.3,27.5,54.3,107.6,24.9,10.6,0.87,23.5,67,PM10
+2021-09-01,Haryana,North,Chandigarh,Monsoon,69,28.9,61.7,111.7,32.5,12.1,0.69,25.4,65,PM10
+2021-10-01,Haryana,North,Chandigarh,Post-Monsoon,18.2,27.2,72.7,130.7,31.8,12.6,0.96,29.8,101,PM10
+2021-11-01,Haryana,North,Chandigarh,Post-Monsoon,22,24.9,84.5,148.7,38,12.3,1.1,28.3,108,PM10
+2021-12-01,Haryana,North,Chandigarh,Winter,14.1,22.1,87.7,170.7,41.6,16.7,1.28,27.9,153,PM10
+2022-01-01,Haryana,North,Chandigarh,Winter,9.5,19.7,87.6,146.5,38.2,13.4,1.11,25.9,126,PM10
+2022-02-01,Haryana,North,Chandigarh,Winter,23.4,21,84.9,153.6,41.3,12.5,1.06,27.9,135,PM10
+2022-03-01,Haryana,North,Chandigarh,Summer,6.8,25.7,80,135.2,34.4,13.9,0.93,31.2,107,PM10
+2022-04-01,Haryana,North,Chandigarh,Summer,4.7,27.4,79.3,143.2,36.4,14.5,1.06,36,111,PM10
+2022-05-01,Haryana,North,Chandigarh,Summer,34.1,30.1,63.7,130.9,28.2,10.3,0.89,33.6,103,PM10
+2022-06-01,Haryana,North,Chandigarh,Monsoon,67,25.8,54.9,98.5,23.7,13.2,0.75,33.5,68,PM10
+2022-07-01,Haryana,North,Chandigarh,Monsoon,96.8,26.8,51.8,103,24.3,16.4,0.71,24,63,PM10
+2022-08-01,Haryana,North,Chandigarh,Monsoon,76.2,24.6,52.9,108,21.5,13.7,0.83,20.9,82,PM10
+2022-09-01,Haryana,North,Chandigarh,Monsoon,61,28.1,54.9,117.1,27.1,12.4,0.89,28.5,65,PM10
+2022-10-01,Haryana,North,Chandigarh,Post-Monsoon,25.3,25.6,73.9,134,25.4,12.6,0.92,31.6,110,PM10
+2022-11-01,Haryana,North,Chandigarh,Post-Monsoon,9.2,23.4,90.8,154.5,38.9,14.1,1.06,27.6,121,PM10
+2022-12-01,Haryana,North,Chandigarh,Winter,21.8,20.1,99.8,155.4,40.1,16.6,1.1,23.5,137,PM10
+2023-01-01,Haryana,North,Chandigarh,Winter,4,18.5,89.3,161.5,41.9,11,1.18,27.5,144,PM10
+2023-02-01,Haryana,North,Chandigarh,Winter,23,21.9,85.7,152.4,41.8,14.8,1.18,28.4,140,PM10
+2023-03-01,Haryana,North,Chandigarh,Summer,4,24.9,76.7,119.3,32.7,14.5,1.02,30.7,102,PM10
+2023-04-01,Haryana,North,Chandigarh,Summer,34.9,28.9,67.1,131.7,30.7,12.9,0.99,32.1,89,PM10
+2023-05-01,Haryana,North,Chandigarh,Summer,33.1,31,68.9,130.9,31.4,16,0.97,36.3,96,PM10
+2023-06-01,Haryana,North,Chandigarh,Monsoon,79.5,28.9,63.1,106.8,26.6,10.9,0.82,30.2,87,PM10
+2023-07-01,Haryana,North,Chandigarh,Monsoon,81.4,26.9,45.9,92.7,23.2,11.1,0.71,21.9,58,PM10
+2023-08-01,Haryana,North,Chandigarh,Monsoon,80.9,26.5,54.4,110.3,28.1,12.3,0.82,24.3,70,PM10
+2023-09-01,Haryana,North,Chandigarh,Monsoon,61.7,29.7,55.3,113.2,28.3,11.8,0.82,23.9,68,PM10
+2023-10-01,Haryana,North,Chandigarh,Post-Monsoon,30.1,24.3,67.7,131.4,29.3,10.6,0.9,31.5,94,PM10
+2023-11-01,Haryana,North,Chandigarh,Post-Monsoon,8.7,24.7,79,147.8,38.5,16,1.01,28,113,PM10
+2023-12-01,Haryana,North,Chandigarh,Winter,31.5,20.5,104.4,152.8,38.9,13.7,0.99,26.8,139,PM10
+2024-01-01,Haryana,North,Chandigarh,Winter,10.1,20.4,90.6,161.4,36.6,11.9,1.02,26.1,142,PM10
+2024-02-01,Haryana,North,Chandigarh,Winter,28.4,19.9,93.1,157.6,36,13.4,0.96,27.7,134,PM10
+2024-03-01,Haryana,North,Chandigarh,Summer,12.5,24.6,79.7,140.6,34.3,12.3,0.94,27.2,109,PM10
+2024-04-01,Haryana,North,Chandigarh,Summer,25,29.3,78.5,127.7,26.2,11,0.97,34.1,112,PM10
+2024-05-01,Haryana,North,Chandigarh,Summer,20.1,32.4,61.7,133.5,28.8,13.3,0.86,33.9,112,PM10
+2024-06-01,Haryana,North,Chandigarh,Monsoon,65.1,31,60.6,104.8,27,9.2,0.82,25.3,78,PM10
+2024-07-01,Haryana,North,Chandigarh,Monsoon,79.1,24.9,54.4,82.9,22.7,12.8,0.85,27.9,70,PM10
+2024-08-01,Haryana,North,Chandigarh,Monsoon,83.5,26.5,60.1,89.1,21.8,10.5,0.87,24.5,68,PM10
+2024-09-01,Haryana,North,Chandigarh,Monsoon,72.5,25.6,58.6,111.7,21.8,12.4,0.77,27.5,78,PM10
+2024-10-01,Haryana,North,Chandigarh,Post-Monsoon,17.3,27.6,67.5,129.6,27.4,15.1,0.88,23.7,97,PM10
+2024-11-01,Haryana,North,Chandigarh,Post-Monsoon,22.8,24.5,85.1,138.6,37.1,13,0.97,28.7,122,PM10
+2024-12-01,Haryana,North,Chandigarh,Winter,12.8,20.1,97.3,159.7,33.4,13.6,1.06,24.5,137,PM10
+2025-01-01,Haryana,North,Chandigarh,Winter,5,20.1,96.7,151.8,34.5,15.8,1,27.8,131,PM10
+2025-02-01,Haryana,North,Chandigarh,Winter,25.9,21.5,86.3,152.6,37.2,15.1,1.04,31,142,PM10
+2025-03-01,Haryana,North,Chandigarh,Summer,4,23.6,71.1,144.4,32.4,11.5,1.01,32.2,111,PM10
+2025-04-01,Haryana,North,Chandigarh,Summer,4,29,70.1,132.3,30.4,12.1,0.93,34.8,112,PM10
+2025-05-01,Haryana,North,Chandigarh,Summer,9.8,31.2,64.3,118,32.4,13.5,0.9,36.9,97,PM10
+2025-06-01,Haryana,North,Chandigarh,Monsoon,95.3,26.2,54,110.4,21,12,0.81,29.6,66,PM10
+2025-07-01,Haryana,North,Chandigarh,Monsoon,80.2,26.4,40.4,104.6,22,9.4,0.88,28.2,72,PM10
+2025-08-01,Haryana,North,Chandigarh,Monsoon,77.2,25.1,50.1,101.7,18.9,9.7,0.69,28.6,62,PM10
+2025-09-01,Haryana,North,Chandigarh,Monsoon,78.7,26.6,54.2,119.1,24.5,12.9,0.79,25.1,82,PM10
+2025-10-01,Haryana,North,Chandigarh,Post-Monsoon,38.6,24.6,71.1,119.8,37.2,11.5,0.92,25.1,99,PM10
+2025-11-01,Haryana,North,Chandigarh,Post-Monsoon,9.8,23.9,86.1,151,34.3,12.1,0.94,27.1,120,PM10
+2025-12-01,Haryana,North,Chandigarh,Winter,27.4,20.9,90.4,156.8,32.2,15.1,0.98,26.4,139,PM10
+2020-01-01,Himachal Pradesh,North,Shimla,Winter,5.4,10.3,27.7,55.8,14.7,7.3,0.46,17.8,76,PM10
+2020-02-01,Himachal Pradesh,North,Shimla,Winter,27.3,13.5,40.5,75.8,11.7,4.7,0.47,16.9,75,PM10
+2020-03-01,Himachal Pradesh,North,Shimla,Summer,27.9,17.4,23.8,46.2,15.6,8.4,0.34,22.2,53,PM10
+2020-04-01,Himachal Pradesh,North,Shimla,Summer,26.8,22.6,31,32,13.3,7.3,0.38,24.7,48,PM10
+2020-05-01,Himachal Pradesh,North,Shimla,Summer,15.4,22.4,30.6,53.4,9.6,5.9,0.26,30.9,41,PM10
+2020-06-01,Himachal Pradesh,North,Shimla,Monsoon,93.6,20.9,21.7,38.9,10.3,3.3,0.39,22.4,35,PM10
+2020-07-01,Himachal Pradesh,North,Shimla,Monsoon,111.3,18.8,24.1,33.5,14.4,6.6,0.34,17.3,35,PM10
+2020-08-01,Himachal Pradesh,North,Shimla,Monsoon,90.2,19.4,23.8,42.2,11,3.8,0.32,19.8,40,PM10
+2020-09-01,Himachal Pradesh,North,Shimla,Monsoon,91.5,20.3,20.8,34.6,9.7,5.2,0.43,16.6,35,PM10
+2020-10-01,Himachal Pradesh,North,Shimla,Post-Monsoon,26.6,18.9,23.3,51.5,13.1,6,0.46,20.3,55,PM10
+2020-11-01,Himachal Pradesh,North,Shimla,Post-Monsoon,28.2,16.2,30.2,52.7,10.4,5.5,0.35,18.1,49,PM10
+2020-12-01,Himachal Pradesh,North,Shimla,Winter,11.1,13.9,33,62.2,20.4,8,0.52,18.1,70,PM10
+2021-01-01,Himachal Pradesh,North,Shimla,Winter,22.4,13.5,32.9,69.5,15.6,6,0.63,18.9,81,PM10
+2021-02-01,Himachal Pradesh,North,Shimla,Winter,4,14.6,32.5,59.7,15.5,5.4,0.51,18.1,66,PM10
+2021-03-01,Himachal Pradesh,North,Shimla,Summer,12.3,19,29.8,51.4,12.9,6.7,0.49,26,48,PM10
+2021-04-01,Himachal Pradesh,North,Shimla,Summer,16.4,23.8,28.3,67.3,15.1,3.7,0.29,21,56,PM10
+2021-05-01,Himachal Pradesh,North,Shimla,Summer,34.1,22.9,29,55.4,10.1,4.2,0.42,26.9,50,PM10
+2021-06-01,Himachal Pradesh,North,Shimla,Monsoon,82.5,21.4,27,46.2,12,3.6,0.35,21,35,PM10
+2021-07-01,Himachal Pradesh,North,Shimla,Monsoon,92,19.2,20.2,36.7,6.7,4.6,0.26,19.3,35,PM10
+2021-08-01,Himachal Pradesh,North,Shimla,Monsoon,100.7,19.6,25.1,43,8.9,7.3,0.35,16.9,35,PM10
+2021-09-01,Himachal Pradesh,North,Shimla,Monsoon,89.8,18.9,27.3,43.2,8.5,6.6,0.35,17.8,35,PM10
+2021-10-01,Himachal Pradesh,North,Shimla,Post-Monsoon,26.2,18.2,30.5,36.1,15.4,6.1,0.36,25.9,53,PM10
+2021-11-01,Himachal Pradesh,North,Shimla,Post-Monsoon,4,14.4,31.3,70.1,13.6,4.6,0.43,20.5,56,PM10
+2021-12-01,Himachal Pradesh,North,Shimla,Winter,7.3,14.3,38,42.4,17.9,5.7,0.55,22,59,PM10
+2022-01-01,Himachal Pradesh,North,Shimla,Winter,28.5,12.8,42.8,64.4,8.4,3.6,0.43,17.2,81,PM10
+2022-02-01,Himachal Pradesh,North,Shimla,Winter,4,13.7,35.7,57.3,12.6,5.4,0.42,18.2,69,PM10
+2022-03-01,Himachal Pradesh,North,Shimla,Summer,8.9,17.2,34.6,57.8,13.9,5.6,0.56,24.4,55,PM10
+2022-04-01,Himachal Pradesh,North,Shimla,Summer,23.7,21,22.9,34.1,14.2,6.1,0.39,26.5,46,PM10
+2022-05-01,Himachal Pradesh,North,Shimla,Summer,48.5,22.1,31.7,50.6,12.5,7.3,0.32,24.7,59,PM10
+2022-06-01,Himachal Pradesh,North,Shimla,Monsoon,99.6,20.3,20.6,30.2,10.3,4,0.34,19.4,35,PM10
+2022-07-01,Himachal Pradesh,North,Shimla,Monsoon,122.1,20.6,14.6,33.4,9.5,6.7,0.26,17.9,35,PM10
+2022-08-01,Himachal Pradesh,North,Shimla,Monsoon,97.5,20.1,18.9,39.2,6,3.7,0.38,15.9,35,PM10
+2022-09-01,Himachal Pradesh,North,Shimla,Monsoon,78.3,20.3,27.2,38.9,9.1,5.6,0.38,18.6,35,PM10
+2022-10-01,Himachal Pradesh,North,Shimla,Post-Monsoon,33.4,15.9,21.8,60.5,6.2,6.4,0.46,22.1,50,PM10
+2022-11-01,Himachal Pradesh,North,Shimla,Post-Monsoon,4,19,31.4,50.7,9.9,6.8,0.47,19,53,PM10
+2022-12-01,Himachal Pradesh,North,Shimla,Winter,26.7,13.1,35.5,45.2,13.5,6.3,0.41,22.6,68,PM10
+2023-01-01,Himachal Pradesh,North,Shimla,Winter,5.2,12.5,35.6,57.4,12.3,6.2,0.53,21.8,59,PM10
+2023-02-01,Himachal Pradesh,North,Shimla,Winter,4,12.8,25,49.5,16.1,3.8,0.44,20.4,66,PM10
+2023-03-01,Himachal Pradesh,North,Shimla,Summer,6.4,16.8,30.7,47,14.9,4.9,0.47,23.4,60,PM10
+2023-04-01,Himachal Pradesh,North,Shimla,Summer,14.1,22.5,23.3,50,10.2,3.4,0.4,23.5,41,PM10
+2023-05-01,Himachal Pradesh,North,Shimla,Summer,28.3,22.4,21.9,49.5,11.6,4.3,0.3,25.2,35,PM10
+2023-06-01,Himachal Pradesh,North,Shimla,Monsoon,77.5,20.9,32.6,49.8,9.6,4,0.3,19.2,35,PM10
+2023-07-01,Himachal Pradesh,North,Shimla,Monsoon,101.8,19.2,28.3,22,8.2,5,0.3,20.9,35,PM2.5
+2023-08-01,Himachal Pradesh,North,Shimla,Monsoon,104.8,18.3,20.7,50.4,7.8,7.9,0.32,13.6,35,PM10
+2023-09-01,Himachal Pradesh,North,Shimla,Monsoon,90.2,17.2,21.1,31,10.7,5.5,0.38,19.3,35,PM10
+2023-10-01,Himachal Pradesh,North,Shimla,Post-Monsoon,31.6,17,23.3,48.5,12.8,7,0.49,21.2,55,PM10
+2023-11-01,Himachal Pradesh,North,Shimla,Post-Monsoon,12.2,16.8,32.9,52.3,13.5,4.3,0.42,18.2,54,PM10
+2023-12-01,Himachal Pradesh,North,Shimla,Winter,11.4,13.9,33,48.9,13.8,5.3,0.39,22,69,PM10
+2024-01-01,Himachal Pradesh,North,Shimla,Winter,32.7,10.6,28.5,67.2,17.3,4,0.39,16.8,73,PM10
+2024-02-01,Himachal Pradesh,North,Shimla,Winter,9.4,16.1,33.6,54.7,18.8,7.7,0.52,25.9,80,PM10
+2024-03-01,Himachal Pradesh,North,Shimla,Summer,4,16.8,27.3,43.8,12.6,8.5,0.38,18.9,46,PM10
+2024-04-01,Himachal Pradesh,North,Shimla,Summer,29.8,19.5,27.3,47,6,5.7,0.3,23.4,51,PM10
+2024-05-01,Himachal Pradesh,North,Shimla,Summer,36.7,23,17.8,39.5,13.5,5.6,0.3,27.9,44,PM10
+2024-06-01,Himachal Pradesh,North,Shimla,Monsoon,96.9,23.2,27.4,29.3,6,5,0.34,21.3,35,PM10
+2024-07-01,Himachal Pradesh,North,Shimla,Monsoon,117.3,17.6,17.4,41.3,10.5,2,0.43,22.1,39,PM10
+2024-08-01,Himachal Pradesh,North,Shimla,Monsoon,95.3,19.1,26.2,22,12.1,3.7,0.33,19.8,35,PM2.5
+2024-09-01,Himachal Pradesh,North,Shimla,Monsoon,58.9,18.9,12.5,31.2,12.6,7.6,0.28,15.5,35,PM10
+2024-10-01,Himachal Pradesh,North,Shimla,Post-Monsoon,28.2,17.4,26.2,46.4,13.6,5.5,0.42,18.7,54,PM10
+2024-11-01,Himachal Pradesh,North,Shimla,Post-Monsoon,35,16,31.5,53.6,14.9,7.6,0.47,19.6,43,PM10
+2024-12-01,Himachal Pradesh,North,Shimla,Winter,4,13,32.5,65.2,13.7,5.4,0.42,21.4,66,PM10
+2025-01-01,Himachal Pradesh,North,Shimla,Winter,14.3,10.4,37.7,70,13.4,4.8,0.47,22.2,81,PM10
+2025-02-01,Himachal Pradesh,North,Shimla,Winter,13.9,15.3,24.7,55.2,17.1,4.5,0.43,18.2,73,PM10
+2025-03-01,Himachal Pradesh,North,Shimla,Summer,7.6,16.8,34.5,37.1,9.8,2.3,0.29,22.7,43,PM10
+2025-04-01,Himachal Pradesh,North,Shimla,Summer,6.7,21.9,29.4,55,11.9,3.6,0.33,25.5,63,PM10
+2025-05-01,Himachal Pradesh,North,Shimla,Summer,38.1,21.7,24,46.2,6,5.4,0.31,26.3,49,PM10
+2025-06-01,Himachal Pradesh,North,Shimla,Monsoon,111.2,20.4,26.5,45.2,16.5,5.5,0.32,19.3,36,PM10
+2025-07-01,Himachal Pradesh,North,Shimla,Monsoon,107,19.5,17.9,38.3,6.5,3.3,0.29,21.4,36,PM10
+2025-08-01,Himachal Pradesh,North,Shimla,Monsoon,116.3,19,24.4,30.1,8.3,4.9,0.41,19.3,35,PM10
+2025-09-01,Himachal Pradesh,North,Shimla,Monsoon,83.7,19,16.1,40.4,10.4,5.8,0.45,16.4,35,PM10
+2025-10-01,Himachal Pradesh,North,Shimla,Post-Monsoon,31,19,18.7,53.7,6.8,5,0.43,22.1,58,PM10
+2025-11-01,Himachal Pradesh,North,Shimla,Post-Monsoon,28.9,16.1,37.6,55.8,13.5,3.3,0.51,23,52,PM10
+2025-12-01,Himachal Pradesh,North,Shimla,Winter,18.9,14.3,25.3,54.6,11.2,3.8,0.47,17.7,63,PM10
+2020-01-01,Jharkhand,East,Ranchi,Winter,22.7,17.6,72.5,143.1,27.3,16.7,0.95,20.2,105,PM10
+2020-02-01,Jharkhand,East,Ranchi,Winter,16.8,20.4,78,132.6,29.9,12.3,0.88,26.8,104,PM10
+2020-03-01,Jharkhand,East,Ranchi,Summer,15,24.3,62.1,129.5,25.2,14.3,0.9,28.5,94,PM10
+2020-04-01,Jharkhand,East,Ranchi,Summer,5.1,27.7,56.2,116.3,25.3,15.2,0.77,32.8,72,PM10
+2020-05-01,Jharkhand,East,Ranchi,Summer,46.4,33.6,63.9,113.5,23.7,13.1,0.74,34.9,72,PM10
+2020-06-01,Jharkhand,East,Ranchi,Monsoon,100.3,28.7,50.4,87.3,21,12.4,0.79,24.7,64,PM10
+2020-07-01,Jharkhand,East,Ranchi,Monsoon,135.1,25.6,48.1,83.4,22.6,9,0.83,24.3,48,PM10
+2020-08-01,Jharkhand,East,Ranchi,Monsoon,135.3,26.3,43.7,102.7,17.2,12.6,0.56,23.3,52,PM10
+2020-09-01,Jharkhand,East,Ranchi,Monsoon,81.2,26.8,51.3,108.6,24.5,11.6,0.66,20.6,60,PM10
+2020-10-01,Jharkhand,East,Ranchi,Post-Monsoon,45.6,23.1,64.1,116.7,31.5,13.9,0.84,27.3,84,PM10
+2020-11-01,Jharkhand,East,Ranchi,Post-Monsoon,31.3,21.6,72.5,122.7,31.7,17,0.84,21.6,98,PM10
+2020-12-01,Jharkhand,East,Ranchi,Winter,27.6,20.8,75,139.6,36.9,15.4,0.91,23.7,115,PM10
+2021-01-01,Jharkhand,East,Ranchi,Winter,14.5,17.7,71.7,130.1,30.5,13.1,0.84,18.9,103,PM10
+2021-02-01,Jharkhand,East,Ranchi,Winter,4,22.7,73.5,134.6,35,14,0.9,24.7,114,PM10
+2021-03-01,Jharkhand,East,Ranchi,Summer,4,25.2,62,111.7,24.1,13.8,0.76,25,71,PM10
+2021-04-01,Jharkhand,East,Ranchi,Summer,42.6,29.3,62.4,107.5,28.1,12.2,0.83,30.3,76,PM10
+2021-05-01,Jharkhand,East,Ranchi,Summer,46.7,29.6,55.7,106.9,21.3,17.3,0.82,32,78,PM10
+2021-06-01,Jharkhand,East,Ranchi,Monsoon,107.2,28.7,55,89,21.9,10.4,0.74,27.7,60,PM10
+2021-07-01,Jharkhand,East,Ranchi,Monsoon,135.8,25.6,44,99.7,19,12,0.64,22.6,43,PM10
+2021-08-01,Jharkhand,East,Ranchi,Monsoon,144.2,24.5,49.3,94.2,20.3,15.2,0.64,21.6,50,PM10
+2021-09-01,Jharkhand,East,Ranchi,Monsoon,84.7,25.4,45.5,87.2,26,11.9,0.81,21.5,58,PM10
+2021-10-01,Jharkhand,East,Ranchi,Post-Monsoon,53.7,25,63.8,102.7,26.6,13.9,0.83,29,80,PM10
+2021-11-01,Jharkhand,East,Ranchi,Post-Monsoon,18.7,24,71.6,129.2,30.7,13.1,0.94,23.7,88,PM10
+2021-12-01,Jharkhand,East,Ranchi,Winter,4,20.1,79.1,122.8,32.9,16.7,0.87,21.2,112,PM10
+2022-01-01,Jharkhand,East,Ranchi,Winter,5.9,20.8,81.9,139.4,29.6,16.8,1.13,25.1,115,PM10
+2022-02-01,Jharkhand,East,Ranchi,Winter,9.9,22.1,70.1,132.7,34.6,15.1,0.99,24.9,115,PM10
+2022-03-01,Jharkhand,East,Ranchi,Summer,37.8,26,69.2,126.8,27.6,14.3,0.87,27.1,93,PM10
+2022-04-01,Jharkhand,East,Ranchi,Summer,26.3,27.4,68.4,103,25.4,15.1,0.84,29,75,PM10
+2022-05-01,Jharkhand,East,Ranchi,Summer,52.5,29.9,62.2,115.6,26.7,16.7,0.65,35.8,79,PM10
+2022-06-01,Jharkhand,East,Ranchi,Monsoon,109.1,29.7,46.4,100.3,16.1,13,0.67,29.6,53,PM10
+2022-07-01,Jharkhand,East,Ranchi,Monsoon,135.3,24.2,45.4,86.6,19.1,14.5,0.72,22.5,38,PM10
+2022-08-01,Jharkhand,East,Ranchi,Monsoon,127.9,25.4,50.2,76.8,18.6,11.1,0.72,26.6,46,PM10
+2022-09-01,Jharkhand,East,Ranchi,Monsoon,101.6,26.7,54.2,74.7,25.9,15.3,0.73,22.8,62,PM10
+2022-10-01,Jharkhand,East,Ranchi,Post-Monsoon,29.4,23.6,61.7,113,23.5,13.2,0.86,23.1,72,PM10
+2022-11-01,Jharkhand,East,Ranchi,Post-Monsoon,10.2,22.6,67.8,118.1,28.9,16.1,1.01,20.7,81,PM10
+2022-12-01,Jharkhand,East,Ranchi,Winter,7.7,20.9,80,133.8,32.8,15.5,0.86,26,115,PM10
+2023-01-01,Jharkhand,East,Ranchi,Winter,4,18.3,69.6,140.6,31.8,12.8,0.95,23.5,105,PM10
+2023-02-01,Jharkhand,East,Ranchi,Winter,23.7,20,75.7,122.8,24.7,12.4,0.87,24.6,103,PM10
+2023-03-01,Jharkhand,East,Ranchi,Summer,23.2,27.2,62,105.7,24.6,13.9,0.95,24.6,78,PM10
+2023-04-01,Jharkhand,East,Ranchi,Summer,25.1,26.8,58.9,109.1,30.4,14.5,0.77,29.6,69,PM10
+2023-05-01,Jharkhand,East,Ranchi,Summer,39.7,30.2,57.6,104.8,21,13.8,0.75,29.6,64,PM10
+2023-06-01,Jharkhand,East,Ranchi,Monsoon,103.8,30.8,51.7,94.8,21.7,11.2,0.84,25.9,54,PM10
+2023-07-01,Jharkhand,East,Ranchi,Monsoon,140.8,27.1,44.8,99,16.1,10,0.71,23.5,45,PM10
+2023-08-01,Jharkhand,East,Ranchi,Monsoon,128.5,24.3,42.2,73.2,22.6,10.5,0.61,20.6,42,PM10
+2023-09-01,Jharkhand,East,Ranchi,Monsoon,73.2,26.8,54.3,96.8,20.6,13.1,0.63,22.2,49,PM10
+2023-10-01,Jharkhand,East,Ranchi,Post-Monsoon,50.3,26.6,63.2,113.5,27.1,15.2,0.84,24.8,79,PM10
+2023-11-01,Jharkhand,East,Ranchi,Post-Monsoon,21.5,23.8,74.7,133.7,29.7,14.3,0.92,25.4,97,PM10
+2023-12-01,Jharkhand,East,Ranchi,Winter,4.8,20,67.9,143.3,30.2,16.6,0.88,22.9,108,PM10
+2024-01-01,Jharkhand,East,Ranchi,Winter,26.7,21.1,73.2,126.3,28.1,10.2,0.86,26.8,108,PM10
+2024-02-01,Jharkhand,East,Ranchi,Winter,14.2,21.4,72.4,124.7,28.6,11.2,0.96,23,113,PM10
+2024-03-01,Jharkhand,East,Ranchi,Summer,17.9,25.2,66.9,107.6,30.3,12.8,0.75,24.4,67,PM10
+2024-04-01,Jharkhand,East,Ranchi,Summer,30.9,28,55.4,112.2,20.2,13.8,0.76,32.2,80,PM10
+2024-05-01,Jharkhand,East,Ranchi,Summer,30.5,29.3,56.8,117.1,25,13.9,0.73,29.9,70,PM10
+2024-06-01,Jharkhand,East,Ranchi,Monsoon,109.8,26,44.1,80.3,19.5,10.9,0.76,24.4,51,PM10
+2024-07-01,Jharkhand,East,Ranchi,Monsoon,126.5,27.8,49.8,84.2,17.2,10.7,0.64,20.3,51,PM10
+2024-08-01,Jharkhand,East,Ranchi,Monsoon,126.3,23.9,36.1,67.9,21.3,12.8,0.75,23.1,39,PM10
+2024-09-01,Jharkhand,East,Ranchi,Monsoon,97.9,27,47,104.7,20.8,13.3,0.61,24.8,58,PM10
+2024-10-01,Jharkhand,East,Ranchi,Post-Monsoon,55.5,26,57.3,104.6,26,11.7,0.71,25.6,70,PM10
+2024-11-01,Jharkhand,East,Ranchi,Post-Monsoon,36.5,24.1,71.3,123.5,28.9,10.7,0.83,27.9,80,PM10
+2024-12-01,Jharkhand,East,Ranchi,Winter,8.9,20.1,74,122.9,36.5,13.4,0.83,21.5,118,PM10
+2025-01-01,Jharkhand,East,Ranchi,Winter,12.7,18.9,76.7,125,31.1,16.6,0.99,23.2,117,PM10
+2025-02-01,Jharkhand,East,Ranchi,Winter,17.4,20,66.7,127.5,28.7,11.6,0.83,23,94,PM10
+2025-03-01,Jharkhand,East,Ranchi,Summer,15.8,24.3,63.1,114.1,30.4,16.2,0.85,27.3,91,PM10
+2025-04-01,Jharkhand,East,Ranchi,Summer,21.6,30.1,60.5,91.3,25.4,13.8,0.84,26.1,63,PM10
+2025-05-01,Jharkhand,East,Ranchi,Summer,26.5,28.6,50.7,90.5,21.7,13.5,0.82,35.4,56,PM10
+2025-06-01,Jharkhand,East,Ranchi,Monsoon,93.4,28.2,53.1,79.9,25.2,13.4,0.64,25.1,49,PM10
+2025-07-01,Jharkhand,East,Ranchi,Monsoon,133.4,26.4,41.8,74.9,19.1,12.4,0.67,24.9,54,PM10
+2025-08-01,Jharkhand,East,Ranchi,Monsoon,133.1,26.8,44.8,78.1,16.3,10.1,0.69,20.7,42,PM10
+2025-09-01,Jharkhand,East,Ranchi,Monsoon,108.5,26.3,42.9,79.8,21.5,10.6,0.79,21.9,55,PM10
+2025-10-01,Jharkhand,East,Ranchi,Post-Monsoon,38.8,26.8,56.3,103.5,26.4,12.8,0.79,28.2,84,PM10
+2025-11-01,Jharkhand,East,Ranchi,Post-Monsoon,32.1,23.7,75.9,132.9,26.9,11.5,0.79,26.2,83,PM10
+2025-12-01,Jharkhand,East,Ranchi,Winter,12.3,20.9,71.6,140.4,29.8,16.2,0.92,22.1,114,PM10
+2020-01-01,Karnataka,South,Bengaluru,Winter,5,22.4,49.2,83,21.9,5.4,0.6,21,80,PM10
+2020-02-01,Karnataka,South,Bengaluru,Winter,4,24.4,44.2,86.9,22,8.8,0.62,22.4,78,PM10
+2020-03-01,Karnataka,South,Bengaluru,Summer,16.1,27.2,40.3,74.9,20.9,7.4,0.49,22.9,61,PM10
+2020-04-01,Karnataka,South,Bengaluru,Summer,24,29.5,34.6,72.9,19.2,5.8,0.51,27.2,43,PM10
+2020-05-01,Karnataka,South,Bengaluru,Summer,46.5,32.3,34.5,69.7,11.1,8.3,0.59,27.8,45,PM10
+2020-06-01,Karnataka,South,Bengaluru,Monsoon,94.6,29.9,27.1,61,10.6,8.2,0.37,18.5,35,PM10
+2020-07-01,Karnataka,South,Bengaluru,Monsoon,114.8,29.8,32.8,42,16.7,6.8,0.55,19.5,35,PM10
+2020-08-01,Karnataka,South,Bengaluru,Monsoon,92.9,27.6,33.3,45.7,11.9,8.2,0.33,18.4,35,PM10
+2020-09-01,Karnataka,South,Bengaluru,Monsoon,69.1,28.2,27,62.1,13.7,10.6,0.49,18.7,35,PM10
+2020-10-01,Karnataka,South,Bengaluru,Post-Monsoon,32.8,27.8,33.3,77.5,15.6,5.5,0.65,21.7,56,PM10
+2020-11-01,Karnataka,South,Bengaluru,Post-Monsoon,6,24.2,48.9,74.7,23.2,7.9,0.52,20.2,61,PM10
+2020-12-01,Karnataka,South,Bengaluru,Winter,22.4,21.1,52.8,85.4,25.7,7.5,0.7,18.2,78,PM10
+2021-01-01,Karnataka,South,Bengaluru,Winter,13.2,20.6,40.8,80.8,24.8,9.6,0.57,17.3,80,PM10
+2021-02-01,Karnataka,South,Bengaluru,Winter,17.1,25.4,44.9,71,23.7,10.4,0.63,22.5,82,PM10
+2021-03-01,Karnataka,South,Bengaluru,Summer,20.9,27.8,46.4,81.5,19.5,6.8,0.6,24.7,56,PM10
+2021-04-01,Karnataka,South,Bengaluru,Summer,16.8,29.7,40,59.1,12.6,7,0.5,28.1,45,PM10
+2021-05-01,Karnataka,South,Bengaluru,Summer,34.7,31.9,34.5,59.4,15.5,9.3,0.49,28.8,48,PM10
+2021-06-01,Karnataka,South,Bengaluru,Monsoon,85.1,30,29.2,60.7,14.7,10.4,0.59,21.7,35,PM10
+2021-07-01,Karnataka,South,Bengaluru,Monsoon,103.8,26.9,31.7,38.9,12.8,8.8,0.52,22.5,35,PM10
+2021-08-01,Karnataka,South,Bengaluru,Monsoon,105.3,28.1,27.6,52,15,7.9,0.51,20.8,35,PM10
+2021-09-01,Karnataka,South,Bengaluru,Monsoon,83.4,28.8,26.8,59.2,15.5,7.2,0.58,20.5,35,PM10
+2021-10-01,Karnataka,South,Bengaluru,Post-Monsoon,31,27.9,45.1,63.1,18.5,8.1,0.63,25.1,56,PM10
+2021-11-01,Karnataka,South,Bengaluru,Post-Monsoon,28.6,25.8,37.9,88.8,25.1,8.1,0.57,22,52,PM10
+2021-12-01,Karnataka,South,Bengaluru,Winter,16.2,20.8,49.6,93.1,27.1,6.6,0.65,21.5,87,PM10
+2022-01-01,Karnataka,South,Bengaluru,Winter,16.5,20.7,44.2,75.9,25.2,7.3,0.64,18.8,75,PM10
+2022-02-01,Karnataka,South,Bengaluru,Winter,6.9,21.5,29.6,79.6,25.3,5.1,0.62,26.7,71,PM10
+2022-03-01,Karnataka,South,Bengaluru,Summer,13,27.8,39.2,60.8,20.9,8.9,0.61,26.7,43,PM10
+2022-04-01,Karnataka,South,Bengaluru,Summer,11.4,27.7,39.4,72.9,19,7.4,0.53,29.6,52,PM10
+2022-05-01,Karnataka,South,Bengaluru,Summer,26.4,33.1,37.4,75.7,16.3,8.6,0.63,30.8,50,PM10
+2022-06-01,Karnataka,South,Bengaluru,Monsoon,79.7,30.4,30.9,63.9,16.7,8.8,0.39,25.8,35,PM10
+2022-07-01,Karnataka,South,Bengaluru,Monsoon,103.3,27.9,26.5,47.7,10.9,6.3,0.58,21,35,PM10
+2022-08-01,Karnataka,South,Bengaluru,Monsoon,89.9,26.1,20.9,40.9,13.2,8.2,0.44,18.1,35,PM10
+2022-09-01,Karnataka,South,Bengaluru,Monsoon,68.9,27.7,37.2,67.5,17.7,6.3,0.42,20.2,53,PM10
+2022-10-01,Karnataka,South,Bengaluru,Post-Monsoon,49.8,24.5,41.3,82.1,16,7.8,0.59,23,67,PM10
+2022-11-01,Karnataka,South,Bengaluru,Post-Monsoon,14.1,24.9,41,86.4,21.8,7.4,0.56,22.7,57,PM10
+2022-12-01,Karnataka,South,Bengaluru,Winter,20.1,21.7,36.9,81.1,20.1,5.6,0.67,20.5,77,PM10
+2023-01-01,Karnataka,South,Bengaluru,Winter,9,20.4,42.8,90.3,21.9,9.1,0.72,19.3,79,PM10
+2023-02-01,Karnataka,South,Bengaluru,Winter,9.8,21.9,43.4,82.5,21.8,8.7,0.7,22.6,79,PM10
+2023-03-01,Karnataka,South,Bengaluru,Summer,6.4,27.1,38.1,68.4,15.7,9.1,0.65,28.4,59,PM10
+2023-04-01,Karnataka,South,Bengaluru,Summer,13.7,31.8,30.4,74.3,16.1,9.7,0.53,27.5,51,PM10
+2023-05-01,Karnataka,South,Bengaluru,Summer,26.4,32.5,35.8,60.1,21.1,5.8,0.48,31.2,48,PM10
+2023-06-01,Karnataka,South,Bengaluru,Monsoon,96.7,30,31.8,57.7,11.7,6.4,0.46,24.4,35,PM10
+2023-07-01,Karnataka,South,Bengaluru,Monsoon,118.2,29.4,20.7,48.2,17.3,7,0.45,18.9,35,PM10
+2023-08-01,Karnataka,South,Bengaluru,Monsoon,96.9,29.4,27.4,49.4,11.1,7.4,0.48,22.4,35,PM10
+2023-09-01,Karnataka,South,Bengaluru,Monsoon,80,30.4,28.2,58.4,15.7,7.5,0.47,20.8,35,PM10
+2023-10-01,Karnataka,South,Bengaluru,Post-Monsoon,68.8,25.9,38.1,62.4,17.5,7.6,0.65,22.4,45,PM10
+2023-11-01,Karnataka,South,Bengaluru,Post-Monsoon,23.4,25.1,40.4,59.8,23.8,6.4,0.65,20.7,52,PM10
+2023-12-01,Karnataka,South,Bengaluru,Winter,17.4,20.1,45.5,94.2,23,10.2,0.72,23.7,80,PM10
+2024-01-01,Karnataka,South,Bengaluru,Winter,22.7,19.7,46.5,91.7,23.5,7.3,0.6,22,69,PM10
+2024-02-01,Karnataka,South,Bengaluru,Winter,4,21.5,40.8,91.8,16.8,6.2,0.52,25.5,80,PM10
+2024-03-01,Karnataka,South,Bengaluru,Summer,36.6,26.3,40.2,80.1,17.4,10.3,0.54,25.4,50,PM10
+2024-04-01,Karnataka,South,Bengaluru,Summer,21.4,29.1,30.5,78.3,19.9,7.7,0.48,27,60,PM10
+2024-05-01,Karnataka,South,Bengaluru,Summer,27.3,34,38.6,53.7,19.7,9.6,0.55,26,44,PM10
+2024-06-01,Karnataka,South,Bengaluru,Monsoon,70,29.4,28.4,53.4,11.9,7.9,0.36,22.8,35,PM10
+2024-07-01,Karnataka,South,Bengaluru,Monsoon,101,28.1,25.8,56.8,10.3,5.1,0.35,20.3,35,PM10
+2024-08-01,Karnataka,South,Bengaluru,Monsoon,100.7,27,38.5,50.1,11.7,8.5,0.43,18.9,35,PM10
+2024-09-01,Karnataka,South,Bengaluru,Monsoon,74.6,28.5,23.7,47.6,14.9,7.5,0.37,23,35,PM10
+2024-10-01,Karnataka,South,Bengaluru,Post-Monsoon,36.9,26.9,33.1,64.8,14.8,7.2,0.45,24.2,35,PM10
+2024-11-01,Karnataka,South,Bengaluru,Post-Monsoon,6.7,25.6,38.2,78.4,17.8,6.4,0.57,22.3,57,PM10
+2024-12-01,Karnataka,South,Bengaluru,Winter,9.3,24.2,43.6,90.9,20.5,6.2,0.65,20,71,PM10
+2025-01-01,Karnataka,South,Bengaluru,Winter,8.3,20.9,53.6,86.5,21.5,7.1,0.59,18.9,79,PM10
+2025-02-01,Karnataka,South,Bengaluru,Winter,21.7,22.6,42.9,78.7,26,7.1,0.66,21.5,73,PM10
+2025-03-01,Karnataka,South,Bengaluru,Summer,16.2,27.8,44.3,84.4,16.1,4.6,0.53,25.3,57,PM10
+2025-04-01,Karnataka,South,Bengaluru,Summer,34,30.8,40.6,65.6,12.7,9.5,0.42,24.2,46,PM10
+2025-05-01,Karnataka,South,Bengaluru,Summer,36,32.3,28.2,61.5,14.3,6.7,0.61,25.2,43,PM10
+2025-06-01,Karnataka,South,Bengaluru,Monsoon,84,28.6,18.6,50.2,19.2,3.6,0.45,25.4,35,PM10
+2025-07-01,Karnataka,South,Bengaluru,Monsoon,106.7,28,26.7,59.9,14.6,7.3,0.43,18,35,PM10
+2025-08-01,Karnataka,South,Bengaluru,Monsoon,88.5,25.2,23.3,41.2,13.4,6.9,0.44,19.2,35,PM10
+2025-09-01,Karnataka,South,Bengaluru,Monsoon,63.1,27.6,28,56.7,12.1,6.2,0.56,18.6,35,PM10
+2025-10-01,Karnataka,South,Bengaluru,Post-Monsoon,28.3,24.7,35.2,72.1,16.2,11.5,0.63,24.5,51,PM10
+2025-11-01,Karnataka,South,Bengaluru,Post-Monsoon,20.5,24,40,78.7,16.8,9.6,0.49,22.3,42,PM10
+2025-12-01,Karnataka,South,Bengaluru,Winter,26.7,21.8,45.4,84.2,19.1,7.1,0.53,21.8,80,PM10
+2020-01-01,Kerala,South,Thiruvananthapuram,Winter,36.4,22.1,31.9,55.8,15.6,3.6,0.35,14.5,55,PM10
+2020-02-01,Kerala,South,Thiruvananthapuram,Winter,28.1,24.6,18.4,42.1,13.9,5,0.32,20.7,55,PM10
+2020-03-01,Kerala,South,Thiruvananthapuram,Summer,21.5,28.6,33.9,44.9,13.3,4.2,0.45,23.1,44,PM10
+2020-04-01,Kerala,South,Thiruvananthapuram,Summer,29.6,31.2,23.8,49.9,12.6,4.6,0.38,20.3,35,PM10
+2020-05-01,Kerala,South,Thiruvananthapuram,Summer,65.3,33.9,12,43.7,7.9,5.5,0.41,29.7,35,PM10
+2020-06-01,Kerala,South,Thiruvananthapuram,Monsoon,180,29,18,40.6,14.9,2.6,0.34,18.7,35,PM10
+2020-07-01,Kerala,South,Thiruvananthapuram,Monsoon,210.7,28.2,16.5,36.2,6,2.9,0.33,16.3,35,PM10
+2020-08-01,Kerala,South,Thiruvananthapuram,Monsoon,216.1,28.5,26.2,44.1,7.5,2.9,0.26,18.9,35,PM10
+2020-09-01,Kerala,South,Thiruvananthapuram,Monsoon,161.6,27.7,18.2,43.2,9.2,7,0.36,20.8,35,PM10
+2020-10-01,Kerala,South,Thiruvananthapuram,Post-Monsoon,56.8,26.9,26.9,50.7,8.7,5.9,0.32,22,35,PM10
+2020-11-01,Kerala,South,Thiruvananthapuram,Post-Monsoon,47.8,25.1,21.8,51.9,10.4,5,0.33,21.2,35,PM10
+2020-12-01,Kerala,South,Thiruvananthapuram,Winter,51.4,22.2,25.1,61.9,15.5,7.4,0.44,18.6,53,PM10
+2021-01-01,Kerala,South,Thiruvananthapuram,Winter,24.7,21.8,35.1,43.5,13.2,4.1,0.39,18.8,65,PM10
+2021-02-01,Kerala,South,Thiruvananthapuram,Winter,16.4,23.3,32.6,50.6,13.5,5.4,0.46,20.3,68,PM10
+2021-03-01,Kerala,South,Thiruvananthapuram,Summer,46.8,28.2,23.7,49.4,10.7,4.8,0.46,24,35,PM10
+2021-04-01,Kerala,South,Thiruvananthapuram,Summer,39,30,25.2,46.2,14.4,5.5,0.35,25.4,42,PM10
+2021-05-01,Kerala,South,Thiruvananthapuram,Summer,66.2,31.2,27.7,41.4,14.7,6.3,0.32,23.9,36,PM10
+2021-06-01,Kerala,South,Thiruvananthapuram,Monsoon,161.5,29.1,19.5,35.3,6,2,0.39,21.5,35,PM10
+2021-07-01,Kerala,South,Thiruvananthapuram,Monsoon,229.4,29.8,23.9,23.1,6.1,2,0.34,20.6,35,PM2.5
+2021-08-01,Kerala,South,Thiruvananthapuram,Monsoon,180,28.3,23.4,29.9,10,4,0.27,17.3,35,PM10
+2021-09-01,Kerala,South,Thiruvananthapuram,Monsoon,135.3,27.5,21.5,45.3,12.2,7.6,0.38,16.3,35,PM10
+2021-10-01,Kerala,South,Thiruvananthapuram,Post-Monsoon,72.8,27.7,31.7,39.3,10.4,4.1,0.33,19.9,35,PM10
+2021-11-01,Kerala,South,Thiruvananthapuram,Post-Monsoon,44.5,27.7,22.7,48.4,13.3,6.5,0.43,21.2,35,PM10
+2021-12-01,Kerala,South,Thiruvananthapuram,Winter,32.4,23.4,28.7,66.6,17.7,6.1,0.41,19.4,65,PM10
+2022-01-01,Kerala,South,Thiruvananthapuram,Winter,36.4,22.5,32.9,47.8,11.7,3,0.41,18.7,62,PM10
+2022-02-01,Kerala,South,Thiruvananthapuram,Winter,24.1,25.2,27.7,54.9,12.2,2.3,0.34,20.9,53,PM10
+2022-03-01,Kerala,South,Thiruvananthapuram,Summer,20.1,28.6,21.6,47.4,10.6,5.3,0.35,24.5,35,PM10
+2022-04-01,Kerala,South,Thiruvananthapuram,Summer,43.9,29.8,26.2,30.7,11.3,5,0.31,21.3,35,PM10
+2022-05-01,Kerala,South,Thiruvananthapuram,Summer,60.4,33.1,19.7,28.6,12.4,5,0.38,27.1,35,PM10
+2022-06-01,Kerala,South,Thiruvananthapuram,Monsoon,170.6,31.1,20,32.1,7.3,4.8,0.36,17,35,PM10
+2022-07-01,Kerala,South,Thiruvananthapuram,Monsoon,218,28.8,20.4,38.5,12.7,5.5,0.4,17.2,35,PM10
+2022-08-01,Kerala,South,Thiruvananthapuram,Monsoon,205.5,28.7,26.2,35.8,12.1,2.1,0.32,16.4,35,PM10
+2022-09-01,Kerala,South,Thiruvananthapuram,Monsoon,140.5,29.3,20,42.9,10.3,4.6,0.25,18.5,35,PM10
+2022-10-01,Kerala,South,Thiruvananthapuram,Post-Monsoon,74.1,28.9,18.3,52.3,11,3.2,0.52,16,44,PM10
+2022-11-01,Kerala,South,Thiruvananthapuram,Post-Monsoon,27.8,26.7,37.9,60.1,13.1,7.8,0.35,19.8,48,PM10
+2022-12-01,Kerala,South,Thiruvananthapuram,Winter,34.8,22.5,30,50,13.1,2.8,0.37,17,58,PM10
+2023-01-01,Kerala,South,Thiruvananthapuram,Winter,28.1,21,30.4,60.7,13,6.7,0.39,18.4,57,PM10
+2023-02-01,Kerala,South,Thiruvananthapuram,Winter,30.7,26.3,28.9,53.1,14.1,3.1,0.32,17.8,54,PM10
+2023-03-01,Kerala,South,Thiruvananthapuram,Summer,25.1,29.2,16.1,42.3,9.9,4.9,0.28,17.7,35,PM10
+2023-04-01,Kerala,South,Thiruvananthapuram,Summer,22.7,31.3,23.1,38.5,14.8,3.3,0.33,26.4,35,PM10
+2023-05-01,Kerala,South,Thiruvananthapuram,Summer,58.5,32.3,19.2,34.1,8.3,5.7,0.35,21.6,35,PM10
+2023-06-01,Kerala,South,Thiruvananthapuram,Monsoon,162.7,31.3,15.1,40.5,8.8,5,0.42,17.9,35,PM10
+2023-07-01,Kerala,South,Thiruvananthapuram,Monsoon,231.9,29.2,12.7,35.8,10.7,6.5,0.2,14.6,35,PM10
+2023-08-01,Kerala,South,Thiruvananthapuram,Monsoon,207.2,30,22,26.6,7.5,5.1,0.31,15.1,35,PM10
+2023-09-01,Kerala,South,Thiruvananthapuram,Monsoon,145.9,27.9,25.3,30.3,6,3.5,0.39,19.1,35,PM10
+2023-10-01,Kerala,South,Thiruvananthapuram,Post-Monsoon,64.4,27,18,43,13.5,4.3,0.36,17.4,35,PM10
+2023-11-01,Kerala,South,Thiruvananthapuram,Post-Monsoon,39.9,26.8,26.2,47.1,12,3.5,0.38,16.4,38,PM10
+2023-12-01,Kerala,South,Thiruvananthapuram,Winter,43.2,23.8,35.1,45.1,13.5,3.5,0.41,13,60,PM10
+2024-01-01,Kerala,South,Thiruvananthapuram,Winter,27.4,19,28.5,55.9,14.7,3.9,0.43,16.8,46,PM10
+2024-02-01,Kerala,South,Thiruvananthapuram,Winter,17.8,23.7,22.8,40.2,10.7,2.5,0.48,18.9,59,PM10
+2024-03-01,Kerala,South,Thiruvananthapuram,Summer,33.4,24.5,22.2,56.8,10.1,6.3,0.36,21.5,35,PM10
+2024-04-01,Kerala,South,Thiruvananthapuram,Summer,39.8,33.7,24,48,15.9,5.9,0.34,22.8,43,PM10
+2024-05-01,Kerala,South,Thiruvananthapuram,Summer,60.1,34.2,19.4,49.4,9.4,5,0.29,21.6,35,PM10
+2024-06-01,Kerala,South,Thiruvananthapuram,Monsoon,169.7,30.3,12,27.1,12.4,3.3,0.33,17.5,35,PM10
+2024-07-01,Kerala,South,Thiruvananthapuram,Monsoon,204.9,28.7,14.7,30.2,11.8,2.7,0.24,21.2,35,PM10
+2024-08-01,Kerala,South,Thiruvananthapuram,Monsoon,191.5,27.5,13.4,26.7,13.7,3.2,0.3,14.5,35,PM10
+2024-09-01,Kerala,South,Thiruvananthapuram,Monsoon,150.4,27.8,22.3,47.2,6,3.8,0.31,18.6,35,PM10
+2024-10-01,Kerala,South,Thiruvananthapuram,Post-Monsoon,67.3,26.9,22,30.6,9.4,2.7,0.32,20.9,35,PM10
+2024-11-01,Kerala,South,Thiruvananthapuram,Post-Monsoon,29.7,27.5,28.2,43.8,12,2,0.28,20.1,37,PM10
+2024-12-01,Kerala,South,Thiruvananthapuram,Winter,46.6,23.6,33.9,59.3,15.8,5.3,0.41,18.6,61,PM10
+2025-01-01,Kerala,South,Thiruvananthapuram,Winter,40.3,20.9,24.6,53.7,9.2,5.7,0.31,18.2,49,PM10
+2025-02-01,Kerala,South,Thiruvananthapuram,Winter,35.6,24.4,14.3,38.8,16.1,3.1,0.46,19,47,PM10
+2025-03-01,Kerala,South,Thiruvananthapuram,Summer,20.2,27.5,33,36.5,8.2,4.3,0.33,20.4,35,PM10
+2025-04-01,Kerala,South,Thiruvananthapuram,Summer,42.4,33.2,25.7,28.7,7.1,4.2,0.3,23.8,35,PM10
+2025-05-01,Kerala,South,Thiruvananthapuram,Summer,72.7,35.9,21.2,48.8,8.4,5.8,0.2,26.8,35,PM10
+2025-06-01,Kerala,South,Thiruvananthapuram,Monsoon,196.3,33.5,21.4,40.3,10.5,5,0.29,17.2,35,PM10
+2025-07-01,Kerala,South,Thiruvananthapuram,Monsoon,219.5,30.6,16.8,37.5,6,5,0.23,22.3,35,PM10
+2025-08-01,Kerala,South,Thiruvananthapuram,Monsoon,196.6,29.3,20.4,27,6,2.4,0.23,18.2,35,PM10
+2025-09-01,Kerala,South,Thiruvananthapuram,Monsoon,146,31.1,20.2,52.2,6.8,4.9,0.25,15.6,35,PM10
+2025-10-01,Kerala,South,Thiruvananthapuram,Post-Monsoon,67,27.4,23.2,46.7,7.3,2,0.4,20.3,35,PM10
+2025-11-01,Kerala,South,Thiruvananthapuram,Post-Monsoon,41.4,25.3,28.1,53,10.8,6.1,0.35,16.8,35,PM10
+2025-12-01,Kerala,South,Thiruvananthapuram,Winter,30.7,22.3,35.3,63.6,13.3,4,0.37,19.1,64,PM10
+2020-01-01,Madhya Pradesh,Central,Bhopal,Winter,16.2,20.2,61.1,119.1,24.5,15.6,0.95,28.4,97,PM10
+2020-02-01,Madhya Pradesh,Central,Bhopal,Winter,17.1,24.7,65,123.6,27.3,11.5,0.9,20.3,103,PM10
+2020-03-01,Madhya Pradesh,Central,Bhopal,Summer,16.4,26.1,51.6,112.9,22.1,11.5,0.93,28.9,80,PM10
+2020-04-01,Madhya Pradesh,Central,Bhopal,Summer,18.9,30.8,57.8,107.6,26.2,13.7,0.77,28.5,79,PM10
+2020-05-01,Madhya Pradesh,Central,Bhopal,Summer,19.7,33.3,52.4,99.5,21.5,10.2,0.72,29.8,76,PM10
+2020-06-01,Madhya Pradesh,Central,Bhopal,Monsoon,67,33.4,52.2,75.3,15.5,11,0.69,25.1,45,PM10
+2020-07-01,Madhya Pradesh,Central,Bhopal,Monsoon,109,30,37.7,70.8,18.9,12.4,0.64,25.5,35,PM10
+2020-08-01,Madhya Pradesh,Central,Bhopal,Monsoon,103.9,28.3,42.1,69.8,19.1,10.3,0.63,22.8,35,PM10
+2020-09-01,Madhya Pradesh,Central,Bhopal,Monsoon,52.2,27.7,46.5,79.6,22,11.9,0.7,23.1,35,PM10
+2020-10-01,Madhya Pradesh,Central,Bhopal,Post-Monsoon,28.9,29.3,54.7,90.4,30.2,12.8,0.69,27.9,66,PM10
+2020-11-01,Madhya Pradesh,Central,Bhopal,Post-Monsoon,16.8,25.5,75.7,114.8,25.7,12.5,0.86,23.7,72,PM10
+2020-12-01,Madhya Pradesh,Central,Bhopal,Winter,6.1,23.9,74,125.2,21.1,14.1,1.1,24,97,PM10
+2021-01-01,Madhya Pradesh,Central,Bhopal,Winter,13.1,21.8,64,131.1,26.6,12.4,0.97,22.8,104,PM10
+2021-02-01,Madhya Pradesh,Central,Bhopal,Winter,4.8,25.3,67.1,118,30.2,12.1,0.81,27.3,99,PM10
+2021-03-01,Madhya Pradesh,Central,Bhopal,Summer,9.5,28.1,55.3,113.3,29.6,10.8,0.83,28.9,74,PM10
+2021-04-01,Madhya Pradesh,Central,Bhopal,Summer,32.3,30.2,55.4,97.8,25.3,11.6,0.89,30.2,77,PM10
+2021-05-01,Madhya Pradesh,Central,Bhopal,Summer,36.1,34.2,58.2,91.3,21.7,10.5,0.67,30.4,70,PM10
+2021-06-01,Madhya Pradesh,Central,Bhopal,Monsoon,95.2,32,55.6,88.3,23.8,12.7,0.73,27.4,71,PM10
+2021-07-01,Madhya Pradesh,Central,Bhopal,Monsoon,109.7,30.6,41.3,75.8,17.7,8.2,0.68,23.4,35,PM10
+2021-08-01,Madhya Pradesh,Central,Bhopal,Monsoon,90.6,26.6,39.6,72.4,13.6,10.2,0.79,20.6,39,PM10
+2021-09-01,Madhya Pradesh,Central,Bhopal,Monsoon,59.6,29,48.1,71.5,30,9.3,0.76,26.3,49,PM10
+2021-10-01,Madhya Pradesh,Central,Bhopal,Post-Monsoon,28.1,27.4,59.6,103.7,22.1,12.3,0.75,21.3,77,PM10
+2021-11-01,Madhya Pradesh,Central,Bhopal,Post-Monsoon,5,26.3,66.2,114.5,29.7,13.1,0.88,22.7,86,PM10
+2021-12-01,Madhya Pradesh,Central,Bhopal,Winter,26.5,22.5,69.6,131.2,28.4,13.4,0.82,23.7,112,PM10
+2022-01-01,Madhya Pradesh,Central,Bhopal,Winter,10.2,22.3,63.8,120,27.5,13.7,0.83,23.9,88,PM10
+2022-02-01,Madhya Pradesh,Central,Bhopal,Winter,4.4,26.6,54.3,109.4,27.8,16.5,0.82,24.9,84,PM10
+2022-03-01,Madhya Pradesh,Central,Bhopal,Summer,4,27.9,61.3,104.8,25,11.8,0.84,22.5,73,PM10
+2022-04-01,Madhya Pradesh,Central,Bhopal,Summer,30,32.2,53.1,108,21.6,12.6,0.74,32.2,79,PM10
+2022-05-01,Madhya Pradesh,Central,Bhopal,Summer,20.9,32.1,55.4,92.8,25.5,11.5,0.71,30.9,61,PM10
+2022-06-01,Madhya Pradesh,Central,Bhopal,Monsoon,78.3,32.3,52.3,80.3,19.2,13.3,0.69,24.5,41,PM10
+2022-07-01,Madhya Pradesh,Central,Bhopal,Monsoon,96.4,29.9,33.5,79.4,17.1,10.9,0.61,22.4,37,PM10
+2022-08-01,Madhya Pradesh,Central,Bhopal,Monsoon,77.6,26.4,47.2,73.2,17,9.4,0.67,22.6,49,PM10
+2022-09-01,Madhya Pradesh,Central,Bhopal,Monsoon,70.4,28.9,53.4,83,17,10,0.69,21.6,57,PM10
+2022-10-01,Madhya Pradesh,Central,Bhopal,Post-Monsoon,37,28.4,54.5,100,24.9,13.1,0.78,25.3,72,PM10
+2022-11-01,Madhya Pradesh,Central,Bhopal,Post-Monsoon,15.2,26.1,69.2,120.4,26.6,12,0.75,22,77,PM10
+2022-12-01,Madhya Pradesh,Central,Bhopal,Winter,6.4,23.2,65.6,128,24.8,12.8,0.98,25.1,104,PM10
+2023-01-01,Madhya Pradesh,Central,Bhopal,Winter,21,21.2,70.7,122.8,29.1,13.1,0.75,18.9,98,PM10
+2023-02-01,Madhya Pradesh,Central,Bhopal,Winter,25.3,25.3,61.7,115.7,32.2,11.6,0.86,26.1,105,PM10
+2023-03-01,Madhya Pradesh,Central,Bhopal,Summer,5.1,30.3,63.7,110.7,27.3,13.5,0.68,28.9,89,PM10
+2023-04-01,Madhya Pradesh,Central,Bhopal,Summer,4,30.3,60.2,92.4,18.5,12.3,0.79,33.3,71,PM10
+2023-05-01,Madhya Pradesh,Central,Bhopal,Summer,14,33.4,60.5,95.5,22.6,12.8,0.75,29.8,71,PM10
+2023-06-01,Madhya Pradesh,Central,Bhopal,Monsoon,79.9,31.8,36.1,66.6,23.5,10.3,0.72,26.6,56,PM10
+2023-07-01,Madhya Pradesh,Central,Bhopal,Monsoon,92,30.7,44.8,65.5,18.8,9.1,0.71,22.1,46,PM10
+2023-08-01,Madhya Pradesh,Central,Bhopal,Monsoon,79.9,28.2,48.4,63,18.2,11.7,0.62,19.9,39,PM10
+2023-09-01,Madhya Pradesh,Central,Bhopal,Monsoon,51.5,28.9,43.9,83.3,17.7,12.1,0.67,23.5,49,PM10
+2023-10-01,Madhya Pradesh,Central,Bhopal,Post-Monsoon,18.3,27.9,57.9,100.4,23.4,13.5,0.82,25.9,64,PM10
+2023-11-01,Madhya Pradesh,Central,Bhopal,Post-Monsoon,16.2,26.8,63,102.9,28.4,12.9,0.85,23.7,70,PM10
+2023-12-01,Madhya Pradesh,Central,Bhopal,Winter,4,24.2,69,113,31,13.8,0.86,21.1,107,PM10
+2024-01-01,Madhya Pradesh,Central,Bhopal,Winter,10.5,19.2,66.7,129.8,28.8,11.2,0.91,21.1,107,PM10
+2024-02-01,Madhya Pradesh,Central,Bhopal,Winter,19.3,20.7,67.1,111.9,29,14.3,0.76,25.8,103,PM10
+2024-03-01,Madhya Pradesh,Central,Bhopal,Summer,15.2,27.2,52.9,98.1,20.6,10.9,0.78,29.7,66,PM10
+2024-04-01,Madhya Pradesh,Central,Bhopal,Summer,22.7,30.3,48.1,105.5,16.6,11.8,0.75,32,77,PM10
+2024-05-01,Madhya Pradesh,Central,Bhopal,Summer,26.2,31.7,49,99.6,20.5,13.6,0.74,29.3,64,PM10
+2024-06-01,Madhya Pradesh,Central,Bhopal,Monsoon,68.3,30.2,35.9,84,21.4,11.5,0.68,25.7,40,PM10
+2024-07-01,Madhya Pradesh,Central,Bhopal,Monsoon,98.5,28.6,38.9,78.9,18.1,12.4,0.54,21.9,42,PM10
+2024-08-01,Madhya Pradesh,Central,Bhopal,Monsoon,88.3,29.1,40.5,76.5,16.3,8.3,0.6,22.3,40,PM10
+2024-09-01,Madhya Pradesh,Central,Bhopal,Monsoon,67.8,28.1,48,92.2,20.1,13.9,0.72,21.3,45,PM10
+2024-10-01,Madhya Pradesh,Central,Bhopal,Post-Monsoon,43.6,27.1,61.6,93,27.6,12.8,0.7,25.8,68,PM10
+2024-11-01,Madhya Pradesh,Central,Bhopal,Post-Monsoon,30.2,25,67.4,130.5,28.4,10.7,0.86,22.4,83,PM10
+2024-12-01,Madhya Pradesh,Central,Bhopal,Winter,21.9,23.5,65,128.2,29.9,11.4,0.87,20.5,107,PM10
+2025-01-01,Madhya Pradesh,Central,Bhopal,Winter,4,22.1,61.9,117,25.3,10.9,0.87,26.2,90,PM10
+2025-02-01,Madhya Pradesh,Central,Bhopal,Winter,9.4,22.9,65,109.9,26.9,12.5,0.83,24.2,96,PM10
+2025-03-01,Madhya Pradesh,Central,Bhopal,Summer,18.1,28.4,55.1,98.3,23.5,13,0.67,28.9,70,PM10
+2025-04-01,Madhya Pradesh,Central,Bhopal,Summer,12,32,56,100.2,25.5,11.1,0.84,30.5,69,PM10
+2025-05-01,Madhya Pradesh,Central,Bhopal,Summer,43.9,34.8,52.2,92.9,19.3,11.3,0.71,32.9,73,PM10
+2025-06-01,Madhya Pradesh,Central,Bhopal,Monsoon,78.9,31.6,50.7,89.5,19.1,9.9,0.72,24.4,57,PM10
+2025-07-01,Madhya Pradesh,Central,Bhopal,Monsoon,102.3,29.9,40.9,76.5,13.5,7.8,0.58,21.8,45,PM10
+2025-08-01,Madhya Pradesh,Central,Bhopal,Monsoon,94.7,26.8,39.8,67,11.6,12.3,0.64,22.9,35,PM10
+2025-09-01,Madhya Pradesh,Central,Bhopal,Monsoon,70.6,26.9,47.4,88.5,22.3,10.9,0.53,21.8,59,PM10
+2025-10-01,Madhya Pradesh,Central,Bhopal,Post-Monsoon,28.8,28.7,59.3,86.6,25.5,10.8,0.77,22.5,64,PM10
+2025-11-01,Madhya Pradesh,Central,Bhopal,Post-Monsoon,14.9,25.8,67,119.4,27,11.7,0.75,25.2,82,PM10
+2025-12-01,Madhya Pradesh,Central,Bhopal,Winter,13.7,21.1,70.6,125.4,25.8,9.6,0.94,28.1,111,PM10
+2020-01-01,Maharashtra,West,Mumbai,Winter,26.1,24.9,62.2,118.7,31.2,10.8,0.61,23.6,89,PM10
+2020-02-01,Maharashtra,West,Mumbai,Winter,23.3,23.3,50.8,103.4,26.6,9.2,0.71,26.6,96,PM10
+2020-03-01,Maharashtra,West,Mumbai,Summer,4,27.9,50.3,107.3,23.5,13.8,0.74,28.1,69,PM10
+2020-04-01,Maharashtra,West,Mumbai,Summer,11.4,33.3,48,90,27.9,12.3,0.58,32.2,68,PM10
+2020-05-01,Maharashtra,West,Mumbai,Summer,25.2,33.7,45.4,88.9,19.8,7.4,0.69,29.9,56,PM10
+2020-06-01,Maharashtra,West,Mumbai,Monsoon,121.7,33.4,43.8,62.5,15.3,7.7,0.64,24.4,41,PM10
+2020-07-01,Maharashtra,West,Mumbai,Monsoon,126.5,32,33.1,69.1,16,8.5,0.64,26.1,41,PM10
+2020-08-01,Maharashtra,West,Mumbai,Monsoon,97.4,28.6,43.6,67.8,17,9.1,0.59,23,37,PM10
+2020-09-01,Maharashtra,West,Mumbai,Monsoon,91.7,29.2,45,73,21,7.1,0.49,24.4,45,PM10
+2020-10-01,Maharashtra,West,Mumbai,Post-Monsoon,26.3,26.4,45.1,82.8,28.5,8.1,0.71,26,70,PM10
+2020-11-01,Maharashtra,West,Mumbai,Post-Monsoon,9.3,27.9,63.8,101.2,29.4,11.3,0.73,26.2,90,PM10
+2020-12-01,Maharashtra,West,Mumbai,Winter,23.9,23.7,56.4,115,33,8,0.73,21.5,93,PM10
+2021-01-01,Maharashtra,West,Mumbai,Winter,4,23.7,54.5,104.6,27.8,11,0.73,23.7,97,PM10
+2021-02-01,Maharashtra,West,Mumbai,Winter,26.9,25,54.6,96.4,27.7,10.3,0.75,23.2,87,PM10
+2021-03-01,Maharashtra,West,Mumbai,Summer,20.5,31.5,58.7,95,21.8,11.4,0.71,25.4,68,PM10
+2021-04-01,Maharashtra,West,Mumbai,Summer,4,30.1,51.5,84.9,20.6,10.7,0.67,31,69,PM10
+2021-05-01,Maharashtra,West,Mumbai,Summer,36.7,36.2,41.7,74.5,23.3,8.5,0.77,34.1,61,PM10
+2021-06-01,Maharashtra,West,Mumbai,Monsoon,95.2,30.6,45.5,66.4,16.2,11.3,0.58,25.5,45,PM10
+2021-07-01,Maharashtra,West,Mumbai,Monsoon,134.3,29.4,37.7,62.4,18.8,8.7,0.7,24.3,41,PM10
+2021-08-01,Maharashtra,West,Mumbai,Monsoon,122.8,30.9,31.8,54.4,21.3,8,0.56,19.5,35,PM10
+2021-09-01,Maharashtra,West,Mumbai,Monsoon,87.7,31.1,38.7,68.3,18.6,7.3,0.57,23.3,47,PM10
+2021-10-01,Maharashtra,West,Mumbai,Post-Monsoon,45,29.9,45,87.7,24.3,8.8,0.64,25.4,64,PM10
+2021-11-01,Maharashtra,West,Mumbai,Post-Monsoon,16.6,26.6,58.3,97.9,26.9,12.6,0.72,29,73,PM10
+2021-12-01,Maharashtra,West,Mumbai,Winter,23.3,23.7,60.4,108.3,28.3,7.9,0.8,25.1,89,PM10
+2022-01-01,Maharashtra,West,Mumbai,Winter,17.4,22.3,58.8,106.6,29.5,10.2,0.62,25.3,100,PM10
+2022-02-01,Maharashtra,West,Mumbai,Winter,26.6,26.4,50.9,86.1,29.3,9.3,0.81,24.8,77,PM10
+2022-03-01,Maharashtra,West,Mumbai,Summer,21.8,29.4,46.5,91.3,29.2,9.7,0.75,24.3,65,PM10
+2022-04-01,Maharashtra,West,Mumbai,Summer,15.4,33.1,46.6,88.6,22.4,9.3,0.65,31.4,68,PM10
+2022-05-01,Maharashtra,West,Mumbai,Summer,42.6,34.2,47.5,73,20.3,11.2,0.67,35.6,77,PM10
+2022-06-01,Maharashtra,West,Mumbai,Monsoon,92.8,31.9,42.8,67.8,18.4,8.4,0.7,26.3,43,PM10
+2022-07-01,Maharashtra,West,Mumbai,Monsoon,132.3,28.6,31.2,59.1,14.1,10.3,0.58,22.1,38,PM10
+2022-08-01,Maharashtra,West,Mumbai,Monsoon,105.8,26.9,34.9,75.6,22.1,8.7,0.42,21.2,43,PM10
+2022-09-01,Maharashtra,West,Mumbai,Monsoon,104.8,32.9,33.5,63.1,16.9,8.7,0.58,24.7,47,PM10
+2022-10-01,Maharashtra,West,Mumbai,Post-Monsoon,36.4,31,49.9,76.5,22.9,9.6,0.67,27.8,52,PM10
+2022-11-01,Maharashtra,West,Mumbai,Post-Monsoon,47,26.2,55.5,85.2,28.4,11,0.86,25.1,69,PM10
+2022-12-01,Maharashtra,West,Mumbai,Winter,18,25.1,55.1,105.1,23.8,10,0.8,26.5,92,PM10
+2023-01-01,Maharashtra,West,Mumbai,Winter,39.5,23.8,63.4,116.5,24.8,14.7,0.77,26.1,105,PM10
+2023-02-01,Maharashtra,West,Mumbai,Winter,21.6,24.2,47.3,94.1,25.4,9.4,0.81,23.5,81,PM10
+2023-03-01,Maharashtra,West,Mumbai,Summer,26.4,29.4,51,100.8,25.2,6.5,0.71,27.6,69,PM10
+2023-04-01,Maharashtra,West,Mumbai,Summer,37.2,30.7,41.2,71.3,27.9,6.3,0.66,28,46,PM10
+2023-05-01,Maharashtra,West,Mumbai,Summer,41.5,33.6,39.1,99.6,25.2,10.4,0.72,29.4,66,PM10
+2023-06-01,Maharashtra,West,Mumbai,Monsoon,100.3,33.5,33.8,67.1,19.9,8.2,0.62,24.7,45,PM10
+2023-07-01,Maharashtra,West,Mumbai,Monsoon,112,29.7,36.4,61.7,19.3,7.2,0.44,25.1,35,PM10
+2023-08-01,Maharashtra,West,Mumbai,Monsoon,120.6,29.5,39.4,61.6,13.6,10.3,0.61,20.1,45,PM10
+2023-09-01,Maharashtra,West,Mumbai,Monsoon,87.8,30.8,37.1,76.3,22.4,10.9,0.59,24.4,50,PM10
+2023-10-01,Maharashtra,West,Mumbai,Post-Monsoon,26,29.1,47.3,83.7,20.4,9.2,0.64,22.7,58,PM10
+2023-11-01,Maharashtra,West,Mumbai,Post-Monsoon,18.8,27,52.9,108.3,24.5,7.4,0.68,24.1,71,PM10
+2023-12-01,Maharashtra,West,Mumbai,Winter,25.4,24.7,63.5,100.6,25.1,6.8,0.81,20.5,93,PM10
+2024-01-01,Maharashtra,West,Mumbai,Winter,17.5,18.4,59.4,101.4,29,12,0.72,27.1,94,PM10
+2024-02-01,Maharashtra,West,Mumbai,Winter,19.4,25.8,57.1,87.6,25.7,10.3,0.7,25,83,PM10
+2024-03-01,Maharashtra,West,Mumbai,Summer,13.4,29,49.1,98.1,22.1,12.2,0.73,24.8,62,PM10
+2024-04-01,Maharashtra,West,Mumbai,Summer,18.2,32,56.5,79.1,20.7,9.2,0.76,26.5,64,PM10
+2024-05-01,Maharashtra,West,Mumbai,Summer,58.7,32.7,46,94.2,23.9,7.7,0.6,32,64,PM10
+2024-06-01,Maharashtra,West,Mumbai,Monsoon,102.3,33.6,32.7,75.7,17.7,7.1,0.64,28.9,39,PM10
+2024-07-01,Maharashtra,West,Mumbai,Monsoon,115.9,30.5,28,62.4,21.8,6.6,0.58,24.1,36,PM10
+2024-08-01,Maharashtra,West,Mumbai,Monsoon,134.2,31.6,36.8,59.7,15.6,4.3,0.52,21.8,35,PM10
+2024-09-01,Maharashtra,West,Mumbai,Monsoon,104.6,27.6,38.6,71,17.9,9.3,0.61,26.5,36,PM10
+2024-10-01,Maharashtra,West,Mumbai,Post-Monsoon,33.5,28.7,39.2,79.5,17.5,10.3,0.65,19.8,54,PM10
+2024-11-01,Maharashtra,West,Mumbai,Post-Monsoon,4.1,26.3,56.9,108.9,31.8,11.7,0.65,24,74,PM10
+2024-12-01,Maharashtra,West,Mumbai,Winter,4.2,25.5,58.7,100.5,27,8.8,0.81,25.1,95,PM10
+2025-01-01,Maharashtra,West,Mumbai,Winter,21.9,24.3,57,93.8,26.3,8.9,0.68,23.9,89,PM10
+2025-02-01,Maharashtra,West,Mumbai,Winter,4,25.7,61.1,91.6,25.7,6.3,0.85,26.3,91,PM10
+2025-03-01,Maharashtra,West,Mumbai,Summer,4,30.2,48.5,95,21.2,9,0.58,30.2,73,PM10
+2025-04-01,Maharashtra,West,Mumbai,Summer,20.1,32.1,43.6,74.9,23.9,10.2,0.69,30,62,PM10
+2025-05-01,Maharashtra,West,Mumbai,Summer,26,34.2,47.2,82,20.5,10.2,0.63,32,45,PM10
+2025-06-01,Maharashtra,West,Mumbai,Monsoon,100.2,32.3,39.8,65.9,22.2,7.4,0.58,27.4,39,PM10
+2025-07-01,Maharashtra,West,Mumbai,Monsoon,117,31.5,35.5,71.9,19.9,4,0.57,24.7,39,PM10
+2025-08-01,Maharashtra,West,Mumbai,Monsoon,104.5,30.9,29.1,73.6,13.7,7.2,0.61,22.5,35,PM10
+2025-09-01,Maharashtra,West,Mumbai,Monsoon,88.2,29.6,33.8,71.4,20,8.6,0.61,20.5,35,PM10
+2025-10-01,Maharashtra,West,Mumbai,Post-Monsoon,41.9,29.2,55.3,83.6,22.8,9.9,0.55,26.9,67,PM10
+2025-11-01,Maharashtra,West,Mumbai,Post-Monsoon,26.1,26.5,49.4,90.3,25.3,11.6,0.78,25.2,74,PM10
+2025-12-01,Maharashtra,West,Mumbai,Winter,22.2,24,57.7,96.6,28.4,10.5,0.75,25,97,PM10
+2020-01-01,Manipur,Northeast,Imphal,Winter,29.1,15.3,30.4,64.4,14.1,7.6,0.43,18.6,49,PM10
+2020-02-01,Manipur,Northeast,Imphal,Winter,15.7,17.5,29.7,52.1,10.2,7.2,0.45,25,59,PM10
+2020-03-01,Manipur,Northeast,Imphal,Summer,25,21.9,22.5,52.9,7.9,6.3,0.35,21.3,35,PM10
+2020-04-01,Manipur,Northeast,Imphal,Summer,40.4,24.3,22.3,50,14.4,2.8,0.38,25.1,35,PM10
+2020-05-01,Manipur,Northeast,Imphal,Summer,57.1,24.4,35.7,46,9.7,6.9,0.38,27.6,39,PM10
+2020-06-01,Manipur,Northeast,Imphal,Monsoon,147.8,24.2,28.1,45.2,6.5,2.7,0.39,23.3,35,PM10
+2020-07-01,Manipur,Northeast,Imphal,Monsoon,196,21.9,19.2,41.5,10.1,5.7,0.39,19.1,35,PM10
+2020-08-01,Manipur,Northeast,Imphal,Monsoon,178,21.2,25.3,26.5,6,4,0.37,15.9,35,PM10
+2020-09-01,Manipur,Northeast,Imphal,Monsoon,150.7,22.1,29.7,43.6,8.2,2.7,0.46,15.3,35,PM10
+2020-10-01,Manipur,Northeast,Imphal,Post-Monsoon,68,20.5,28.9,56,13.3,5.9,0.38,19.6,35,PM10
+2020-11-01,Manipur,Northeast,Imphal,Post-Monsoon,30.4,20.2,36.4,55.5,14.7,4.2,0.36,19.5,35,PM10
+2020-12-01,Manipur,Northeast,Imphal,Winter,19.9,17.2,39.3,66.4,17,4,0.45,16.8,45,PM10
+2021-01-01,Manipur,Northeast,Imphal,Winter,28.4,16.1,37.4,56.8,11.4,5,0.48,16.5,65,PM10
+2021-02-01,Manipur,Northeast,Imphal,Winter,38.5,16.7,28.9,71.7,14,5.9,0.5,23.4,55,PM10
+2021-03-01,Manipur,Northeast,Imphal,Summer,4,21.3,30.7,50.2,14.6,4,0.48,24.8,35,PM10
+2021-04-01,Manipur,Northeast,Imphal,Summer,26.4,24.9,19.6,51.1,10.3,2.7,0.45,25.7,35,PM10
+2021-05-01,Manipur,Northeast,Imphal,Summer,60.6,26.9,31.1,27.1,10.5,2.3,0.42,25.8,35,PM2.5
+2021-06-01,Manipur,Northeast,Imphal,Monsoon,169.7,24.1,15.1,47,6.1,5.1,0.28,22.5,35,PM10
+2021-07-01,Manipur,Northeast,Imphal,Monsoon,196.8,21.9,22.5,28.3,15.4,4,0.29,18.7,35,PM10
+2021-08-01,Manipur,Northeast,Imphal,Monsoon,189.9,22,28.4,39.4,9,2,0.34,20.7,35,PM10
+2021-09-01,Manipur,Northeast,Imphal,Monsoon,140.1,23.4,25.6,41.6,6,8.3,0.44,14,35,PM10
+2021-10-01,Manipur,Northeast,Imphal,Post-Monsoon,58.7,21.7,22,47.5,19.5,5.5,0.41,23.6,35,PM10
+2021-11-01,Manipur,Northeast,Imphal,Post-Monsoon,31.1,22.4,29.5,52.7,12.9,5.5,0.4,19.2,44,PM10
+2021-12-01,Manipur,Northeast,Imphal,Winter,8.5,15.3,33.4,67.2,13.2,4.2,0.43,19.4,57,PM10
+2022-01-01,Manipur,Northeast,Imphal,Winter,34.5,15,37.2,62.2,15.1,5.3,0.45,19.8,50,PM10
+2022-02-01,Manipur,Northeast,Imphal,Winter,19.3,19,30.7,47.7,13.1,6.6,0.42,22.1,41,PM10
+2022-03-01,Manipur,Northeast,Imphal,Summer,34.4,21.6,21.4,54.8,10.8,2.5,0.49,19,35,PM10
+2022-04-01,Manipur,Northeast,Imphal,Summer,33.4,24.9,37.2,36.9,10,4,0.42,25.8,35,PM2.5
+2022-05-01,Manipur,Northeast,Imphal,Summer,58.1,26.3,26.8,38.1,8.5,4.6,0.4,22.4,35,PM10
+2022-06-01,Manipur,Northeast,Imphal,Monsoon,161,24,20.4,24.6,8.3,4.2,0.3,21.4,35,PM10
+2022-07-01,Manipur,Northeast,Imphal,Monsoon,200.4,22.5,18.9,43.6,9.6,4.6,0.35,19.9,35,PM10
+2022-08-01,Manipur,Northeast,Imphal,Monsoon,181.6,21.7,31.1,23.6,8.8,3.9,0.4,17.4,35,PM2.5
+2022-09-01,Manipur,Northeast,Imphal,Monsoon,136.6,22.9,22.3,43.9,9,2.8,0.29,18.3,35,PM10
+2022-10-01,Manipur,Northeast,Imphal,Post-Monsoon,64.3,24.6,21.3,49.7,9.3,4.5,0.35,18.8,35,PM10
+2022-11-01,Manipur,Northeast,Imphal,Post-Monsoon,33.2,20.7,37.1,61.2,11.6,8.2,0.45,20.7,35,PM10
+2022-12-01,Manipur,Northeast,Imphal,Winter,42.9,17.8,31.8,53.7,13.4,4.6,0.38,19.4,53,PM10
+2023-01-01,Manipur,Northeast,Imphal,Winter,30.1,17.8,34.1,50.4,12.6,3.9,0.43,17.1,51,PM10
+2023-02-01,Manipur,Northeast,Imphal,Winter,17.7,18.5,35.2,49.6,10.3,5.1,0.45,23.9,49,PM10
+2023-03-01,Manipur,Northeast,Imphal,Summer,18.1,22.3,21.9,60.9,10.9,2.5,0.46,22.4,35,PM10
+2023-04-01,Manipur,Northeast,Imphal,Summer,30.9,25.1,23.7,42.1,12.7,2,0.4,21.1,35,PM10
+2023-05-01,Manipur,Northeast,Imphal,Summer,64.9,28.6,18.7,47.6,10.4,6.9,0.44,24.8,35,PM10
+2023-06-01,Manipur,Northeast,Imphal,Monsoon,151.3,27.6,24.1,42.7,6,5.1,0.48,20.4,35,PM10
+2023-07-01,Manipur,Northeast,Imphal,Monsoon,183.8,23.8,20.4,38.1,9.6,3.2,0.35,18.2,35,PM10
+2023-08-01,Manipur,Northeast,Imphal,Monsoon,175.5,21.6,29.4,42.2,6,4.1,0.34,17.4,35,PM10
+2023-09-01,Manipur,Northeast,Imphal,Monsoon,159.3,23.9,25,44.2,6.2,3.5,0.42,18.4,35,PM10
+2023-10-01,Manipur,Northeast,Imphal,Post-Monsoon,62.7,21.8,24.9,55.1,15.4,7.5,0.33,21,35,PM10
+2023-11-01,Manipur,Northeast,Imphal,Post-Monsoon,10.8,17.9,35.7,50.7,14.9,5.7,0.5,19.6,35,PM10
+2023-12-01,Manipur,Northeast,Imphal,Winter,12,13.8,36.3,68.3,11.7,5.8,0.53,20.3,67,PM10
+2024-01-01,Manipur,Northeast,Imphal,Winter,40.1,13.7,35,47.6,18.3,4,0.4,19.3,47,PM10
+2024-02-01,Manipur,Northeast,Imphal,Winter,26.4,17.2,31.8,45.6,12.5,5.3,0.4,21.1,57,PM10
+2024-03-01,Manipur,Northeast,Imphal,Summer,16.3,19.3,23.4,51.2,9.6,5.5,0.37,25,35,PM10
+2024-04-01,Manipur,Northeast,Imphal,Summer,35.8,26.1,25.1,64.7,6.5,5.3,0.3,25.4,35,PM10
+2024-05-01,Manipur,Northeast,Imphal,Summer,62.6,29.3,29.2,31.1,15.1,3.2,0.43,23.7,35,PM10
+2024-06-01,Manipur,Northeast,Imphal,Monsoon,167.9,25.7,20.8,30.3,9.5,2,0.33,24,35,PM10
+2024-07-01,Manipur,Northeast,Imphal,Monsoon,188.4,22.6,23.4,22,8.7,4.1,0.21,14.6,35,PM2.5
+2024-08-01,Manipur,Northeast,Imphal,Monsoon,176.9,21.3,22,25.3,11.8,7.6,0.28,18.9,35,PM10
+2024-09-01,Manipur,Northeast,Imphal,Monsoon,156.6,22.5,21.8,43.1,9.5,5.2,0.37,17.6,35,PM10
+2024-10-01,Manipur,Northeast,Imphal,Post-Monsoon,50.1,20.5,23.7,44.9,7.6,5.1,0.45,25.1,35,PM10
+2024-11-01,Manipur,Northeast,Imphal,Post-Monsoon,35.8,20.2,31.8,51.8,10.6,4.3,0.43,16,35,PM10
+2024-12-01,Manipur,Northeast,Imphal,Winter,30.8,17.4,33.5,47.9,17.5,8.8,0.42,20.6,46,PM10
+2025-01-01,Manipur,Northeast,Imphal,Winter,25.5,17.1,33.2,60.7,12.5,7.4,0.43,18.1,54,PM10
+2025-02-01,Manipur,Northeast,Imphal,Winter,8.9,17,28.5,56.6,9.9,7.6,0.43,16.7,61,PM10
+2025-03-01,Manipur,Northeast,Imphal,Summer,35.1,20.8,28.1,60.9,9.3,6,0.37,21.3,35,PM10
+2025-04-01,Manipur,Northeast,Imphal,Summer,42.4,26.1,17.9,41.9,11.5,3.3,0.41,23,35,PM10
+2025-05-01,Manipur,Northeast,Imphal,Summer,42.4,28.7,23.4,44.3,6.3,3.6,0.4,23.6,40,PM10
+2025-06-01,Manipur,Northeast,Imphal,Monsoon,152.4,25.6,21.7,46.1,10.1,4.5,0.44,24.1,35,PM10
+2025-07-01,Manipur,Northeast,Imphal,Monsoon,193.7,22.1,15.3,22,6.9,2.7,0.42,16.8,35,PM10
+2025-08-01,Manipur,Northeast,Imphal,Monsoon,192.2,23,13,23.5,8.9,2,0.3,17.6,35,PM10
+2025-09-01,Manipur,Northeast,Imphal,Monsoon,144.7,22.7,25.3,37.2,11.3,5.7,0.33,23,35,PM10
+2025-10-01,Manipur,Northeast,Imphal,Post-Monsoon,61.4,21.4,25.1,37.8,10.8,3.2,0.34,21.5,35,PM10
+2025-11-01,Manipur,Northeast,Imphal,Post-Monsoon,35.9,21,29.7,62.4,16.6,4.5,0.44,21.9,35,PM10
+2025-12-01,Manipur,Northeast,Imphal,Winter,38.1,18.6,19.4,62.9,12.9,4.4,0.52,18.4,55,PM10
+2020-01-01,Meghalaya,Northeast,Shillong,Winter,57.7,12.8,22.1,43.7,12.9,7.3,0.46,17.9,50,PM10
+2020-02-01,Meghalaya,Northeast,Shillong,Winter,28,15.5,28.5,38.2,11.1,3.8,0.38,18.8,50,PM10
+2020-03-01,Meghalaya,Northeast,Shillong,Summer,41.8,19.4,21.3,52.9,8.1,3.7,0.25,19,35,PM10
+2020-04-01,Meghalaya,Northeast,Shillong,Summer,69.1,23.3,12,37.5,16.8,2.6,0.29,21.7,35,PM10
+2020-05-01,Meghalaya,Northeast,Shillong,Summer,97.8,25.8,20,44,6,2,0.3,21.8,35,PM10
+2020-06-01,Meghalaya,Northeast,Shillong,Monsoon,253.1,24.2,12,28.4,6,6.7,0.26,19.2,35,PM10
+2020-07-01,Meghalaya,Northeast,Shillong,Monsoon,308,21.2,14.4,27,6.1,6.5,0.2,16.6,35,PM10
+2020-08-01,Meghalaya,Northeast,Shillong,Monsoon,295.1,20.5,21,22,10,4.2,0.31,16.8,35,PM10
+2020-09-01,Meghalaya,Northeast,Shillong,Monsoon,223.9,23.8,16.6,39.1,10.3,2,0.42,19.2,35,PM10
+2020-10-01,Meghalaya,Northeast,Shillong,Post-Monsoon,91.1,20.9,26.2,54.8,6.6,2,0.33,18.2,35,PM10
+2020-11-01,Meghalaya,Northeast,Shillong,Post-Monsoon,53.3,16.4,24.9,40.5,11.3,5.4,0.42,21.3,35,PM10
+2020-12-01,Meghalaya,Northeast,Shillong,Winter,46.4,17,35.3,59.3,10.7,4,0.43,15.4,55,PM10
+2021-01-01,Meghalaya,Northeast,Shillong,Winter,28.3,14.2,23.4,49.8,10.1,5.1,0.42,19.9,59,PM10
+2021-02-01,Meghalaya,Northeast,Shillong,Winter,35.2,14.9,17.6,38.7,6.1,4.1,0.27,19.4,39,PM10
+2021-03-01,Meghalaya,Northeast,Shillong,Summer,46.2,18.2,21.3,42.1,11.6,6.2,0.31,22.8,35,PM10
+2021-04-01,Meghalaya,Northeast,Shillong,Summer,50.2,24.3,20.5,39.4,9.9,4.1,0.36,22.1,35,PM10
+2021-05-01,Meghalaya,Northeast,Shillong,Summer,78,26,17.7,41.9,10.7,4.5,0.47,24.6,35,PM10
+2021-06-01,Meghalaya,Northeast,Shillong,Monsoon,238.4,22.5,14.8,39.2,7,2,0.3,18.4,35,PM10
+2021-07-01,Meghalaya,Northeast,Shillong,Monsoon,309.2,22.9,20.7,22,6,2.6,0.26,14.6,35,PM10
+2021-08-01,Meghalaya,Northeast,Shillong,Monsoon,317.2,19.6,22.8,22.8,6,4.7,0.26,14.1,35,PM2.5
+2021-09-01,Meghalaya,Northeast,Shillong,Monsoon,219.5,19.9,14.4,22,6,3.5,0.32,16.4,35,PM10
+2021-10-01,Meghalaya,Northeast,Shillong,Post-Monsoon,95.6,20.8,15.9,41.1,12.4,2.6,0.35,18.2,35,PM10
+2021-11-01,Meghalaya,Northeast,Shillong,Post-Monsoon,69.9,20.2,25.4,46.4,9,3.9,0.45,15.7,42,PM10
+2021-12-01,Meghalaya,Northeast,Shillong,Winter,48.5,14.8,34.3,54.2,9.2,5.7,0.36,16.7,42,PM10
+2022-01-01,Meghalaya,Northeast,Shillong,Winter,46.2,16.1,26.3,43.3,15,4.1,0.39,21.1,56,PM10
+2022-02-01,Meghalaya,Northeast,Shillong,Winter,38.8,17.6,24.2,44.3,8.8,2.4,0.4,19.4,41,PM10
+2022-03-01,Meghalaya,Northeast,Shillong,Summer,31.5,19.8,22.4,25.6,7.5,3.5,0.27,19.1,35,PM10
+2022-04-01,Meghalaya,Northeast,Shillong,Summer,63.3,22.9,20.3,45.3,13.6,2,0.36,23.3,35,PM10
+2022-05-01,Meghalaya,Northeast,Shillong,Summer,89,25.8,16,46,12.3,2.6,0.45,23.2,35,PM10
+2022-06-01,Meghalaya,Northeast,Shillong,Monsoon,243.4,24.9,13.8,22,9.8,4.4,0.24,22.3,35,O3
+2022-07-01,Meghalaya,Northeast,Shillong,Monsoon,331.3,22.5,13.6,31.6,6.6,3.6,0.34,18.5,35,PM10
+2022-08-01,Meghalaya,Northeast,Shillong,Monsoon,273,19.7,17.7,23.4,6,2.5,0.3,16.1,35,PM10
+2022-09-01,Meghalaya,Northeast,Shillong,Monsoon,228.9,23.2,15.5,35.6,15.1,2.7,0.33,14.3,35,PM10
+2022-10-01,Meghalaya,Northeast,Shillong,Post-Monsoon,88.2,20.2,18.9,33.3,8.6,4,0.34,21.6,35,PM10
+2022-11-01,Meghalaya,Northeast,Shillong,Post-Monsoon,64.5,17.9,24.7,38.4,12.6,3.7,0.34,14.8,35,PM10
+2022-12-01,Meghalaya,Northeast,Shillong,Winter,35.3,17.2,31.1,39.8,15.4,4.1,0.42,15.5,48,PM10
+2023-01-01,Meghalaya,Northeast,Shillong,Winter,40.2,12.7,27.9,39.6,12.9,4.4,0.4,18.4,43,PM10
+2023-02-01,Meghalaya,Northeast,Shillong,Winter,34.7,14.5,21.2,39.3,11,3,0.29,18.3,46,PM10
+2023-03-01,Meghalaya,Northeast,Shillong,Summer,27,18.3,20.7,28.3,8.6,2.2,0.45,17.9,35,PM10
+2023-04-01,Meghalaya,Northeast,Shillong,Summer,51.3,22.1,19.1,38.7,9.8,2,0.34,24,35,PM10
+2023-05-01,Meghalaya,Northeast,Shillong,Summer,97.2,25.9,14.4,22,9.3,6.4,0.33,24.8,35,O3
+2023-06-01,Meghalaya,Northeast,Shillong,Monsoon,243,24.8,15.9,40.9,10.2,3.3,0.29,20.9,35,PM10
+2023-07-01,Meghalaya,Northeast,Shillong,Monsoon,306.3,19.6,18.9,22,12.7,3.8,0.23,18,35,PM10
+2023-08-01,Meghalaya,Northeast,Shillong,Monsoon,290.2,20.9,12,25.3,6,5.2,0.27,13.1,35,PM10
+2023-09-01,Meghalaya,Northeast,Shillong,Monsoon,209.4,20.1,16.4,38.1,6,2,0.2,21.3,35,PM10
+2023-10-01,Meghalaya,Northeast,Shillong,Post-Monsoon,98.1,19,22.4,29.3,6,2.9,0.38,18.1,35,PM10
+2023-11-01,Meghalaya,Northeast,Shillong,Post-Monsoon,61.3,17.8,23.9,41.1,13.9,4.8,0.4,21,35,PM10
+2023-12-01,Meghalaya,Northeast,Shillong,Winter,50.8,13.7,27.9,49.8,7.1,3.5,0.35,13.6,43,PM10
+2024-01-01,Meghalaya,Northeast,Shillong,Winter,40.8,13.3,17.2,44.7,10,3.5,0.33,20.6,35,PM10
+2024-02-01,Meghalaya,Northeast,Shillong,Winter,40.7,18.4,19.6,32.7,11.5,6,0.38,20.3,41,PM10
+2024-03-01,Meghalaya,Northeast,Shillong,Summer,42.1,21.7,13.5,34.5,10,2.8,0.37,18.3,35,PM10
+2024-04-01,Meghalaya,Northeast,Shillong,Summer,60.3,20.9,19,40.6,11.7,6.5,0.29,25.2,35,PM10
+2024-05-01,Meghalaya,Northeast,Shillong,Summer,102.3,25.1,21.6,23.4,8.8,2.5,0.23,19.6,35,PM10
+2024-06-01,Meghalaya,Northeast,Shillong,Monsoon,257.7,22.4,19.5,46.4,6,5.6,0.37,21.7,35,PM10
+2024-07-01,Meghalaya,Northeast,Shillong,Monsoon,322.1,22.5,12,28.1,13.1,2.7,0.3,19.3,35,PM10
+2024-08-01,Meghalaya,Northeast,Shillong,Monsoon,291.2,20,16.3,32.4,6,2,0.22,15.3,35,PM10
+2024-09-01,Meghalaya,Northeast,Shillong,Monsoon,214.5,20.5,16.5,41.8,6,4.4,0.41,18.7,35,PM10
+2024-10-01,Meghalaya,Northeast,Shillong,Post-Monsoon,99,18.4,14,22,10.8,3.8,0.25,19.4,35,PM10
+2024-11-01,Meghalaya,Northeast,Shillong,Post-Monsoon,68.5,21.3,23.6,29.7,11.8,5.3,0.23,16,35,PM10
+2024-12-01,Meghalaya,Northeast,Shillong,Winter,50.9,16.4,29.2,40.7,12,3.7,0.4,17.2,42,PM10
+2025-01-01,Meghalaya,Northeast,Shillong,Winter,60.6,14.7,16.1,35,11.9,7.1,0.32,18.3,37,PM10
+2025-02-01,Meghalaya,Northeast,Shillong,Winter,37.9,16,29.2,36.1,11.2,3.1,0.32,19.2,44,PM10
+2025-03-01,Meghalaya,Northeast,Shillong,Summer,37.4,21.7,20.3,37.7,7.8,2.7,0.23,22.1,35,PM10
+2025-04-01,Meghalaya,Northeast,Shillong,Summer,59.1,23.8,18.1,30.1,9.1,5.8,0.31,23.2,35,PM10
+2025-05-01,Meghalaya,Northeast,Shillong,Summer,79.6,26.9,19.8,27.6,7.8,7,0.42,23.2,35,PM10
+2025-06-01,Meghalaya,Northeast,Shillong,Monsoon,235.7,24,16.1,33.7,8.4,4.4,0.28,18.8,35,PM10
+2025-07-01,Meghalaya,Northeast,Shillong,Monsoon,319.1,19.5,15.3,22.1,8.2,2,0.22,15.2,35,PM10
+2025-08-01,Meghalaya,Northeast,Shillong,Monsoon,273.3,17.8,18,26.8,9,2,0.28,13.8,35,PM10
+2025-09-01,Meghalaya,Northeast,Shillong,Monsoon,247,21.2,12,22,9.5,2,0.33,16.7,35,PM10
+2025-10-01,Meghalaya,Northeast,Shillong,Post-Monsoon,102.6,21.1,23.7,39.9,7.1,3.8,0.32,17,35,PM10
+2025-11-01,Meghalaya,Northeast,Shillong,Post-Monsoon,54.4,18.3,21.6,48.8,11.2,5.9,0.3,17.8,35,PM10
+2025-12-01,Meghalaya,Northeast,Shillong,Winter,27.7,14.5,20.5,51.6,15.5,6,0.42,18.3,55,PM10
+2020-01-01,Mizoram,Northeast,Aizawl,Winter,26.3,14,28.4,40.9,9.4,3.6,0.39,17.8,58,PM10
+2020-02-01,Mizoram,Northeast,Aizawl,Winter,32.3,16.8,18.1,38.3,11.1,5.3,0.29,16.7,37,PM10
+2020-03-01,Mizoram,Northeast,Aizawl,Summer,43.5,22.3,20.6,50.7,12.2,3.1,0.29,17.8,35,PM10
+2020-04-01,Mizoram,Northeast,Aizawl,Summer,51.7,24.3,22.6,22,10.8,5.1,0.31,19.4,35,PM2.5
+2020-05-01,Mizoram,Northeast,Aizawl,Summer,83.8,21.8,17.5,43.3,11,2.3,0.26,25.4,35,PM10
+2020-06-01,Mizoram,Northeast,Aizawl,Monsoon,206.6,22.4,14.5,28.4,6.5,5.8,0.23,16,35,PM10
+2020-07-01,Mizoram,Northeast,Aizawl,Monsoon,258.9,20.7,20.9,31.5,6,6.3,0.26,18.9,35,PM10
+2020-08-01,Mizoram,Northeast,Aizawl,Monsoon,259.1,22.2,21.6,26.2,8,7.2,0.36,14.6,35,PM10
+2020-09-01,Mizoram,Northeast,Aizawl,Monsoon,183.1,22,17,29.3,7.2,2.6,0.31,19.6,35,PM10
+2020-10-01,Mizoram,Northeast,Aizawl,Post-Monsoon,84.4,21.1,25.8,42.5,9.1,4.2,0.28,19.1,35,PM10
+2020-11-01,Mizoram,Northeast,Aizawl,Post-Monsoon,40.6,16.6,17.9,55,16.5,4.3,0.4,16.2,35,PM10
+2020-12-01,Mizoram,Northeast,Aizawl,Winter,29.7,15.7,29,52.6,16.4,6.3,0.43,15.8,50,PM10
+2021-01-01,Mizoram,Northeast,Aizawl,Winter,49.3,16.5,27.7,41.9,7,5.1,0.4,16.7,47,PM10
+2021-02-01,Mizoram,Northeast,Aizawl,Winter,33.6,16.8,23.4,44.4,13.6,4.3,0.53,17.4,40,PM10
+2021-03-01,Mizoram,Northeast,Aizawl,Summer,22.9,20.7,23.9,53.8,14.2,3.5,0.27,20.1,35,PM10
+2021-04-01,Mizoram,Northeast,Aizawl,Summer,47.1,24.6,23.4,43,7.2,4.9,0.31,23.5,35,PM10
+2021-05-01,Mizoram,Northeast,Aizawl,Summer,73.4,24.1,24,22,8.1,2,0.33,21.7,35,PM2.5
+2021-06-01,Mizoram,Northeast,Aizawl,Monsoon,215.1,25,12,22,6.4,2.3,0.26,18.5,35,PM10
+2021-07-01,Mizoram,Northeast,Aizawl,Monsoon,277,21.9,12,36.6,8.4,3.5,0.2,15.2,35,PM10
+2021-08-01,Mizoram,Northeast,Aizawl,Monsoon,259.5,20.1,12.6,22,6,3.4,0.32,13.9,35,PM10
+2021-09-01,Mizoram,Northeast,Aizawl,Monsoon,184.4,21.7,19.9,22,10.2,4.7,0.22,17.5,35,PM10
+2021-10-01,Mizoram,Northeast,Aizawl,Post-Monsoon,96,22.3,15.5,44.8,12.4,3.9,0.4,20.2,35,PM10
+2021-11-01,Mizoram,Northeast,Aizawl,Post-Monsoon,29.6,18.2,23.7,33,10.8,3.7,0.37,18.1,35,PM10
+2021-12-01,Mizoram,Northeast,Aizawl,Winter,45.5,14.9,23.9,42.6,10.3,3.5,0.36,17.7,38,PM10
+2022-01-01,Mizoram,Northeast,Aizawl,Winter,30.5,15.2,32.5,55.4,13.1,2.4,0.37,17.7,41,PM10
+2022-02-01,Mizoram,Northeast,Aizawl,Winter,41.1,18.8,22.1,22,11.2,2.9,0.33,17.5,39,PM2.5
+2022-03-01,Mizoram,Northeast,Aizawl,Summer,39.2,22.7,24.2,33.3,9.6,5,0.26,22.6,35,PM10
+2022-04-01,Mizoram,Northeast,Aizawl,Summer,63.1,24.5,17.3,47.1,13.8,4.4,0.32,24.6,35,PM10
+2022-05-01,Mizoram,Northeast,Aizawl,Summer,87.8,25.8,27.1,22,9.9,3.7,0.29,21.1,35,PM2.5
+2022-06-01,Mizoram,Northeast,Aizawl,Monsoon,211.5,25.7,16.9,28.3,6.1,4,0.33,19.3,35,PM10
+2022-07-01,Mizoram,Northeast,Aizawl,Monsoon,253.9,22.8,15.5,28.4,7,3.7,0.39,17,35,PM10
+2022-08-01,Mizoram,Northeast,Aizawl,Monsoon,233.3,22.9,21,27.6,7.6,2.7,0.22,15.9,35,PM10
+2022-09-01,Mizoram,Northeast,Aizawl,Monsoon,190.6,23.2,12,22,7.4,3.4,0.35,13.1,35,PM10
+2022-10-01,Mizoram,Northeast,Aizawl,Post-Monsoon,82.8,20,22.5,26.3,7.5,2,0.31,16.4,35,PM10
+2022-11-01,Mizoram,Northeast,Aizawl,Post-Monsoon,49.9,21.3,15.3,48.1,12.1,2,0.33,18.2,35,PM10
+2022-12-01,Mizoram,Northeast,Aizawl,Winter,33.4,15.6,18.6,59.5,11.1,4.8,0.27,11.8,40,PM10
+2023-01-01,Mizoram,Northeast,Aizawl,Winter,13.1,17.8,21.7,35,11.9,2.2,0.31,19.8,38,PM10
+2023-02-01,Mizoram,Northeast,Aizawl,Winter,59.1,17.2,24.6,36.7,8.1,4.7,0.37,15.4,42,PM10
+2023-03-01,Mizoram,Northeast,Aizawl,Summer,35,22.5,19.7,41,6,5,0.34,23.8,35,PM10
+2023-04-01,Mizoram,Northeast,Aizawl,Summer,48.5,23.6,24.5,34.6,8.5,2.2,0.26,25.7,35,PM10
+2023-05-01,Mizoram,Northeast,Aizawl,Summer,92.2,25.4,18.8,23.5,6,4.6,0.31,19,35,PM10
+2023-06-01,Mizoram,Northeast,Aizawl,Monsoon,216.9,25.7,17.7,31.8,6,6.6,0.29,14.6,35,PM10
+2023-07-01,Mizoram,Northeast,Aizawl,Monsoon,250.5,21.7,12,35,6,2,0.27,19.4,35,PM10
+2023-08-01,Mizoram,Northeast,Aizawl,Monsoon,232.2,20.6,12,22,7.2,4.9,0.31,17.1,35,PM10
+2023-09-01,Mizoram,Northeast,Aizawl,Monsoon,182.5,22,22.2,33.2,6,4,0.26,15.1,35,PM10
+2023-10-01,Mizoram,Northeast,Aizawl,Post-Monsoon,59,20.3,27.1,38.7,6.1,3.7,0.33,19.2,35,PM10
+2023-11-01,Mizoram,Northeast,Aizawl,Post-Monsoon,37.3,19.3,31,43.1,7.2,3.3,0.27,14.4,35,PM10
+2023-12-01,Mizoram,Northeast,Aizawl,Winter,46.1,17.9,22.1,31.6,9.1,5.1,0.36,21.2,41,PM10
+2024-01-01,Mizoram,Northeast,Aizawl,Winter,33.9,15.5,28.6,23.8,11.4,3.2,0.21,15.9,35,PM2.5
+2024-02-01,Mizoram,Northeast,Aizawl,Winter,25.7,17.3,19.5,42,11,6.9,0.31,18.6,43,PM10
+2024-03-01,Mizoram,Northeast,Aizawl,Summer,31.9,21.5,21.5,40.7,10.4,2.8,0.25,18,35,PM10
+2024-04-01,Mizoram,Northeast,Aizawl,Summer,43.1,24.7,12,40.1,8.7,4.9,0.2,20.9,35,PM10
+2024-05-01,Mizoram,Northeast,Aizawl,Summer,69.5,25.5,24.3,33.1,7.2,3.5,0.3,17.9,35,PM10
+2024-06-01,Mizoram,Northeast,Aizawl,Monsoon,201.3,23.4,17.1,29.1,6.2,3.3,0.34,16.3,35,PM10
+2024-07-01,Mizoram,Northeast,Aizawl,Monsoon,267.3,23.2,16,25.3,9.5,2,0.37,15,35,PM10
+2024-08-01,Mizoram,Northeast,Aizawl,Monsoon,244,21.2,12,22,8.1,3.4,0.21,16.9,35,PM10
+2024-09-01,Mizoram,Northeast,Aizawl,Monsoon,171.5,22.9,22.5,22.8,6,2.6,0.2,17.3,35,PM10
+2024-10-01,Mizoram,Northeast,Aizawl,Post-Monsoon,86.3,20.8,26.3,40.8,10.6,3.9,0.34,15.8,35,PM10
+2024-11-01,Mizoram,Northeast,Aizawl,Post-Monsoon,41.9,19.5,19.2,43,12.8,5.3,0.27,17.6,35,PM10
+2024-12-01,Mizoram,Northeast,Aizawl,Winter,40.8,15.1,32,53,13.7,5.3,0.42,14.3,50,PM10
+2025-01-01,Mizoram,Northeast,Aizawl,Winter,45,14.8,18.2,39.8,7,4.9,0.38,13.5,41,PM10
+2025-02-01,Mizoram,Northeast,Aizawl,Winter,31.7,16.1,20.6,37.9,8.5,2,0.24,17.7,35,PM10
+2025-03-01,Mizoram,Northeast,Aizawl,Summer,34,19.8,21,30.2,8,5.1,0.28,17.6,35,PM10
+2025-04-01,Mizoram,Northeast,Aizawl,Summer,43.9,23.5,19.9,22,9.4,4,0.39,18.9,35,PM10
+2025-05-01,Mizoram,Northeast,Aizawl,Summer,84.4,26.6,18.6,26.4,8.3,3.8,0.28,25.1,35,PM10
+2025-06-01,Mizoram,Northeast,Aizawl,Monsoon,213.1,26.7,20.1,26.9,6,6.4,0.21,17.7,35,PM10
+2025-07-01,Mizoram,Northeast,Aizawl,Monsoon,260.9,21.7,12,32.1,6,3,0.2,17.5,35,PM10
+2025-08-01,Mizoram,Northeast,Aizawl,Monsoon,242.6,20.2,12,48.4,7.2,2,0.34,15.7,35,PM10
+2025-09-01,Mizoram,Northeast,Aizawl,Monsoon,185.5,19.4,14.8,25.8,6,2,0.2,15.3,35,PM10
+2025-10-01,Mizoram,Northeast,Aizawl,Post-Monsoon,72.4,21.2,23.3,36,8.2,2.6,0.37,22.1,35,PM10
+2025-11-01,Mizoram,Northeast,Aizawl,Post-Monsoon,45.5,20.1,19.5,31.6,7.4,5.9,0.22,16,35,PM10
+2025-12-01,Mizoram,Northeast,Aizawl,Winter,43.8,15.6,19.9,49,6,2.6,0.36,15.3,38,PM10
+2020-01-01,Nagaland,Northeast,Kohima,Winter,16.3,10.8,24.9,56.9,12,5.1,0.42,18.3,54,PM10
+2020-02-01,Nagaland,Northeast,Kohima,Winter,44.8,16.8,23.8,42.6,15.8,4.4,0.36,20.1,38,PM10
+2020-03-01,Nagaland,Northeast,Kohima,Summer,34.9,20.7,25,45.7,12.3,2.7,0.35,25,35,PM10
+2020-04-01,Nagaland,Northeast,Kohima,Summer,46.1,25.3,28.6,27.3,13.5,4,0.39,21.6,35,PM2.5
+2020-05-01,Nagaland,Northeast,Kohima,Summer,57.9,25.8,21.1,29.8,11.5,3.3,0.36,25.8,35,PM10
+2020-06-01,Nagaland,Northeast,Kohima,Monsoon,173.3,21.9,19.6,29.7,6,2,0.41,19.7,35,PM10
+2020-07-01,Nagaland,Northeast,Kohima,Monsoon,220.8,21.8,12.3,28.7,6,2.9,0.2,15.4,35,PM10
+2020-08-01,Nagaland,Northeast,Kohima,Monsoon,209.8,19.2,19.7,31.8,7.9,2,0.33,15.6,35,PM10
+2020-09-01,Nagaland,Northeast,Kohima,Monsoon,135.3,20.8,20.7,47.6,11.5,3.9,0.27,17.7,35,PM10
+2020-10-01,Nagaland,Northeast,Kohima,Post-Monsoon,71.8,21.4,30.9,36.3,13.6,4.3,0.37,21.3,35,PM10
+2020-11-01,Nagaland,Northeast,Kohima,Post-Monsoon,57.3,17.8,26,53.8,12.5,2.8,0.46,21.8,35,PM10
+2020-12-01,Nagaland,Northeast,Kohima,Winter,24.3,16,26,54.8,14.4,6.2,0.48,20.3,50,PM10
+2021-01-01,Nagaland,Northeast,Kohima,Winter,33.1,15.2,28.9,59.9,13.5,3.5,0.45,17.3,56,PM10
+2021-02-01,Nagaland,Northeast,Kohima,Winter,30.8,15.6,32,46.4,12.6,3,0.48,17.3,46,PM10
+2021-03-01,Nagaland,Northeast,Kohima,Summer,32.9,20.3,18.6,30.2,10.4,3.7,0.35,21.1,35,PM10
+2021-04-01,Nagaland,Northeast,Kohima,Summer,4,21.3,14.1,45.1,13.1,4.1,0.36,23.4,35,PM10
+2021-05-01,Nagaland,Northeast,Kohima,Summer,54.2,26.3,21.8,36.4,11.3,3.3,0.32,24.3,35,PM10
+2021-06-01,Nagaland,Northeast,Kohima,Monsoon,191.3,25.6,22,26.4,11.7,4.3,0.29,19.7,35,PM10
+2021-07-01,Nagaland,Northeast,Kohima,Monsoon,202.6,20.5,20.4,34.8,9.2,2,0.26,19.8,35,PM10
+2021-08-01,Nagaland,Northeast,Kohima,Monsoon,205.5,21.9,14.5,36.2,10.5,4.2,0.25,17.7,35,PM10
+2021-09-01,Nagaland,Northeast,Kohima,Monsoon,152.5,18.9,17.4,32.2,8.8,2,0.23,20,35,PM10
+2021-10-01,Nagaland,Northeast,Kohima,Post-Monsoon,54.9,20.3,21,40.5,9.5,2.9,0.41,19.4,35,PM10
+2021-11-01,Nagaland,Northeast,Kohima,Post-Monsoon,31.7,17,27.5,59.2,15.5,4.1,0.38,17.6,35,PM10
+2021-12-01,Nagaland,Northeast,Kohima,Winter,28.7,16.4,30.7,42.5,16.3,4,0.46,21.2,57,PM10
+2022-01-01,Nagaland,Northeast,Kohima,Winter,31.6,13,26.2,48.9,12.4,2.3,0.35,15.4,47,PM10
+2022-02-01,Nagaland,Northeast,Kohima,Winter,50,15.9,22.6,42.8,12.8,5.7,0.25,22.8,42,PM10
+2022-03-01,Nagaland,Northeast,Kohima,Summer,37.9,20.6,26.5,41.8,6,2,0.39,19.5,35,PM10
+2022-04-01,Nagaland,Northeast,Kohima,Summer,46.2,22.4,21.9,44.2,10.8,4.8,0.25,22.9,35,PM10
+2022-05-01,Nagaland,Northeast,Kohima,Summer,50.1,26.4,31.5,48.5,6,2.7,0.3,24.7,36,PM10
+2022-06-01,Nagaland,Northeast,Kohima,Monsoon,165.7,23,21.9,39.1,7.3,2.9,0.31,18.5,35,PM10
+2022-07-01,Nagaland,Northeast,Kohima,Monsoon,205.9,20,19.6,22,10.2,2,0.2,16.2,35,PM10
+2022-08-01,Nagaland,Northeast,Kohima,Monsoon,199.3,20.2,16.2,35.5,11.2,4,0.24,20.9,35,PM10
+2022-09-01,Nagaland,Northeast,Kohima,Monsoon,149.1,19.6,18.5,42.4,7.2,5.7,0.2,23,35,PM10
+2022-10-01,Nagaland,Northeast,Kohima,Post-Monsoon,74,18.5,25.8,30.4,10.7,2.4,0.36,21,35,PM10
+2022-11-01,Nagaland,Northeast,Kohima,Post-Monsoon,39.3,17.4,23,41.4,12.4,6,0.4,18.8,35,PM10
+2022-12-01,Nagaland,Northeast,Kohima,Winter,19.6,15.1,37.6,45.9,9.1,4.6,0.38,16.8,53,PM10
+2023-01-01,Nagaland,Northeast,Kohima,Winter,24,16.4,28.2,57.5,12.6,7,0.29,16.3,44,PM10
+2023-02-01,Nagaland,Northeast,Kohima,Winter,4,15.9,28.5,63.6,8.4,5.2,0.33,16.1,46,PM10
+2023-03-01,Nagaland,Northeast,Kohima,Summer,4.4,21.8,25.1,55.4,9.1,5.3,0.34,23,35,PM10
+2023-04-01,Nagaland,Northeast,Kohima,Summer,37,23.4,14,47.3,9.1,4.4,0.32,20.2,35,PM10
+2023-05-01,Nagaland,Northeast,Kohima,Summer,50,25.5,25.1,50.7,11.5,2.7,0.34,23.4,35,PM10
+2023-06-01,Nagaland,Northeast,Kohima,Monsoon,171,22.1,18.6,40.1,7.5,6.4,0.42,20,35,PM10
+2023-07-01,Nagaland,Northeast,Kohima,Monsoon,175.1,19.9,12,23,6,2,0.22,16.5,35,PM10
+2023-08-01,Nagaland,Northeast,Kohima,Monsoon,210.5,19.5,12,31,6.8,3.2,0.29,20.2,35,PM10
+2023-09-01,Nagaland,Northeast,Kohima,Monsoon,148.2,20.9,16.1,31.6,7.7,4.1,0.23,18.9,35,PM10
+2023-10-01,Nagaland,Northeast,Kohima,Post-Monsoon,49.8,20.3,21.2,29.3,9.4,2,0.35,23.4,35,PM10
+2023-11-01,Nagaland,Northeast,Kohima,Post-Monsoon,50.9,17.6,24.2,51.1,10.4,4.3,0.47,20.4,35,PM10
+2023-12-01,Nagaland,Northeast,Kohima,Winter,9.6,13.4,35.3,55.5,16.6,2.7,0.39,17.4,57,PM10
+2024-01-01,Nagaland,Northeast,Kohima,Winter,40.5,12.9,27.4,45.4,16.5,2.3,0.38,20.6,55,PM10
+2024-02-01,Nagaland,Northeast,Kohima,Winter,30.1,16.2,28.2,47,10.7,3.9,0.42,18.3,35,PM10
+2024-03-01,Nagaland,Northeast,Kohima,Summer,16.6,18.8,35.6,41.3,9.9,4.3,0.39,18.7,35,PM10
+2024-04-01,Nagaland,Northeast,Kohima,Summer,40.6,23.3,20.9,27.7,8.2,7,0.34,23.8,35,PM10
+2024-05-01,Nagaland,Northeast,Kohima,Summer,75,23.3,27.6,42.2,10.4,3.1,0.31,27.8,35,PM10
+2024-06-01,Nagaland,Northeast,Kohima,Monsoon,180.6,23.3,22.3,35.7,6,2.7,0.33,18.1,35,PM10
+2024-07-01,Nagaland,Northeast,Kohima,Monsoon,221.5,19.1,16.2,30.4,7.9,4.1,0.34,15.2,35,PM10
+2024-08-01,Nagaland,Northeast,Kohima,Monsoon,181.8,19.5,12,34.9,13.3,2.1,0.3,15.9,35,PM10
+2024-09-01,Nagaland,Northeast,Kohima,Monsoon,143.7,19.8,14.4,27.6,13.5,5.2,0.28,18.7,35,PM10
+2024-10-01,Nagaland,Northeast,Kohima,Post-Monsoon,72.6,19.6,20.5,51,9.3,5.4,0.32,18.3,35,PM10
+2024-11-01,Nagaland,Northeast,Kohima,Post-Monsoon,51.9,17.7,24.4,46.7,14.6,2.5,0.35,20.4,35,PM10
+2024-12-01,Nagaland,Northeast,Kohima,Winter,13.5,16.1,26.1,45.5,14.1,2,0.27,22.2,43,PM10
+2025-01-01,Nagaland,Northeast,Kohima,Winter,27,12.7,24.6,59,10.4,3.7,0.29,20.3,39,PM10
+2025-02-01,Nagaland,Northeast,Kohima,Winter,13.1,16.9,27,51.9,10.6,5.1,0.41,23.3,49,PM10
+2025-03-01,Nagaland,Northeast,Kohima,Summer,4,20.4,17.6,44.7,9,2,0.32,23,35,PM10
+2025-04-01,Nagaland,Northeast,Kohima,Summer,22.7,22.7,18.1,43.7,11.3,4.8,0.34,24.8,35,PM10
+2025-05-01,Nagaland,Northeast,Kohima,Summer,59.2,24.7,12,37.8,7.2,3.7,0.37,27.6,35,PM10
+2025-06-01,Nagaland,Northeast,Kohima,Monsoon,179.4,22.4,12,35.2,6,5.5,0.24,18.9,35,PM10
+2025-07-01,Nagaland,Northeast,Kohima,Monsoon,202.8,23.9,15.3,38.5,6,4.2,0.38,14.3,35,PM10
+2025-08-01,Nagaland,Northeast,Kohima,Monsoon,189,18.8,20,29.7,6,2.7,0.3,18.9,35,PM10
+2025-09-01,Nagaland,Northeast,Kohima,Monsoon,163.7,20.5,24.1,37.5,8.5,3,0.38,18.4,35,PM10
+2025-10-01,Nagaland,Northeast,Kohima,Post-Monsoon,79.8,20.2,20.6,51.2,9.8,2.5,0.24,21.6,35,PM10
+2025-11-01,Nagaland,Northeast,Kohima,Post-Monsoon,32.1,17,23.5,47.9,10.7,3.9,0.33,19.9,35,PM10
+2025-12-01,Nagaland,Northeast,Kohima,Winter,44.7,12.3,22.7,36.4,6.1,3.9,0.3,21.9,46,PM10
+2020-01-01,Odisha,East,Bhubaneswar,Winter,31.9,22.1,50.1,105.7,24.6,10.4,0.77,19.5,90,PM10
+2020-02-01,Odisha,East,Bhubaneswar,Winter,28.7,26,52.1,103.4,29.2,13.2,0.72,25.7,90,PM10
+2020-03-01,Odisha,East,Bhubaneswar,Summer,9.9,29.2,62.6,84.2,20.6,13.9,0.8,24.9,68,PM10
+2020-04-01,Odisha,East,Bhubaneswar,Summer,23.7,31.4,39.5,96.3,21.1,12.3,0.65,30.9,61,PM10
+2020-05-01,Odisha,East,Bhubaneswar,Summer,40.1,32.5,46.3,84.6,17.7,10.3,0.61,31.9,58,PM10
+2020-06-01,Odisha,East,Bhubaneswar,Monsoon,123.4,33.1,40.7,65.6,17.8,10.2,0.6,26.3,35,PM10
+2020-07-01,Odisha,East,Bhubaneswar,Monsoon,159.9,28,36.3,55.3,20,5.8,0.52,22.3,45,PM10
+2020-08-01,Odisha,East,Bhubaneswar,Monsoon,150.7,26.9,30.7,65.3,10.7,7.4,0.55,20.5,38,PM10
+2020-09-01,Odisha,East,Bhubaneswar,Monsoon,105.9,29.3,37.5,75.7,19.7,8.3,0.71,20.3,36,PM10
+2020-10-01,Odisha,East,Bhubaneswar,Post-Monsoon,47.3,30.8,42.5,77.1,22.3,5.6,0.62,21,53,PM10
+2020-11-01,Odisha,East,Bhubaneswar,Post-Monsoon,24.4,27,54.7,96,30.6,11.9,0.81,23.3,71,PM10
+2020-12-01,Odisha,East,Bhubaneswar,Winter,38.9,25.2,59.9,100.1,30.2,11.3,0.71,19.3,95,PM10
+2021-01-01,Odisha,East,Bhubaneswar,Winter,12.1,23.1,58.5,95.5,26.8,14.6,0.75,20.3,81,PM10
+2021-02-01,Odisha,East,Bhubaneswar,Winter,35.4,25.3,54.9,94.9,27.6,12.7,0.79,23.5,86,PM10
+2021-03-01,Odisha,East,Bhubaneswar,Summer,26.6,29.4,50.8,82.1,20.9,10.1,0.65,25.6,55,PM10
+2021-04-01,Odisha,East,Bhubaneswar,Summer,16.9,31.7,48.8,91.7,24.3,8.3,0.65,29.3,69,PM10
+2021-05-01,Odisha,East,Bhubaneswar,Summer,36.5,34.3,45.6,76.4,18.8,13.1,0.49,31.9,55,PM10
+2021-06-01,Odisha,East,Bhubaneswar,Monsoon,127.8,31.7,48.4,62.2,18.3,6.7,0.57,26,46,PM10
+2021-07-01,Odisha,East,Bhubaneswar,Monsoon,152.8,29.2,37.6,59.5,16.6,9.2,0.53,20.9,36,PM10
+2021-08-01,Odisha,East,Bhubaneswar,Monsoon,145.8,27.3,37.7,50.1,12.2,8.6,0.54,18.7,35,PM10
+2021-09-01,Odisha,East,Bhubaneswar,Monsoon,99.5,31.6,39,64.9,15.9,10,0.73,19.9,43,PM10
+2021-10-01,Odisha,East,Bhubaneswar,Post-Monsoon,53.8,30.3,42.8,88.3,21.6,12.1,0.62,27.1,60,PM10
+2021-11-01,Odisha,East,Bhubaneswar,Post-Monsoon,19.6,27.4,51.9,109.9,27.2,11.8,0.66,25.1,71,PM10
+2021-12-01,Odisha,East,Bhubaneswar,Winter,15.4,23.3,54.4,103.9,30.8,7.6,0.88,24.2,89,PM10
+2022-01-01,Odisha,East,Bhubaneswar,Winter,9.7,22.9,55.9,103.9,20.7,12.4,0.67,22.5,88,PM10
+2022-02-01,Odisha,East,Bhubaneswar,Winter,21.8,26.3,52.5,102.2,24.7,13.5,0.64,26.6,84,PM10
+2022-03-01,Odisha,East,Bhubaneswar,Summer,8.3,29.9,57.1,89.3,24.3,9.3,0.69,26.7,65,PM10
+2022-04-01,Odisha,East,Bhubaneswar,Summer,10.2,32.1,46.6,72.6,17.9,7.6,0.64,31.9,57,PM10
+2022-05-01,Odisha,East,Bhubaneswar,Summer,32.9,35,51.1,80.8,20.4,8.9,0.56,30.6,59,PM10
+2022-06-01,Odisha,East,Bhubaneswar,Monsoon,132.7,32.2,27.9,72.9,16.4,9.7,0.54,25.4,35,PM10
+2022-07-01,Odisha,East,Bhubaneswar,Monsoon,142.2,29.1,37.4,57,18.4,7.3,0.64,22.5,51,PM10
+2022-08-01,Odisha,East,Bhubaneswar,Monsoon,143.2,27,29.7,69.9,18.6,8.5,0.46,19.9,38,PM10
+2022-09-01,Odisha,East,Bhubaneswar,Monsoon,100.6,30.6,35.4,69.9,15.3,9.2,0.55,23.1,39,PM10
+2022-10-01,Odisha,East,Bhubaneswar,Post-Monsoon,59.8,30.9,42.9,81.3,23.3,10.5,0.64,27.3,61,PM10
+2022-11-01,Odisha,East,Bhubaneswar,Post-Monsoon,20.8,25.5,58.8,86.3,21,9.7,0.74,23,77,PM10
+2022-12-01,Odisha,East,Bhubaneswar,Winter,24.1,22.6,56.7,89.4,24.8,11.8,0.77,23.5,92,PM10
+2023-01-01,Odisha,East,Bhubaneswar,Winter,18.9,25.2,56.8,104.5,27.8,11.2,0.72,25.3,90,PM10
+2023-02-01,Odisha,East,Bhubaneswar,Winter,24.4,25.5,50.9,97.3,27.7,10.4,0.58,24.9,83,PM10
+2023-03-01,Odisha,East,Bhubaneswar,Summer,30.5,31,43.5,89.6,19,9.5,0.66,27.8,66,PM10
+2023-04-01,Odisha,East,Bhubaneswar,Summer,23.4,31,46.1,83.5,19.8,10.3,0.6,29.3,57,PM10
+2023-05-01,Odisha,East,Bhubaneswar,Summer,42.7,35.4,41.6,78.4,17.6,11,0.71,31.3,60,PM10
+2023-06-01,Odisha,East,Bhubaneswar,Monsoon,130,30.5,28.9,73.8,15.8,10.6,0.57,27.4,35,PM10
+2023-07-01,Odisha,East,Bhubaneswar,Monsoon,139,30.8,30.5,63.8,16.7,9.2,0.53,21.8,35,PM10
+2023-08-01,Odisha,East,Bhubaneswar,Monsoon,149.3,26.4,34.8,55.8,11.2,9.4,0.49,19.9,35,PM10
+2023-09-01,Odisha,East,Bhubaneswar,Monsoon,102.3,31,38.6,66.2,20,10.2,0.5,19.5,44,PM10
+2023-10-01,Odisha,East,Bhubaneswar,Post-Monsoon,34.3,28,43.8,70.8,19.5,9,0.65,25.4,57,PM10
+2023-11-01,Odisha,East,Bhubaneswar,Post-Monsoon,27.4,27.2,51,104,23.2,10.7,0.7,25.2,62,PM10
+2023-12-01,Odisha,East,Bhubaneswar,Winter,8.7,23,52.4,93.9,24.5,11.3,0.67,22.9,83,PM10
+2024-01-01,Odisha,East,Bhubaneswar,Winter,17.4,22.8,57.9,87.9,24.5,16.3,0.75,22.4,86,PM10
+2024-02-01,Odisha,East,Bhubaneswar,Winter,9.7,27.1,50.9,80.3,18.1,8.5,0.68,24.5,87,PM10
+2024-03-01,Odisha,East,Bhubaneswar,Summer,7.2,29.3,45.2,73.9,20.7,9.1,0.61,29.4,67,PM10
+2024-04-01,Odisha,East,Bhubaneswar,Summer,38.2,32.6,40.8,86.2,19.1,9.6,0.59,31.2,56,PM10
+2024-05-01,Odisha,East,Bhubaneswar,Summer,36.8,33.9,45.3,79.6,16,11.7,0.63,28.9,58,PM10
+2024-06-01,Odisha,East,Bhubaneswar,Monsoon,124.2,32.9,22.8,72.2,21.4,6.9,0.61,25.7,43,PM10
+2024-07-01,Odisha,East,Bhubaneswar,Monsoon,153.8,29.6,34.8,51.4,18.7,9.3,0.63,23.9,35,PM10
+2024-08-01,Odisha,East,Bhubaneswar,Monsoon,149.6,28.6,35.3,70.2,12.8,11.3,0.55,18.3,35,PM10
+2024-09-01,Odisha,East,Bhubaneswar,Monsoon,86.9,31,39.4,67.1,17.5,11.2,0.6,22,45,PM10
+2024-10-01,Odisha,East,Bhubaneswar,Post-Monsoon,53.5,27.5,45.2,83.3,20.8,9.9,0.54,26,52,PM10
+2024-11-01,Odisha,East,Bhubaneswar,Post-Monsoon,21.6,27,53.7,83.4,24.8,11.1,0.69,20.6,68,PM10
+2024-12-01,Odisha,East,Bhubaneswar,Winter,13.1,22.7,57.4,102.4,23.8,11.3,0.72,21.6,92,PM10
+2025-01-01,Odisha,East,Bhubaneswar,Winter,25.9,22.7,52.8,97.3,24.6,11.1,0.65,22.3,84,PM10
+2025-02-01,Odisha,East,Bhubaneswar,Winter,4,25.8,50.8,84.6,24.9,11.7,0.76,26.1,91,PM10
+2025-03-01,Odisha,East,Bhubaneswar,Summer,11.7,31.1,43.9,81.9,17.4,11.1,0.7,28.4,48,PM10
+2025-04-01,Odisha,East,Bhubaneswar,Summer,17.9,29.2,46.4,84.6,18,12.1,0.61,29.3,67,PM10
+2025-05-01,Odisha,East,Bhubaneswar,Summer,46.1,34.2,42,74.4,20,10,0.56,30,65,PM10
+2025-06-01,Odisha,East,Bhubaneswar,Monsoon,123.9,32.2,28.1,62.6,19.8,10.5,0.61,25.1,45,PM10
+2025-07-01,Odisha,East,Bhubaneswar,Monsoon,156.3,28.6,35.5,55.3,14.7,9.9,0.48,24.1,35,PM10
+2025-08-01,Odisha,East,Bhubaneswar,Monsoon,141,29.7,36.8,63.4,17.6,7.1,0.47,21.9,35,PM10
+2025-09-01,Odisha,East,Bhubaneswar,Monsoon,105.1,32.5,31.5,76.1,18.3,7.7,0.67,23.3,47,PM10
+2025-10-01,Odisha,East,Bhubaneswar,Post-Monsoon,55.3,31.5,52.8,79.1,22.5,14.4,0.57,26.3,58,PM10
+2025-11-01,Odisha,East,Bhubaneswar,Post-Monsoon,22.8,26.4,51.2,84.5,22.9,11.9,0.73,22.7,63,PM10
+2025-12-01,Odisha,East,Bhubaneswar,Winter,24.3,24.6,53.9,88.7,28.2,12.8,0.66,22.9,91,PM10
+2020-01-01,Punjab,North,Chandigarh,Winter,4,18.5,97.6,157.8,41.3,18.2,1.13,25.5,148,PM10
+2020-02-01,Punjab,North,Chandigarh,Winter,20.3,21.5,83.7,138.4,34.5,14.2,0.95,29.3,141,PM10
+2020-03-01,Punjab,North,Chandigarh,Summer,18.7,23.1,82.1,136.1,32.9,15.1,1.04,30.9,118,PM10
+2020-04-01,Punjab,North,Chandigarh,Summer,10.8,28,75,123.9,29.6,12.4,0.84,35.8,107,PM10
+2020-05-01,Punjab,North,Chandigarh,Summer,7,29.3,81.4,116.8,26.3,14.8,0.87,37.6,107,PM10
+2020-06-01,Punjab,North,Chandigarh,Monsoon,54.7,24.7,59.8,104.9,27.2,12.1,0.86,25,66,PM10
+2020-07-01,Punjab,North,Chandigarh,Monsoon,79.4,24.1,56.2,110,21.6,12.2,0.83,24.1,65,PM10
+2020-08-01,Punjab,North,Chandigarh,Monsoon,55.4,25.6,56.7,97.3,23.8,11.4,0.79,21,64,PM10
+2020-09-01,Punjab,North,Chandigarh,Monsoon,72.4,23.5,59.6,115.4,24.6,10.4,0.94,27.4,87,PM10
+2020-10-01,Punjab,North,Chandigarh,Post-Monsoon,32.3,22.4,73.9,123.3,31.2,12.8,0.96,30.3,98,PM10
+2020-11-01,Punjab,North,Chandigarh,Post-Monsoon,27,21,87.2,139.7,29.4,14,1.04,26.2,108,PM10
+2020-12-01,Punjab,North,Chandigarh,Winter,21.4,20.7,99.2,146.3,36.9,13.1,1.04,24.6,139,PM10
+2021-01-01,Punjab,North,Chandigarh,Winter,28,17.6,89.2,161,42.4,16.5,1.09,24.6,128,PM10
+2021-02-01,Punjab,North,Chandigarh,Winter,13.7,17,88.8,158.4,33.3,14.5,0.97,27.4,123,PM10
+2021-03-01,Punjab,North,Chandigarh,Summer,4.4,24,78.3,131.9,31.8,13.7,0.92,25.9,101,PM10
+2021-04-01,Punjab,North,Chandigarh,Summer,11.3,26.7,79.2,123.8,30.3,12.1,0.94,29.6,95,PM10
+2021-05-01,Punjab,North,Chandigarh,Summer,22.4,28.1,65.8,122.8,33,13.4,0.85,36.1,95,PM10
+2021-06-01,Punjab,North,Chandigarh,Monsoon,54.2,27.4,56.1,120.9,29.5,9.1,0.77,29.9,76,PM10
+2021-07-01,Punjab,North,Chandigarh,Monsoon,73.2,24.8,59.5,100.8,22.1,10.1,0.63,25.6,69,PM10
+2021-08-01,Punjab,North,Chandigarh,Monsoon,67.5,24.8,46.1,98,25.4,11.3,0.77,24.2,64,PM10
+2021-09-01,Punjab,North,Chandigarh,Monsoon,56.1,27.4,68.9,112.4,26.4,13.4,0.95,24.6,86,PM10
+2021-10-01,Punjab,North,Chandigarh,Post-Monsoon,16.7,24.3,71.8,125.4,26.8,15.3,0.91,25.5,96,PM10
+2021-11-01,Punjab,North,Chandigarh,Post-Monsoon,29.5,22.1,89.3,139.8,38.4,14.3,0.89,29.5,122,PM10
+2021-12-01,Punjab,North,Chandigarh,Winter,4,18.3,95.4,156.5,36,15.1,0.89,25,132,PM10
+2022-01-01,Punjab,North,Chandigarh,Winter,4,19.2,81.8,148.6,34.5,12.8,1.01,26.5,133,PM10
+2022-02-01,Punjab,North,Chandigarh,Winter,11.9,19.8,84.4,151,35.3,12,0.99,25.8,128,PM10
+2022-03-01,Punjab,North,Chandigarh,Summer,4,26.4,81.3,133.6,35.6,12.8,0.97,30.3,110,PM10
+2022-04-01,Punjab,North,Chandigarh,Summer,12.3,27.3,76.8,130.1,27,14,0.88,30.7,102,PM10
+2022-05-01,Punjab,North,Chandigarh,Summer,17.2,28.5,73.1,111,28.9,12.4,0.83,32.5,97,PM10
+2022-06-01,Punjab,North,Chandigarh,Monsoon,56.1,28.9,66,99.3,22.1,10.5,0.74,25.5,60,PM10
+2022-07-01,Punjab,North,Chandigarh,Monsoon,85.3,24.1,49.7,101,21,12.9,0.79,22.3,74,PM10
+2022-08-01,Punjab,North,Chandigarh,Monsoon,75.9,25.2,54.8,101,23.4,11.3,0.9,22.7,68,PM10
+2022-09-01,Punjab,North,Chandigarh,Monsoon,48.9,24.2,58.8,101.5,27,11.2,0.95,22.6,86,PM10
+2022-10-01,Punjab,North,Chandigarh,Post-Monsoon,5.7,23.7,69.9,129.5,24.6,11.5,0.83,30.9,98,PM10
+2022-11-01,Punjab,North,Chandigarh,Post-Monsoon,20.4,22.8,82.5,150,35.7,15.1,1.02,23.9,120,PM10
+2022-12-01,Punjab,North,Chandigarh,Winter,21.5,18.5,96,146.9,34.8,17.1,1.11,27,129,PM10
+2023-01-01,Punjab,North,Chandigarh,Winter,13.4,18.2,93.7,149.5,36.6,13.2,1.02,26.7,142,PM10
+2023-02-01,Punjab,North,Chandigarh,Winter,12.9,20.1,85.8,141.4,38.4,13.2,0.97,28.4,128,PM10
+2023-03-01,Punjab,North,Chandigarh,Summer,10.1,23.2,70.7,119.5,26.4,14.5,1.01,29.6,102,PM10
+2023-04-01,Punjab,North,Chandigarh,Summer,4,27.6,69.8,129.1,31.2,11.8,0.93,31.9,124,PM10
+2023-05-01,Punjab,North,Chandigarh,Summer,29,29.2,74.5,131.7,26.6,12.4,0.91,30.8,104,PM10
+2023-06-01,Punjab,North,Chandigarh,Monsoon,86,26.3,61.4,94.2,25.9,13.6,0.79,30,76,PM10
+2023-07-01,Punjab,North,Chandigarh,Monsoon,86.6,23.2,56.6,95.2,23.7,12,0.76,22.6,71,PM10
+2023-08-01,Punjab,North,Chandigarh,Monsoon,74.5,23.6,53.5,84.2,20.1,10,0.78,24.3,61,PM10
+2023-09-01,Punjab,North,Chandigarh,Monsoon,60.5,25.5,59.5,87.5,22.1,10.2,0.82,25,71,PM10
+2023-10-01,Punjab,North,Chandigarh,Post-Monsoon,29.6,22.9,74,128.3,30.4,13.9,0.98,25.9,103,PM10
+2023-11-01,Punjab,North,Chandigarh,Post-Monsoon,7.9,19.9,85.5,134.5,36.5,13,1.03,24.4,106,PM10
+2023-12-01,Punjab,North,Chandigarh,Winter,13.6,19.2,83.8,154.2,36.4,14.4,1.07,25.8,139,PM10
+2024-01-01,Punjab,North,Chandigarh,Winter,16.1,16.4,89.9,159,32.8,14,1.08,23,135,PM10
+2024-02-01,Punjab,North,Chandigarh,Winter,8.1,22.8,89.3,153.2,31.5,14.4,0.89,26.9,136,PM10
+2024-03-01,Punjab,North,Chandigarh,Summer,4,22.8,80.8,129.3,30.9,13.4,1.02,30.9,107,PM10
+2024-04-01,Punjab,North,Chandigarh,Summer,26.1,27.5,84.7,123.7,28.6,14,0.86,31.9,103,PM10
+2024-05-01,Punjab,North,Chandigarh,Summer,20.8,30.5,71.8,112.9,24.9,9.8,0.83,31.8,92,PM10
+2024-06-01,Punjab,North,Chandigarh,Monsoon,56,25.3,62.5,102.4,23.1,10.1,0.79,26.3,73,PM10
+2024-07-01,Punjab,North,Chandigarh,Monsoon,84.4,24.8,47.8,97.1,19,10.8,0.64,27.1,66,PM10
+2024-08-01,Punjab,North,Chandigarh,Monsoon,69.5,23.9,45.3,82,24.7,8.8,0.8,25.9,61,PM10
+2024-09-01,Punjab,North,Chandigarh,Monsoon,42.5,25.4,59.7,100.9,24.1,11.9,0.87,24.4,68,PM10
+2024-10-01,Punjab,North,Chandigarh,Post-Monsoon,38.4,26.1,73.4,125.5,25.8,12.5,0.88,28.5,103,PM10
+2024-11-01,Punjab,North,Chandigarh,Post-Monsoon,12.5,24.9,85.5,146.4,30.7,13.7,0.92,25.3,97,PM10
+2024-12-01,Punjab,North,Chandigarh,Winter,12.5,17.3,89.7,156.9,36.2,13.8,1.02,22.9,142,PM10
+2025-01-01,Punjab,North,Chandigarh,Winter,16.2,19.8,94.9,134.8,35.9,18.5,0.87,24.3,136,PM10
+2025-02-01,Punjab,North,Chandigarh,Winter,21.1,18.3,80.3,150.5,31.1,15.3,1.03,25.2,132,PM10
+2025-03-01,Punjab,North,Chandigarh,Summer,4,24.2,81.6,127.8,27.8,12.7,0.9,27,100,PM10
+2025-04-01,Punjab,North,Chandigarh,Summer,24,25.4,76.7,118.7,28.6,10.4,0.82,30.7,103,PM10
+2025-05-01,Punjab,North,Chandigarh,Summer,27.7,27.9,75.9,113.9,25.9,12.6,0.88,28.8,101,PM10
+2025-06-01,Punjab,North,Chandigarh,Monsoon,26.8,26.8,62.2,94.3,24.8,12.7,0.77,27.5,67,PM10
+2025-07-01,Punjab,North,Chandigarh,Monsoon,90.9,24.4,55.2,90,19.2,8.8,0.74,26.1,68,PM10
+2025-08-01,Punjab,North,Chandigarh,Monsoon,68.5,23.5,52.9,93.9,19.1,10.6,0.78,25,59,PM10
+2025-09-01,Punjab,North,Chandigarh,Monsoon,50.6,24,58.8,123.1,27.6,12.9,0.71,26.5,79,PM10
+2025-10-01,Punjab,North,Chandigarh,Post-Monsoon,18.5,23.3,63.7,136.3,29.1,15.8,0.82,22.4,99,PM10
+2025-11-01,Punjab,North,Chandigarh,Post-Monsoon,19.9,20.9,90.8,152.1,35.1,12.6,0.96,28.5,122,PM10
+2025-12-01,Punjab,North,Chandigarh,Winter,4,19.8,102.1,157.1,37,12.3,0.92,24.8,133,PM10
+2020-01-01,Rajasthan,North,Jaipur,Winter,4,24,81,145.3,28.4,12.1,0.92,28.3,118,PM10
+2020-02-01,Rajasthan,North,Jaipur,Winter,26.9,25.8,70.1,154.4,34.2,10.7,1,28.2,124,PM10
+2020-03-01,Rajasthan,North,Jaipur,Summer,13.3,30.1,76.2,128.1,32.1,16.7,1.02,36.1,103,PM10
+2020-04-01,Rajasthan,North,Jaipur,Summer,10.4,33.1,62.1,114.2,30,11.6,0.76,31.2,89,PM10
+2020-05-01,Rajasthan,North,Jaipur,Summer,21.1,37,55.2,131.1,22.2,12.7,0.78,36.4,85,PM10
+2020-06-01,Rajasthan,North,Jaipur,Monsoon,52.3,34.5,54,102.9,18.3,10.6,0.81,33.3,54,PM10
+2020-07-01,Rajasthan,North,Jaipur,Monsoon,61.2,30.3,47.6,97.8,19.8,12.1,0.65,26.4,55,PM10
+2020-08-01,Rajasthan,North,Jaipur,Monsoon,50.3,29.7,49.4,108.1,28.5,8.4,0.84,30.4,68,PM10
+2020-09-01,Rajasthan,North,Jaipur,Monsoon,33.2,30.9,52.8,101.2,25.4,12.1,0.79,27.6,64,PM10
+2020-10-01,Rajasthan,North,Jaipur,Post-Monsoon,25.6,29.8,68.8,120.6,25.5,10.5,0.8,30.6,96,PM10
+2020-11-01,Rajasthan,North,Jaipur,Post-Monsoon,4,28.9,69.1,138.2,33.4,11.7,0.96,27.5,102,PM10
+2020-12-01,Rajasthan,North,Jaipur,Winter,11.1,24.4,81.3,149.9,40.9,14.2,0.98,27.2,121,PM10
+2021-01-01,Rajasthan,North,Jaipur,Winter,21.2,24.5,89.2,139.4,34.4,12.9,0.87,32.2,127,PM10
+2021-02-01,Rajasthan,North,Jaipur,Winter,18.7,25.9,84.3,148.4,29.5,16.1,0.88,29.9,136,PM10
+2021-03-01,Rajasthan,North,Jaipur,Summer,4.9,31,69.1,120.2,32,10.7,0.89,28.2,101,PM10
+2021-04-01,Rajasthan,North,Jaipur,Summer,6.6,32.8,67.8,123.8,31.9,15.1,0.78,32,87,PM10
+2021-05-01,Rajasthan,North,Jaipur,Summer,24.5,34.7,68,109.4,20.5,11.9,0.93,38.3,89,PM10
+2021-06-01,Rajasthan,North,Jaipur,Monsoon,49.6,32.5,53,103.3,21.9,10.8,0.81,30.2,72,PM10
+2021-07-01,Rajasthan,North,Jaipur,Monsoon,40.2,31,59.5,89.4,19.6,9.2,0.69,27,71,PM10
+2021-08-01,Rajasthan,North,Jaipur,Monsoon,44.9,29.5,42.8,84.9,22.9,12.9,0.78,24.9,66,PM10
+2021-09-01,Rajasthan,North,Jaipur,Monsoon,39,28.8,57.2,117.8,22,13.7,0.75,24.7,78,PM10
+2021-10-01,Rajasthan,North,Jaipur,Post-Monsoon,25.6,28.8,55.4,124.5,25.1,16.7,0.8,28.2,89,PM10
+2021-11-01,Rajasthan,North,Jaipur,Post-Monsoon,4,27.3,76.3,136.4,31.2,15,0.93,26.9,101,PM10
+2021-12-01,Rajasthan,North,Jaipur,Winter,4,22.1,80.5,154,34.7,10.5,0.86,28,123,PM10
+2022-01-01,Rajasthan,North,Jaipur,Winter,15.9,25.5,83.7,154.9,30.8,15.1,0.98,28.4,132,PM10
+2022-02-01,Rajasthan,North,Jaipur,Winter,4,26.6,71.7,136.7,32.1,13,0.95,31.9,121,PM10
+2022-03-01,Rajasthan,North,Jaipur,Summer,11.6,30.6,80.3,119.7,21.2,12.7,0.88,31.2,98,PM10
+2022-04-01,Rajasthan,North,Jaipur,Summer,12,32.7,64,115.9,26.8,14.6,0.79,35.9,89,PM10
+2022-05-01,Rajasthan,North,Jaipur,Summer,4,33.5,63.1,112.3,26,12.2,0.84,39.7,94,PM10
+2022-06-01,Rajasthan,North,Jaipur,Monsoon,48.3,31.7,55,108.2,24.9,8.6,0.73,31.8,66,PM10
+2022-07-01,Rajasthan,North,Jaipur,Monsoon,57.7,32.6,45.7,87,20.2,14.5,0.62,26.9,56,PM10
+2022-08-01,Rajasthan,North,Jaipur,Monsoon,53.4,28.1,46.7,93.1,18.9,11,0.71,23.2,57,PM10
+2022-09-01,Rajasthan,North,Jaipur,Monsoon,38.9,30.5,54.3,88.9,19.2,10.4,0.65,28.4,63,PM10
+2022-10-01,Rajasthan,North,Jaipur,Post-Monsoon,4.3,31.1,64.8,124.1,28.5,13.1,0.88,30,94,PM10
+2022-11-01,Rajasthan,North,Jaipur,Post-Monsoon,30,27.1,72.5,146.5,32.2,12,0.9,26,107,PM10
+2022-12-01,Rajasthan,North,Jaipur,Winter,4,25.7,72.3,152.6,34.2,14.1,0.94,26.8,125,PM10
+2023-01-01,Rajasthan,North,Jaipur,Winter,6.5,24.7,76.1,144.7,33.2,12.9,0.97,26.4,128,PM10
+2023-02-01,Rajasthan,North,Jaipur,Winter,22.9,26.9,76.6,145.3,27.4,11,0.88,31.3,117,PM10
+2023-03-01,Rajasthan,North,Jaipur,Summer,24.4,31.8,71.8,124.4,27.5,13.8,0.78,26.5,106,PM10
+2023-04-01,Rajasthan,North,Jaipur,Summer,4,32.3,68.4,118,23.8,11,0.86,36.1,99,PM10
+2023-05-01,Rajasthan,North,Jaipur,Summer,15.1,33.4,60,119.8,27.7,11.9,0.83,34.6,108,PM10
+2023-06-01,Rajasthan,North,Jaipur,Monsoon,39.7,31.3,47.5,88.2,23.9,12.2,0.62,31.5,57,PM10
+2023-07-01,Rajasthan,North,Jaipur,Monsoon,74.9,30.3,49.1,84.1,16.4,11.9,0.73,29,61,PM10
+2023-08-01,Rajasthan,North,Jaipur,Monsoon,50.5,28.4,46.7,87.3,19.1,10.6,0.74,25.5,55,PM10
+2023-09-01,Rajasthan,North,Jaipur,Monsoon,53.8,29.8,53,100.6,22.5,11.7,0.85,29.7,64,PM10
+2023-10-01,Rajasthan,North,Jaipur,Post-Monsoon,32.2,30.3,67.6,115.5,28.7,11,0.83,30.5,93,PM10
+2023-11-01,Rajasthan,North,Jaipur,Post-Monsoon,4,28.5,68,143.4,26.5,15.6,0.86,27.9,105,PM10
+2023-12-01,Rajasthan,North,Jaipur,Winter,14.4,24.3,80.7,151.2,35.5,11,0.92,30.9,126,PM10
+2024-01-01,Rajasthan,North,Jaipur,Winter,4,23.2,76.6,150.1,33.6,13.5,0.86,29.6,113,PM10
+2024-02-01,Rajasthan,North,Jaipur,Winter,4,26.7,77.7,138.4,27.8,11.5,0.82,31.9,120,PM10
+2024-03-01,Rajasthan,North,Jaipur,Summer,4,30.8,60.2,111.8,26.6,11.9,0.8,35.3,89,PM10
+2024-04-01,Rajasthan,North,Jaipur,Summer,25.9,36.9,62.5,127.2,24.9,11.2,0.87,33.6,98,PM10
+2024-05-01,Rajasthan,North,Jaipur,Summer,20.2,33,56.3,120.6,30,7.4,0.86,36.7,89,PM10
+2024-06-01,Rajasthan,North,Jaipur,Monsoon,46.4,33.8,52.1,96.4,21.2,9.6,0.72,29.4,64,PM10
+2024-07-01,Rajasthan,North,Jaipur,Monsoon,37.8,29.4,50,78.7,17.4,9.7,0.68,26.7,51,PM10
+2024-08-01,Rajasthan,North,Jaipur,Monsoon,34,28.7,51.4,92.9,21.3,11.6,0.56,21.8,55,PM10
+2024-09-01,Rajasthan,North,Jaipur,Monsoon,51.8,29.7,51.4,91.9,16.5,7.8,0.74,25.9,73,PM10
+2024-10-01,Rajasthan,North,Jaipur,Post-Monsoon,14.1,29.5,61.9,130,21.5,10.2,0.79,26.8,90,PM10
+2024-11-01,Rajasthan,North,Jaipur,Post-Monsoon,6.1,27.6,80.9,136.2,30.7,13.5,0.9,29.4,109,PM10
+2024-12-01,Rajasthan,North,Jaipur,Winter,14.2,24.3,78.5,144.3,29.8,15,0.9,27.3,129,PM10
+2025-01-01,Rajasthan,North,Jaipur,Winter,18.4,23.1,74.9,140.7,28.3,12.3,0.86,26.5,125,PM10
+2025-02-01,Rajasthan,North,Jaipur,Winter,27.4,26,74.8,148.6,28.8,12.2,0.81,28,114,PM10
+2025-03-01,Rajasthan,North,Jaipur,Summer,4,30.5,60.3,122.5,24.1,12.2,0.79,31.8,77,PM10
+2025-04-01,Rajasthan,North,Jaipur,Summer,23.3,33.6,65,114.3,26.4,10.3,0.82,36.9,87,PM10
+2025-05-01,Rajasthan,North,Jaipur,Summer,15.7,37.8,72.2,117.4,26.8,11.1,0.82,37.1,98,PM10
+2025-06-01,Rajasthan,North,Jaipur,Monsoon,40,32.5,49.1,95.5,22.4,11.4,0.57,33,62,PM10
+2025-07-01,Rajasthan,North,Jaipur,Monsoon,59.5,29.2,47,83.5,14.8,13.1,0.74,26.5,48,PM10
+2025-08-01,Rajasthan,North,Jaipur,Monsoon,43.4,31.1,44.3,84.9,20.2,10.3,0.73,23.8,66,PM10
+2025-09-01,Rajasthan,North,Jaipur,Monsoon,32.6,31.7,54.5,93.6,19.7,9.4,0.73,28.3,67,PM10
+2025-10-01,Rajasthan,North,Jaipur,Post-Monsoon,13.9,30.7,64.7,118.3,30.4,13,0.9,30,92,PM10
+2025-11-01,Rajasthan,North,Jaipur,Post-Monsoon,4,27.7,77.3,138.4,36.4,10.5,0.82,32.1,96,PM10
+2025-12-01,Rajasthan,North,Jaipur,Winter,4,27.7,72,137.8,33,13.7,0.87,29.9,139,PM10
+2020-01-01,Sikkim,Northeast,Gangtok,Winter,30.3,12.6,21.2,53.4,6,2.6,0.35,16.5,35,PM10
+2020-02-01,Sikkim,Northeast,Gangtok,Winter,21.9,12.2,14,46.4,13.3,2,0.3,16.1,35,PM10
+2020-03-01,Sikkim,Northeast,Gangtok,Summer,25.5,15.5,12.2,33.7,6,2.1,0.21,15.7,35,PM10
+2020-04-01,Sikkim,Northeast,Gangtok,Summer,46.5,19.8,15.5,22,7.1,3.8,0.25,22.5,35,O3
+2020-05-01,Sikkim,Northeast,Gangtok,Summer,64.5,21.4,19.5,30.9,11.4,4.9,0.26,22.1,35,PM10
+2020-06-01,Sikkim,Northeast,Gangtok,Monsoon,179.3,19.3,14.4,35.6,6,3.9,0.28,16.5,35,PM10
+2020-07-01,Sikkim,Northeast,Gangtok,Monsoon,210.4,16.7,12,34.6,6,3,0.2,13.7,35,PM10
+2020-08-01,Sikkim,Northeast,Gangtok,Monsoon,203.6,15.3,12,22,7.9,2,0.2,13.5,35,PM10
+2020-09-01,Sikkim,Northeast,Gangtok,Monsoon,155.8,19.2,14.9,37.5,6,3.6,0.33,14.5,35,PM10
+2020-10-01,Sikkim,Northeast,Gangtok,Post-Monsoon,64.9,15.8,14.3,34.6,7,2,0.29,18.5,35,PM10
+2020-11-01,Sikkim,Northeast,Gangtok,Post-Monsoon,47.2,13.1,24,43,10.5,2,0.27,15.6,35,PM10
+2020-12-01,Sikkim,Northeast,Gangtok,Winter,17.5,9.9,22.4,46,13,2.8,0.32,15.1,41,PM10
+2021-01-01,Sikkim,Northeast,Gangtok,Winter,30.5,10.5,21.1,41,7.6,5.2,0.3,16.8,35,PM10
+2021-02-01,Sikkim,Northeast,Gangtok,Winter,28.4,13.4,15.8,37,12.6,6.1,0.25,17.4,35,PM10
+2021-03-01,Sikkim,Northeast,Gangtok,Summer,42.7,16.5,18.3,28.1,6,2,0.28,20.7,35,PM10
+2021-04-01,Sikkim,Northeast,Gangtok,Summer,48.8,17.1,22.6,30.7,6,5.9,0.33,19.5,35,PM10
+2021-05-01,Sikkim,Northeast,Gangtok,Summer,65.6,22.3,28.1,22.7,13.2,3.3,0.36,17.3,35,PM2.5
+2021-06-01,Sikkim,Northeast,Gangtok,Monsoon,185.2,18.5,22.4,28.3,6,2,0.2,19.7,35,PM10
+2021-07-01,Sikkim,Northeast,Gangtok,Monsoon,226,18,12,22,6,2.1,0.2,16.3,35,PM10
+2021-08-01,Sikkim,Northeast,Gangtok,Monsoon,200.8,14.7,13.7,25.7,7.7,2,0.28,14.8,35,PM10
+2021-09-01,Sikkim,Northeast,Gangtok,Monsoon,156.7,15.7,12,43.3,6,2.6,0.35,10.1,35,PM10
+2021-10-01,Sikkim,Northeast,Gangtok,Post-Monsoon,83,15.9,17.4,31.6,12,4.5,0.27,15.5,35,PM10
+2021-11-01,Sikkim,Northeast,Gangtok,Post-Monsoon,37.2,13.2,23.5,39.1,12.9,4.3,0.28,17.3,35,PM10
+2021-12-01,Sikkim,Northeast,Gangtok,Winter,37.5,12.3,21.2,33.3,10.2,4.1,0.21,15.6,35,PM10
+2022-01-01,Sikkim,Northeast,Gangtok,Winter,35.7,12.5,18.4,44.5,12.9,3.7,0.25,21.5,37,PM10
+2022-02-01,Sikkim,Northeast,Gangtok,Winter,31.4,11.5,28.7,38.4,9.4,3.2,0.31,16,41,PM10
+2022-03-01,Sikkim,Northeast,Gangtok,Summer,25.7,17.6,15.3,36.1,11.1,3.1,0.36,20.5,35,PM10
+2022-04-01,Sikkim,Northeast,Gangtok,Summer,36.3,20.4,12.7,32.2,11.5,5.4,0.26,18.9,35,PM10
+2022-05-01,Sikkim,Northeast,Gangtok,Summer,59,20.4,12,33.8,8.4,5.2,0.31,22.3,35,PM10
+2022-06-01,Sikkim,Northeast,Gangtok,Monsoon,189.2,18.2,12,37.1,7.1,3.9,0.2,17.7,35,PM10
+2022-07-01,Sikkim,Northeast,Gangtok,Monsoon,226.4,18.3,12,22,6.4,2.9,0.21,13.2,35,PM10
+2022-08-01,Sikkim,Northeast,Gangtok,Monsoon,204.3,17,18.3,22.9,6,4.9,0.29,11.3,35,PM10
+2022-09-01,Sikkim,Northeast,Gangtok,Monsoon,174.7,16.2,17.5,28.9,6,2,0.21,16.5,35,PM10
+2022-10-01,Sikkim,Northeast,Gangtok,Post-Monsoon,65.9,17.1,18.9,38.6,6,2,0.36,18,35,PM10
+2022-11-01,Sikkim,Northeast,Gangtok,Post-Monsoon,37.8,13.3,16,53.1,8.5,5.4,0.3,15.9,35,PM10
+2022-12-01,Sikkim,Northeast,Gangtok,Winter,37.5,10.5,17.8,33.3,8.3,3.1,0.35,14.6,35,PM10
+2023-01-01,Sikkim,Northeast,Gangtok,Winter,40.7,8.3,20.4,35.8,6.7,2,0.23,17.5,36,PM10
+2023-02-01,Sikkim,Northeast,Gangtok,Winter,29,12.2,27.7,52.2,12.6,2.6,0.28,15.1,39,PM10
+2023-03-01,Sikkim,Northeast,Gangtok,Summer,33.9,15.8,18.8,45.5,11.1,6.4,0.3,16.4,37,PM10
+2023-04-01,Sikkim,Northeast,Gangtok,Summer,28.9,21.3,15.8,44.2,7.8,3.5,0.28,18.4,35,PM10
+2023-05-01,Sikkim,Northeast,Gangtok,Summer,50.9,21.6,14.3,46.8,6,3.3,0.34,21.7,35,PM10
+2023-06-01,Sikkim,Northeast,Gangtok,Monsoon,198.6,19.5,15.3,31.2,6,3,0.25,19.6,35,PM10
+2023-07-01,Sikkim,Northeast,Gangtok,Monsoon,234.6,16.9,13.5,24,8.3,2.9,0.24,18,35,PM10
+2023-08-01,Sikkim,Northeast,Gangtok,Monsoon,220.3,14.5,12,22,8,2,0.23,15.3,35,PM10
+2023-09-01,Sikkim,Northeast,Gangtok,Monsoon,153,16,16.7,35.1,8.1,5.3,0.2,13.9,35,PM10
+2023-10-01,Sikkim,Northeast,Gangtok,Post-Monsoon,101.2,16.2,16,26.5,8.9,2,0.2,13.3,35,PM10
+2023-11-01,Sikkim,Northeast,Gangtok,Post-Monsoon,40.1,13.9,17.9,48.6,9.9,3.1,0.26,14.2,35,PM10
+2023-12-01,Sikkim,Northeast,Gangtok,Winter,28.4,11.9,26.1,51.3,10.5,3.3,0.46,14.4,46,PM10
+2024-01-01,Sikkim,Northeast,Gangtok,Winter,34.6,11.4,21.3,23.5,9.3,5.8,0.24,14.9,36,PM10
+2024-02-01,Sikkim,Northeast,Gangtok,Winter,36.5,11,18.2,40.3,7.9,4.2,0.25,16.2,39,PM10
+2024-03-01,Sikkim,Northeast,Gangtok,Summer,41.3,14.8,23.9,44.5,10.5,4,0.2,17.1,35,PM10
+2024-04-01,Sikkim,Northeast,Gangtok,Summer,38,17.2,15.3,36.9,6.7,2,0.23,21.5,35,PM10
+2024-05-01,Sikkim,Northeast,Gangtok,Summer,82.7,20.6,17.9,30.4,6,2,0.31,25,35,PM10
+2024-06-01,Sikkim,Northeast,Gangtok,Monsoon,188.5,19.9,12.3,22.2,7,2,0.23,20,35,PM10
+2024-07-01,Sikkim,Northeast,Gangtok,Monsoon,205.6,17.3,12,22,6,2,0.2,14.9,35,PM10
+2024-08-01,Sikkim,Northeast,Gangtok,Monsoon,218.7,14.5,19.7,22,10.5,2.7,0.2,17.5,35,PM10
+2024-09-01,Sikkim,Northeast,Gangtok,Monsoon,146.2,17.5,19.7,27.6,6,5.2,0.2,12.7,35,PM10
+2024-10-01,Sikkim,Northeast,Gangtok,Post-Monsoon,77.6,16.5,16.1,35.6,6,2.3,0.3,16,35,PM10
+2024-11-01,Sikkim,Northeast,Gangtok,Post-Monsoon,40.2,12.4,23,26.1,8,2.6,0.3,14.2,35,PM10
+2024-12-01,Sikkim,Northeast,Gangtok,Winter,35.6,12.8,21.2,33.1,8.2,4.3,0.36,19.5,39,PM10
+2025-01-01,Sikkim,Northeast,Gangtok,Winter,29.9,9.3,16.1,38,11.2,2,0.42,18.3,40,PM10
+2025-02-01,Sikkim,Northeast,Gangtok,Winter,36,10.2,23.4,31,10,2,0.42,18.2,40,PM10
+2025-03-01,Sikkim,Northeast,Gangtok,Summer,22.6,16.5,29.1,40.7,7.5,5.7,0.25,18.4,35,PM10
+2025-04-01,Sikkim,Northeast,Gangtok,Summer,35.8,16.9,17.5,23.2,7.7,3.6,0.21,24.5,35,O3
+2025-05-01,Sikkim,Northeast,Gangtok,Summer,69.6,22.7,17.3,22,11,2,0.33,18.3,35,PM10
+2025-06-01,Sikkim,Northeast,Gangtok,Monsoon,180.7,17.7,12.6,33.1,9.7,2.7,0.2,13.6,35,PM10
+2025-07-01,Sikkim,Northeast,Gangtok,Monsoon,240.7,15.6,16.3,32.9,7.1,2,0.2,11.7,35,PM10
+2025-08-01,Sikkim,Northeast,Gangtok,Monsoon,213.8,17.2,12,28.6,7.2,2,0.22,16.3,35,PM10
+2025-09-01,Sikkim,Northeast,Gangtok,Monsoon,147.8,16.4,18,39,6,4.6,0.22,18.2,35,PM10
+2025-10-01,Sikkim,Northeast,Gangtok,Post-Monsoon,66.4,16.5,24.2,35.6,6.6,2,0.2,19.4,35,PM10
+2025-11-01,Sikkim,Northeast,Gangtok,Post-Monsoon,41.1,12.8,20.9,37.1,7.2,3.4,0.25,16.2,35,PM10
+2025-12-01,Sikkim,Northeast,Gangtok,Winter,27.4,11.9,31,45.1,11.6,3.8,0.23,18.4,44,PM10
+2020-01-01,Tamil Nadu,South,Chennai,Winter,20.5,23.6,47.2,98.1,23,8.3,0.62,21.6,89,PM10
+2020-02-01,Tamil Nadu,South,Chennai,Winter,9,26.1,47.7,85.6,25.9,6.2,0.54,27.8,73,PM10
+2020-03-01,Tamil Nadu,South,Chennai,Summer,6.8,27.6,43.1,72,23.1,11.7,0.64,26,60,PM10
+2020-04-01,Tamil Nadu,South,Chennai,Summer,33.9,32.7,37.5,78.4,20.9,9.9,0.57,29.2,61,PM10
+2020-05-01,Tamil Nadu,South,Chennai,Summer,36.6,34.3,42.1,74.4,16.8,7.9,0.55,34.1,52,PM10
+2020-06-01,Tamil Nadu,South,Chennai,Monsoon,95.2,31.7,37.1,61.9,20.7,5.8,0.53,27.4,39,PM10
+2020-07-01,Tamil Nadu,South,Chennai,Monsoon,138.9,30.6,30.9,45.8,16.5,8.2,0.49,22.5,35,PM10
+2020-08-01,Tamil Nadu,South,Chennai,Monsoon,102.3,29.6,34.7,48.5,10.5,5.9,0.61,20.8,35,PM10
+2020-09-01,Tamil Nadu,South,Chennai,Monsoon,70.4,29.6,26.6,69.4,13.9,5.8,0.57,22,35,PM10
+2020-10-01,Tamil Nadu,South,Chennai,Post-Monsoon,40.8,29.8,48.9,90.4,16.6,6.8,0.59,20.6,70,PM10
+2020-11-01,Tamil Nadu,South,Chennai,Post-Monsoon,15.5,27.5,46.9,91.5,24.9,8.2,0.62,24.5,60,PM10
+2020-12-01,Tamil Nadu,South,Chennai,Winter,13.1,25.8,54,100.9,19.2,9.7,0.7,21.4,87,PM10
+2021-01-01,Tamil Nadu,South,Chennai,Winter,4,22.5,52.1,87.4,24.2,10.2,0.59,24.9,81,PM10
+2021-02-01,Tamil Nadu,South,Chennai,Winter,18.1,26.2,45.9,82.6,29.1,10.2,0.56,26.2,81,PM10
+2021-03-01,Tamil Nadu,South,Chennai,Summer,4,30.5,36.1,86.7,21.3,8.6,0.58,26.6,64,PM10
+2021-04-01,Tamil Nadu,South,Chennai,Summer,15.9,33.2,41.5,76.1,22.6,6.7,0.59,28.7,54,PM10
+2021-05-01,Tamil Nadu,South,Chennai,Summer,32.4,35.8,31.1,74.4,17.6,7.2,0.61,31,50,PM10
+2021-06-01,Tamil Nadu,South,Chennai,Monsoon,107.9,34.6,37.7,60.5,17.6,5,0.46,27.9,35,PM10
+2021-07-01,Tamil Nadu,South,Chennai,Monsoon,99.4,30.1,36.9,64.4,9.6,7.3,0.4,24.7,35,PM10
+2021-08-01,Tamil Nadu,South,Chennai,Monsoon,108.5,30.7,27.3,57.4,16.7,6.5,0.59,24.5,35,PM10
+2021-09-01,Tamil Nadu,South,Chennai,Monsoon,63.7,31.6,32.9,73,15.6,3.8,0.63,20.4,43,PM10
+2021-10-01,Tamil Nadu,South,Chennai,Post-Monsoon,28.6,30.5,35.7,72.8,21.5,6.6,0.55,26.6,40,PM10
+2021-11-01,Tamil Nadu,South,Chennai,Post-Monsoon,25.3,28.1,48.6,85.2,20.6,9.3,0.68,26.1,56,PM10
+2021-12-01,Tamil Nadu,South,Chennai,Winter,17.5,23.8,58.4,84.8,25.7,8,0.71,20.4,81,PM10
+2022-01-01,Tamil Nadu,South,Chennai,Winter,24.2,22.8,55.3,85.2,20.3,10.5,0.65,25,90,PM10
+2022-02-01,Tamil Nadu,South,Chennai,Winter,4,26.4,47.7,83.5,25.3,10.9,0.7,25.7,73,PM10
+2022-03-01,Tamil Nadu,South,Chennai,Summer,18.4,30.8,43.1,89,25.7,10.6,0.54,27,66,PM10
+2022-04-01,Tamil Nadu,South,Chennai,Summer,19.7,32.3,36.9,71.3,18.4,9.3,0.53,28.1,57,PM10
+2022-05-01,Tamil Nadu,South,Chennai,Summer,35.1,34.3,41.3,66.8,21.7,7.1,0.46,29.9,45,PM10
+2022-06-01,Tamil Nadu,South,Chennai,Monsoon,112,33.4,34.2,71.3,19.4,5.5,0.34,26.7,39,PM10
+2022-07-01,Tamil Nadu,South,Chennai,Monsoon,108.3,31.4,33.4,57.7,13.6,9.8,0.61,18.9,39,PM10
+2022-08-01,Tamil Nadu,South,Chennai,Monsoon,94,30.2,22.4,46,16.1,7.6,0.58,19.6,35,PM10
+2022-09-01,Tamil Nadu,South,Chennai,Monsoon,63,29.5,29.2,67,12,6,0.46,25.5,42,PM10
+2022-10-01,Tamil Nadu,South,Chennai,Post-Monsoon,37.7,29.9,38.2,69.6,20.7,8.7,0.58,18.9,58,PM10
+2022-11-01,Tamil Nadu,South,Chennai,Post-Monsoon,33.5,29.9,46.3,73.9,18.7,5.4,0.68,22.6,57,PM10
+2022-12-01,Tamil Nadu,South,Chennai,Winter,17.2,25.9,56.4,84.5,20.2,9.3,0.64,20.1,84,PM10
+2023-01-01,Tamil Nadu,South,Chennai,Winter,34,26.1,48.7,94.6,21.2,8.4,0.64,22.7,77,PM10
+2023-02-01,Tamil Nadu,South,Chennai,Winter,10.2,27.2,47,80.9,28,7.8,0.65,20.5,73,PM10
+2023-03-01,Tamil Nadu,South,Chennai,Summer,21.3,29.6,38.7,71.7,19.7,8.8,0.59,29.7,50,PM10
+2023-04-01,Tamil Nadu,South,Chennai,Summer,4,32.7,40.8,79,18.7,9.5,0.63,29.5,56,PM10
+2023-05-01,Tamil Nadu,South,Chennai,Summer,33.7,35.7,40.1,71.8,13.1,11.5,0.66,30.6,62,PM10
+2023-06-01,Tamil Nadu,South,Chennai,Monsoon,102.6,30.5,33.2,57.6,19.8,7.7,0.49,22.3,35,PM10
+2023-07-01,Tamil Nadu,South,Chennai,Monsoon,98.1,30.3,22.1,53.3,15.1,3.6,0.48,20.8,35,PM10
+2023-08-01,Tamil Nadu,South,Chennai,Monsoon,125.8,30.9,25.4,42.7,16.9,5.2,0.46,21,35,PM10
+2023-09-01,Tamil Nadu,South,Chennai,Monsoon,76.6,30.5,38.9,54.3,12.5,6.2,0.44,21.2,35,PM10
+2023-10-01,Tamil Nadu,South,Chennai,Post-Monsoon,42,29.7,34.2,82.9,19.7,9.4,0.68,25.6,64,PM10
+2023-11-01,Tamil Nadu,South,Chennai,Post-Monsoon,24.9,27.6,35.6,92.8,23.3,9.4,0.65,22.3,58,PM10
+2023-12-01,Tamil Nadu,South,Chennai,Winter,13.1,24.1,45.8,87.9,18,9.5,0.6,18.4,71,PM10
+2024-01-01,Tamil Nadu,South,Chennai,Winter,12.3,21.7,50.4,95.3,22.6,11.4,0.65,24.5,87,PM10
+2024-02-01,Tamil Nadu,South,Chennai,Winter,23,26,51.5,90.8,22.8,5.5,0.55,24.6,79,PM10
+2024-03-01,Tamil Nadu,South,Chennai,Summer,9.4,28.7,43.8,75.7,21.2,7.6,0.64,30.3,51,PM10
+2024-04-01,Tamil Nadu,South,Chennai,Summer,26.7,30.8,39.4,84.8,13.2,7.8,0.51,30.8,49,PM10
+2024-05-01,Tamil Nadu,South,Chennai,Summer,33.9,34.4,34.9,63.9,13.2,6,0.61,30.8,53,PM10
+2024-06-01,Tamil Nadu,South,Chennai,Monsoon,99.1,34.2,30.2,53.2,17.2,5.3,0.49,25.6,35,PM10
+2024-07-01,Tamil Nadu,South,Chennai,Monsoon,128.5,32.5,21.9,46.9,12.4,7.2,0.4,22.5,35,PM10
+2024-08-01,Tamil Nadu,South,Chennai,Monsoon,111.1,29.3,21.9,47.6,7.2,7.6,0.41,19.8,35,PM10
+2024-09-01,Tamil Nadu,South,Chennai,Monsoon,86.9,30.5,29.6,56.3,15.8,10.4,0.44,27,35,PM10
+2024-10-01,Tamil Nadu,South,Chennai,Post-Monsoon,38,30.9,35,65,20.1,9.4,0.53,24,45,PM10
+2024-11-01,Tamil Nadu,South,Chennai,Post-Monsoon,20.2,27.2,48.1,95.9,22.8,7.9,0.72,23.6,66,PM10
+2024-12-01,Tamil Nadu,South,Chennai,Winter,9.6,22.9,44.2,97.6,20.6,10.7,0.68,21.9,86,PM10
+2025-01-01,Tamil Nadu,South,Chennai,Winter,5.6,23.2,48.8,72.2,23.2,9.8,0.53,22.5,70,PM10
+2025-02-01,Tamil Nadu,South,Chennai,Winter,8.7,23.9,48.2,82.7,17.8,9.1,0.54,17.1,83,PM10
+2025-03-01,Tamil Nadu,South,Chennai,Summer,34.5,30.2,47.8,86.4,16.7,8.9,0.61,26.5,58,PM10
+2025-04-01,Tamil Nadu,South,Chennai,Summer,32.1,32.4,36.8,78.2,15.6,6.5,0.56,25.4,50,PM10
+2025-05-01,Tamil Nadu,South,Chennai,Summer,33.2,34.7,32.6,76.1,22,8.7,0.47,28.3,56,PM10
+2025-06-01,Tamil Nadu,South,Chennai,Monsoon,89.9,32.1,35.3,45.7,16.5,7.4,0.46,25.2,42,PM10
+2025-07-01,Tamil Nadu,South,Chennai,Monsoon,121.4,29.9,27.3,52.3,10.9,8.2,0.44,20.1,35,PM10
+2025-08-01,Tamil Nadu,South,Chennai,Monsoon,111.7,31.4,35.6,49.8,13.8,7.2,0.5,18.7,35,PM10
+2025-09-01,Tamil Nadu,South,Chennai,Monsoon,93.9,32.2,29.4,68.6,15.9,6,0.44,22.4,39,PM10
+2025-10-01,Tamil Nadu,South,Chennai,Post-Monsoon,54.6,29.3,33.6,70,18.5,10,0.56,29.2,44,PM10
+2025-11-01,Tamil Nadu,South,Chennai,Post-Monsoon,37,30.1,35,90.4,15.3,9.3,0.58,24.4,51,PM10
+2025-12-01,Tamil Nadu,South,Chennai,Winter,15.9,23.8,42.8,78.2,23.9,10.2,0.69,21.4,69,PM10
+2020-01-01,Telangana,South,Hyderabad,Winter,14.5,22.2,61.9,139,26.2,10.7,0.85,23.9,105,PM10
+2020-02-01,Telangana,South,Hyderabad,Winter,4,25.2,68.2,105,26.2,11.8,0.78,26.9,100,PM10
+2020-03-01,Telangana,South,Hyderabad,Summer,21,28.9,53.5,109.1,28.1,10.9,0.8,27.1,76,PM10
+2020-04-01,Telangana,South,Hyderabad,Summer,4,31.3,46.3,93.1,26.3,11.7,0.69,30,51,PM10
+2020-05-01,Telangana,South,Hyderabad,Summer,29.4,33.2,51.2,84.3,27.1,10.1,0.64,30.7,67,PM10
+2020-06-01,Telangana,South,Hyderabad,Monsoon,76.8,32.3,48.3,84,15.3,9.5,0.68,26.6,35,PM10
+2020-07-01,Telangana,South,Hyderabad,Monsoon,104.2,31.7,40,72,13.4,11.2,0.64,22.3,42,PM10
+2020-08-01,Telangana,South,Hyderabad,Monsoon,88.5,30.2,35.2,66.5,13.3,10.3,0.53,20.1,35,PM10
+2020-09-01,Telangana,South,Hyderabad,Monsoon,63.3,30.1,46.1,75.7,17.8,10,0.56,25.4,43,PM10
+2020-10-01,Telangana,South,Hyderabad,Post-Monsoon,20,29.3,46.3,107.7,20.1,11.6,0.76,27.2,70,PM10
+2020-11-01,Telangana,South,Hyderabad,Post-Monsoon,5.1,27.2,52.5,113.4,24.1,12.6,0.78,22.7,70,PM10
+2020-12-01,Telangana,South,Hyderabad,Winter,24.5,26.2,69,129.9,25.5,11.7,0.83,21.2,106,PM10
+2021-01-01,Telangana,South,Hyderabad,Winter,4,20.9,58.6,115.7,27,17.3,0.75,21.5,92,PM10
+2021-02-01,Telangana,South,Hyderabad,Winter,19.7,25.5,63.2,103.4,23.5,9.9,0.77,23.6,93,PM10
+2021-03-01,Telangana,South,Hyderabad,Summer,18.1,29.6,50.7,105.2,22.2,10.5,0.78,28.9,63,PM10
+2021-04-01,Telangana,South,Hyderabad,Summer,16.3,33.5,55.6,80.1,20.8,8.3,0.77,31,75,PM10
+2021-05-01,Telangana,South,Hyderabad,Summer,26.4,33.6,45.3,103,23.6,9.3,0.66,30,68,PM10
+2021-06-01,Telangana,South,Hyderabad,Monsoon,65.9,31.3,50.1,70.5,21.7,10.1,0.72,28.6,41,PM10
+2021-07-01,Telangana,South,Hyderabad,Monsoon,86.7,29.7,27.8,72.3,11,6.7,0.62,22.8,35,PM10
+2021-08-01,Telangana,South,Hyderabad,Monsoon,83.2,27.7,33.6,71.9,16.9,10.1,0.54,22.7,39,PM10
+2021-09-01,Telangana,South,Hyderabad,Monsoon,63.9,29.9,41.9,97.6,15.4,8.5,0.62,22.5,55,PM10
+2021-10-01,Telangana,South,Hyderabad,Post-Monsoon,42.3,30,52.2,111.4,19,8.1,0.72,29.7,68,PM10
+2021-11-01,Telangana,South,Hyderabad,Post-Monsoon,13.3,26.5,57.9,111.4,27.9,11.2,0.69,26.8,74,PM10
+2021-12-01,Telangana,South,Hyderabad,Winter,16.6,23.7,55.8,119.3,27.7,10,0.78,22.9,83,PM10
+2022-01-01,Telangana,South,Hyderabad,Winter,9.2,22.5,57.9,107.9,24.3,12,0.76,23.2,80,PM10
+2022-02-01,Telangana,South,Hyderabad,Winter,23.4,26.6,60.5,90.6,25.1,10.5,0.79,26.9,89,PM10
+2022-03-01,Telangana,South,Hyderabad,Summer,4,27.6,45.8,94.5,22.7,9.1,0.72,29,74,PM10
+2022-04-01,Telangana,South,Hyderabad,Summer,12.2,33.5,49.2,85.1,19.3,9.7,0.68,27.8,71,PM10
+2022-05-01,Telangana,South,Hyderabad,Summer,23.5,33.7,53.3,95.6,21.9,11,0.6,34.3,62,PM10
+2022-06-01,Telangana,South,Hyderabad,Monsoon,71.7,34.1,36.7,84.2,14.9,11.8,0.72,25.6,44,PM10
+2022-07-01,Telangana,South,Hyderabad,Monsoon,88.9,29,35.3,75.8,10.2,8.2,0.64,22.7,59,PM10
+2022-08-01,Telangana,South,Hyderabad,Monsoon,110.1,28.1,36.6,58.5,14.1,9.2,0.67,20.9,38,PM10
+2022-09-01,Telangana,South,Hyderabad,Monsoon,59.1,30.6,52.8,83.6,17.3,8.2,0.66,22.1,56,PM10
+2022-10-01,Telangana,South,Hyderabad,Post-Monsoon,23.9,28.4,51.8,101.4,23.9,8.2,0.54,27.5,73,PM10
+2022-11-01,Telangana,South,Hyderabad,Post-Monsoon,11.7,27.9,62.5,104.8,24.6,8.9,0.8,25.4,75,PM10
+2022-12-01,Telangana,South,Hyderabad,Winter,12.4,25.8,65.6,112.4,29.9,10.8,0.91,22.3,107,PM10
+2023-01-01,Telangana,South,Hyderabad,Winter,4,22.8,62.4,111.4,24.4,10.1,0.78,25.4,96,PM10
+2023-02-01,Telangana,South,Hyderabad,Winter,19.6,25,59.6,115.6,24.3,9.7,0.71,24.7,99,PM10
+2023-03-01,Telangana,South,Hyderabad,Summer,28.1,28.2,56.3,99.7,23.1,12.2,0.67,28.7,57,PM10
+2023-04-01,Telangana,South,Hyderabad,Summer,9.2,34.4,46.9,82.8,24.9,11.1,0.63,34.1,66,PM10
+2023-05-01,Telangana,South,Hyderabad,Summer,4,33.7,38.3,83.9,21.8,11.6,0.57,29.4,59,PM10
+2023-06-01,Telangana,South,Hyderabad,Monsoon,78.1,32.6,47.6,81.9,18.8,10.2,0.64,25.5,44,PM10
+2023-07-01,Telangana,South,Hyderabad,Monsoon,103.9,29.6,37.6,60.2,13.8,6.3,0.58,23.1,35,PM10
+2023-08-01,Telangana,South,Hyderabad,Monsoon,93.8,29.4,36.9,59.7,14.9,8.9,0.67,20.8,35,PM10
+2023-09-01,Telangana,South,Hyderabad,Monsoon,58.6,30,45.7,88.5,14.4,10.9,0.63,21.6,54,PM10
+2023-10-01,Telangana,South,Hyderabad,Post-Monsoon,27.8,27.9,55.9,84.4,18.9,9.1,0.73,22.2,61,PM10
+2023-11-01,Telangana,South,Hyderabad,Post-Monsoon,28.1,29.4,57,106.8,24.7,10.5,0.84,20,68,PM10
+2023-12-01,Telangana,South,Hyderabad,Winter,15.5,24.1,61,97.9,30.1,14.1,0.86,21.5,81,PM10
+2024-01-01,Telangana,South,Hyderabad,Winter,27.7,23.5,55.6,103.1,28,11.8,0.59,25.7,96,PM10
+2024-02-01,Telangana,South,Hyderabad,Winter,11.5,24.1,56,113.1,20.9,8.6,0.86,28.8,97,PM10
+2024-03-01,Telangana,South,Hyderabad,Summer,18.5,27.5,52.2,77.9,21.4,9.8,0.76,31.4,61,PM10
+2024-04-01,Telangana,South,Hyderabad,Summer,27.1,32.1,52.8,84.2,18.3,10.2,0.63,32.4,69,PM10
+2024-05-01,Telangana,South,Hyderabad,Summer,14.8,35.5,46.5,92,22.9,8.6,0.67,32.8,71,PM10
+2024-06-01,Telangana,South,Hyderabad,Monsoon,70.1,32.6,31.7,76.1,16.5,11.1,0.69,23.8,46,PM10
+2024-07-01,Telangana,South,Hyderabad,Monsoon,98.1,30,38.2,58.7,20.6,5.9,0.5,19.1,47,PM10
+2024-08-01,Telangana,South,Hyderabad,Monsoon,91.8,28.9,34.2,76.9,19.6,9.3,0.68,22,42,PM10
+2024-09-01,Telangana,South,Hyderabad,Monsoon,66.3,30.3,41.7,75.4,14.1,9.3,0.6,20.6,52,PM10
+2024-10-01,Telangana,South,Hyderabad,Post-Monsoon,16.3,27.6,45.3,82.7,21.3,11.3,0.71,21.6,67,PM10
+2024-11-01,Telangana,South,Hyderabad,Post-Monsoon,7.8,27.5,58.2,96.1,24.9,11,0.67,18.4,74,PM10
+2024-12-01,Telangana,South,Hyderabad,Winter,8.4,25.8,64.5,106.6,25.5,11.1,0.84,25.4,111,PM10
+2025-01-01,Telangana,South,Hyderabad,Winter,4,22.4,62.8,117.3,26.4,11.4,0.8,23.3,98,PM10
+2025-02-01,Telangana,South,Hyderabad,Winter,15.7,24.6,54.8,97.5,25.1,9.6,0.65,25.9,93,PM10
+2025-03-01,Telangana,South,Hyderabad,Summer,4,29.8,47.6,87,25.6,11.8,0.7,25.5,68,PM10
+2025-04-01,Telangana,South,Hyderabad,Summer,22,31.2,53.7,92.6,23,10.5,0.59,26.3,69,PM10
+2025-05-01,Telangana,South,Hyderabad,Summer,34.9,36.1,48.4,80.8,20,10.9,0.56,33.4,53,PM10
+2025-06-01,Telangana,South,Hyderabad,Monsoon,67.9,32,39.7,61.2,16.2,9.3,0.61,22.7,41,PM10
+2025-07-01,Telangana,South,Hyderabad,Monsoon,88.1,31,30,64.5,13.7,9.6,0.63,22.4,36,PM10
+2025-08-01,Telangana,South,Hyderabad,Monsoon,96.1,29.1,32.6,54.6,16.6,8.7,0.6,17.2,35,PM10
+2025-09-01,Telangana,South,Hyderabad,Monsoon,53.7,28.9,45.4,79.5,17.6,10.5,0.63,21.2,53,PM10
+2025-10-01,Telangana,South,Hyderabad,Post-Monsoon,38.6,30.8,46,98.2,19.4,11.6,0.58,23,58,PM10
+2025-11-01,Telangana,South,Hyderabad,Post-Monsoon,10.6,24.7,59.4,107.4,25.9,10.6,0.75,25.8,73,PM10
+2025-12-01,Telangana,South,Hyderabad,Winter,17.7,24.7,59.4,115.2,30,10.5,0.81,26.5,105,PM10
+2020-01-01,Tripura,Northeast,Agartala,Winter,42.5,20.1,34.6,69.2,13.6,6.8,0.51,20.4,49,PM10
+2020-02-01,Tripura,Northeast,Agartala,Winter,23.5,22.5,34.3,70,14.8,5.5,0.44,19,60,PM10
+2020-03-01,Tripura,Northeast,Agartala,Summer,27.9,25.8,33.4,47,18.2,6.1,0.46,24.5,35,PM10
+2020-04-01,Tripura,Northeast,Agartala,Summer,23.7,26.7,30.9,49.1,7.3,2.5,0.39,25.2,35,PM10
+2020-05-01,Tripura,Northeast,Agartala,Summer,72.8,29.7,32,54.7,15.6,3.5,0.38,28.9,35,PM10
+2020-06-01,Tripura,Northeast,Agartala,Monsoon,177.1,29.4,26,59,10,5.7,0.35,23,35,PM10
+2020-07-01,Tripura,Northeast,Agartala,Monsoon,228.1,25.4,25.6,37.7,12.8,4.3,0.36,18.1,35,PM10
+2020-08-01,Tripura,Northeast,Agartala,Monsoon,207.1,25.1,17.2,46,6.2,6.7,0.41,15.3,35,PM10
+2020-09-01,Tripura,Northeast,Agartala,Monsoon,139.3,28.8,25.8,38.6,12.1,5.6,0.32,19.8,35,PM10
+2020-10-01,Tripura,Northeast,Agartala,Post-Monsoon,67.5,24,32.3,49.3,13.5,6.7,0.51,21.8,40,PM10
+2020-11-01,Tripura,Northeast,Agartala,Post-Monsoon,43.9,21.6,32.2,54.6,15.6,2,0.49,18.9,35,PM10
+2020-12-01,Tripura,Northeast,Agartala,Winter,27.3,19.4,33.5,71.7,15.7,3.3,0.55,18.7,54,PM10
+2021-01-01,Tripura,Northeast,Agartala,Winter,23.1,19.5,28.8,59.5,18.6,5.4,0.49,17.6,60,PM10
+2021-02-01,Tripura,Northeast,Agartala,Winter,37.5,24.2,31.9,60.7,13.1,5.8,0.59,19.7,38,PM10
+2021-03-01,Tripura,Northeast,Agartala,Summer,25.4,27.5,33.4,55.6,15.3,5.6,0.43,24.8,39,PM10
+2021-04-01,Tripura,Northeast,Agartala,Summer,36.1,27.2,30.9,50.2,12.2,3.5,0.36,23.4,35,PM10
+2021-05-01,Tripura,Northeast,Agartala,Summer,74.1,30.9,28.4,59.2,8.9,4.9,0.4,26,36,PM10
+2021-06-01,Tripura,Northeast,Agartala,Monsoon,175.9,28.8,18.5,36.2,11.6,5.6,0.42,20.8,35,PM10
+2021-07-01,Tripura,Northeast,Agartala,Monsoon,219,26.5,17.7,42,9.1,5.3,0.33,21.5,35,PM10
+2021-08-01,Tripura,Northeast,Agartala,Monsoon,215.6,21.9,31,61.8,13,2.3,0.25,16.6,35,PM10
+2021-09-01,Tripura,Northeast,Agartala,Monsoon,180.1,24,31.3,54.2,10.4,2.1,0.39,16.1,35,PM10
+2021-10-01,Tripura,Northeast,Agartala,Post-Monsoon,60.4,24.3,30.2,52.5,14.9,5.1,0.4,20.7,36,PM10
+2021-11-01,Tripura,Northeast,Agartala,Post-Monsoon,49.6,25.2,38.3,72,14.5,7.7,0.45,18.4,46,PM10
+2021-12-01,Tripura,Northeast,Agartala,Winter,30.4,18.3,40.2,74.3,12,4.4,0.45,19.9,57,PM10
+2022-01-01,Tripura,Northeast,Agartala,Winter,22.4,19.6,45.2,66.2,17.9,4.5,0.48,16.8,61,PM10
+2022-02-01,Tripura,Northeast,Agartala,Winter,33.6,21.6,27.6,74.8,7.8,5.3,0.39,21.3,54,PM10
+2022-03-01,Tripura,Northeast,Agartala,Summer,39.9,24.9,24,55.2,10.6,4.6,0.43,19.3,35,PM10
+2022-04-01,Tripura,Northeast,Agartala,Summer,19.9,27.5,29.3,50.3,15.4,3.9,0.42,24.4,35,PM10
+2022-05-01,Tripura,Northeast,Agartala,Summer,55.5,32.6,28.4,45.8,15.1,5.2,0.51,23.5,35,PM10
+2022-06-01,Tripura,Northeast,Agartala,Monsoon,187,27.5,27.3,41.2,7.5,6.9,0.38,19.5,35,PM10
+2022-07-01,Tripura,Northeast,Agartala,Monsoon,233.7,26.5,21.6,42.4,10.8,3,0.34,21.1,35,PM10
+2022-08-01,Tripura,Northeast,Agartala,Monsoon,199.7,23.9,22,30.3,15.3,2.6,0.42,19.1,35,PM10
+2022-09-01,Tripura,Northeast,Agartala,Monsoon,148.3,26,25.3,36.5,11.3,5.1,0.43,19.1,35,PM10
+2022-10-01,Tripura,Northeast,Agartala,Post-Monsoon,75.4,24.4,23.4,53.4,14.7,7.7,0.48,19.9,36,PM10
+2022-11-01,Tripura,Northeast,Agartala,Post-Monsoon,26.9,23.4,32.3,55.9,15,4.8,0.46,19.5,35,PM10
+2022-12-01,Tripura,Northeast,Agartala,Winter,24.5,20.1,35.6,68.8,15.5,5.4,0.38,22.4,59,PM10
+2023-01-01,Tripura,Northeast,Agartala,Winter,29.5,18.2,38.6,60,13.6,6.5,0.52,19.9,58,PM10
+2023-02-01,Tripura,Northeast,Agartala,Winter,21,20.3,35.9,51.8,20.4,4.9,0.42,18.5,52,PM10
+2023-03-01,Tripura,Northeast,Agartala,Summer,30.2,26.9,32,58.7,7.8,4.7,0.51,22.8,35,PM10
+2023-04-01,Tripura,Northeast,Agartala,Summer,29.5,26.9,36,44.2,11.2,4.8,0.43,21.6,38,PM10
+2023-05-01,Tripura,Northeast,Agartala,Summer,84.2,30.3,25,49.2,14.3,4.7,0.37,26,35,PM10
+2023-06-01,Tripura,Northeast,Agartala,Monsoon,190.5,27.7,19.5,44.7,14.9,4.7,0.43,20.8,35,PM10
+2023-07-01,Tripura,Northeast,Agartala,Monsoon,217.2,25,20.7,38.1,10.9,2.4,0.3,19,35,PM10
+2023-08-01,Tripura,Northeast,Agartala,Monsoon,213.1,25,24.5,40.9,12.1,3.8,0.24,18.2,35,PM10
+2023-09-01,Tripura,Northeast,Agartala,Monsoon,163.8,25.6,16.9,36.5,9.8,4.1,0.41,20.1,35,PM10
+2023-10-01,Tripura,Northeast,Agartala,Post-Monsoon,62.6,25.2,27.6,54,8.4,6.2,0.34,18.2,35,PM10
+2023-11-01,Tripura,Northeast,Agartala,Post-Monsoon,34.3,21.3,29.8,74.6,11.8,7.2,0.5,17.1,35,PM10
+2023-12-01,Tripura,Northeast,Agartala,Winter,21.1,17.6,40.6,57.1,15.9,5,0.6,17.6,67,PM10
+2024-01-01,Tripura,Northeast,Agartala,Winter,25.7,19.7,40.2,65.6,6,4.2,0.49,18.3,56,PM10
+2024-02-01,Tripura,Northeast,Agartala,Winter,32,21.3,34.6,72.9,12.6,3.4,0.4,17.1,57,PM10
+2024-03-01,Tripura,Northeast,Agartala,Summer,26.2,23.5,31,55.9,10.5,7.8,0.55,20.5,35,PM10
+2024-04-01,Tripura,Northeast,Agartala,Summer,44.2,28.4,28.6,45.4,13,2,0.49,29.6,36,PM10
+2024-05-01,Tripura,Northeast,Agartala,Summer,65.6,29.5,24.6,43.2,13,4.1,0.41,26,35,PM10
+2024-06-01,Tripura,Northeast,Agartala,Monsoon,197.6,27.7,17.5,50.2,9.1,5.4,0.4,21.5,35,PM10
+2024-07-01,Tripura,Northeast,Agartala,Monsoon,226.3,26.6,18,43.9,9.5,5.7,0.36,19,35,PM10
+2024-08-01,Tripura,Northeast,Agartala,Monsoon,225,24.9,18,36.4,9.5,3.3,0.46,21,35,PM10
+2024-09-01,Tripura,Northeast,Agartala,Monsoon,146.7,24.5,27.4,42,7.2,5.4,0.41,19.2,35,PM10
+2024-10-01,Tripura,Northeast,Agartala,Post-Monsoon,71.2,24.3,22,45.9,13.7,4.3,0.49,21,35,PM10
+2024-11-01,Tripura,Northeast,Agartala,Post-Monsoon,48.3,20.6,28.8,69.5,13.2,4.6,0.52,18.5,35,PM10
+2024-12-01,Tripura,Northeast,Agartala,Winter,20.2,19.8,33.1,67.9,15.7,4.6,0.51,21.4,57,PM10
+2025-01-01,Tripura,Northeast,Agartala,Winter,42.8,20.1,34.3,59.3,12,6.7,0.48,17.8,49,PM10
+2025-02-01,Tripura,Northeast,Agartala,Winter,26.8,21.4,31.6,65.2,15,2.5,0.47,19.5,62,PM10
+2025-03-01,Tripura,Northeast,Agartala,Summer,28,24,25.9,58.8,12.5,4.6,0.44,21.2,35,PM10
+2025-04-01,Tripura,Northeast,Agartala,Summer,28.5,28.9,27.4,56.6,9.2,5,0.54,22,35,PM10
+2025-05-01,Tripura,Northeast,Agartala,Summer,70,30.5,28.7,43,12.2,4.3,0.47,25.5,35,PM10
+2025-06-01,Tripura,Northeast,Agartala,Monsoon,185.7,29,16.4,30.1,8.1,5.2,0.4,20.4,35,PM10
+2025-07-01,Tripura,Northeast,Agartala,Monsoon,237.7,26.1,18,38.5,13.3,3.7,0.27,16,35,PM10
+2025-08-01,Tripura,Northeast,Agartala,Monsoon,221.1,24,21.6,35.3,9.9,2,0.37,14.9,35,PM10
+2025-09-01,Tripura,Northeast,Agartala,Monsoon,147.5,27.8,31.6,35.4,6,5.4,0.36,15.9,35,PM10
+2025-10-01,Tripura,Northeast,Agartala,Post-Monsoon,80.9,22.6,26.4,51.8,13.8,2.7,0.35,21.5,35,PM10
+2025-11-01,Tripura,Northeast,Agartala,Post-Monsoon,48.5,22.7,31.8,50.3,19.2,6.6,0.49,21.4,36,PM10
+2025-12-01,Tripura,Northeast,Agartala,Winter,20.2,20.2,36.2,49.5,17.5,6.5,0.46,18.6,54,PM10
+2020-01-01,Uttar Pradesh,North,Lucknow,Winter,4,22,103,188.1,49.4,12.8,1.16,27.9,150,PM10
+2020-02-01,Uttar Pradesh,North,Lucknow,Winter,9.4,20.8,96.5,175.5,36.5,13.4,1.12,26.9,141,PM10
+2020-03-01,Uttar Pradesh,North,Lucknow,Summer,4,29.4,84.6,171.2,39.6,13.3,1.09,32.4,128,PM10
+2020-04-01,Uttar Pradesh,North,Lucknow,Summer,5.1,32.5,90.1,144.7,32.6,14.5,1.09,37.8,109,PM10
+2020-05-01,Uttar Pradesh,North,Lucknow,Summer,27.4,30.6,80.7,125.6,33.6,14.4,1,36.6,99,PM10
+2020-06-01,Uttar Pradesh,North,Lucknow,Monsoon,79.8,27.5,65.2,137.3,28.6,14.3,0.9,31.9,95,PM10
+2020-07-01,Uttar Pradesh,North,Lucknow,Monsoon,98.7,29.1,58.6,104.5,27.3,13.8,0.9,25.5,74,PM10
+2020-08-01,Uttar Pradesh,North,Lucknow,Monsoon,83.6,28.3,65.4,113.7,34.7,12.3,1.01,25,89,PM10
+2020-09-01,Uttar Pradesh,North,Lucknow,Monsoon,67.4,26.6,68.5,128.8,28.3,14.1,0.95,28.6,83,PM10
+2020-10-01,Uttar Pradesh,North,Lucknow,Post-Monsoon,43.5,26.7,87.5,152.5,37.8,14.9,1.02,29.4,113,PM10
+2020-11-01,Uttar Pradesh,North,Lucknow,Post-Monsoon,4,24.4,102.8,179.5,46.3,15.4,1.11,27,130,PM10
+2020-12-01,Uttar Pradesh,North,Lucknow,Winter,16.2,20.3,103.7,195.3,42.3,12.1,1.13,29.3,161,PM10
+2021-01-01,Uttar Pradesh,North,Lucknow,Winter,7.6,21.5,108.4,169.5,42.9,14.9,1.12,27.4,151,PM10
+2021-02-01,Uttar Pradesh,North,Lucknow,Winter,11.9,22.5,104,173.7,40.8,15.2,1.08,28.8,137,PM10
+2021-03-01,Uttar Pradesh,North,Lucknow,Summer,4,26,86.2,146.8,44.6,10.9,1.09,30.3,112,PM10
+2021-04-01,Uttar Pradesh,North,Lucknow,Summer,13.3,29.6,91.5,144.9,32.2,13.8,0.96,37.4,112,PM10
+2021-05-01,Uttar Pradesh,North,Lucknow,Summer,31.8,33.3,74.2,149,33.6,14.6,0.92,38.3,105,PM10
+2021-06-01,Uttar Pradesh,North,Lucknow,Monsoon,104.1,31.1,60.6,126.2,26.1,12.3,0.9,31.3,76,PM10
+2021-07-01,Uttar Pradesh,North,Lucknow,Monsoon,106.6,27.5,59.5,127,24.8,12.7,0.92,24.7,76,PM10
+2021-08-01,Uttar Pradesh,North,Lucknow,Monsoon,98.1,27.3,58.6,102.6,25,10.3,0.92,23.3,73,PM10
+2021-09-01,Uttar Pradesh,North,Lucknow,Monsoon,78,26.2,65.7,130.5,28,15.8,0.91,30.8,86,PM10
+2021-10-01,Uttar Pradesh,North,Lucknow,Post-Monsoon,35.2,26,83.6,143.1,35.9,12.9,1.08,29.7,112,PM10
+2021-11-01,Uttar Pradesh,North,Lucknow,Post-Monsoon,23.7,24.4,95.8,177.1,42.3,17.2,1.06,29.5,131,PM10
+2021-12-01,Uttar Pradesh,North,Lucknow,Winter,13.5,20.7,105.5,183.8,45.5,15.1,1.07,29.2,153,PM10
+2022-01-01,Uttar Pradesh,North,Lucknow,Winter,7.3,20.9,101.8,182,45.3,14,1.22,25.3,147,PM10
+2022-02-01,Uttar Pradesh,North,Lucknow,Winter,24.8,20.7,99.1,161.4,39.7,14.3,1.08,27.2,144,PM10
+2022-03-01,Uttar Pradesh,North,Lucknow,Summer,4,28.8,81.9,150.3,31.9,17,1,32.4,119,PM10
+2022-04-01,Uttar Pradesh,North,Lucknow,Summer,16.8,28.6,80,161.1,30.9,13.3,0.97,34.6,117,PM10
+2022-05-01,Uttar Pradesh,North,Lucknow,Summer,29.4,31.3,86.3,145.8,32.5,11.3,1.11,36.1,119,PM10
+2022-06-01,Uttar Pradesh,North,Lucknow,Monsoon,63.9,28.8,60.5,114.9,23.8,13.3,0.86,30.9,77,PM10
+2022-07-01,Uttar Pradesh,North,Lucknow,Monsoon,96,27.7,56.2,109.7,31.8,13.5,0.82,26.8,79,PM10
+2022-08-01,Uttar Pradesh,North,Lucknow,Monsoon,90.8,27.9,63.8,105.2,27.4,15.9,0.8,25.7,75,PM10
+2022-09-01,Uttar Pradesh,North,Lucknow,Monsoon,91.7,29.5,67.6,120.3,25.7,12.3,0.91,23.3,93,PM10
+2022-10-01,Uttar Pradesh,North,Lucknow,Post-Monsoon,28.7,27.2,88.2,148.2,31.3,12.7,1.13,30,114,PM10
+2022-11-01,Uttar Pradesh,North,Lucknow,Post-Monsoon,20.1,24.9,100.7,167.1,43.5,15,1.03,26.1,129,PM10
+2022-12-01,Uttar Pradesh,North,Lucknow,Winter,4,22,99.1,190.4,41.6,18.1,1.1,26.4,153,PM10
+2023-01-01,Uttar Pradesh,North,Lucknow,Winter,9.6,20.5,99.9,185,44.5,14.1,1.11,25.5,157,PM10
+2023-02-01,Uttar Pradesh,North,Lucknow,Winter,4,22.4,100.3,184.7,37,19.5,1.08,29.9,154,PM10
+2023-03-01,Uttar Pradesh,North,Lucknow,Summer,23.2,26.6,93.6,146.6,33.8,11.8,1.01,33.4,115,PM10
+2023-04-01,Uttar Pradesh,North,Lucknow,Summer,15.9,31.5,79.8,128.8,34.7,15.2,1.01,32.9,106,PM10
+2023-05-01,Uttar Pradesh,North,Lucknow,Summer,34.2,31.5,77.5,133.6,32.7,14.3,0.94,38.7,115,PM10
+2023-06-01,Uttar Pradesh,North,Lucknow,Monsoon,85.7,29,75,115.5,25.2,14.2,0.96,30.4,92,PM10
+2023-07-01,Uttar Pradesh,North,Lucknow,Monsoon,106.8,27.7,58.1,106.6,23.8,11.9,0.91,26.5,91,PM10
+2023-08-01,Uttar Pradesh,North,Lucknow,Monsoon,99.9,26.4,61.3,103.4,27,11.8,0.87,26.1,65,PM10
+2023-09-01,Uttar Pradesh,North,Lucknow,Monsoon,78.4,29,70.4,125.3,29.1,12.7,0.84,27.1,80,PM10
+2023-10-01,Uttar Pradesh,North,Lucknow,Post-Monsoon,33.2,27.1,84.4,139.1,32.2,14.7,0.96,26.4,114,PM10
+2023-11-01,Uttar Pradesh,North,Lucknow,Post-Monsoon,39.9,24.8,91.8,155.4,44.1,16.5,1.16,26.2,120,PM10
+2023-12-01,Uttar Pradesh,North,Lucknow,Winter,13.5,20.2,99.7,172.8,42,15.5,1.13,28.5,149,PM10
+2024-01-01,Uttar Pradesh,North,Lucknow,Winter,12.2,22.1,97.3,163.5,34.9,13,1.13,27.3,142,PM10
+2024-02-01,Uttar Pradesh,North,Lucknow,Winter,23.1,23.5,83.2,150.3,38.1,13.6,1.13,29.6,130,PM10
+2024-03-01,Uttar Pradesh,North,Lucknow,Summer,6.7,27.1,84.9,152.4,30,14.9,1.15,30.7,109,PM10
+2024-04-01,Uttar Pradesh,North,Lucknow,Summer,18.8,28.5,82.6,143,37,12.9,1,33.5,107,PM10
+2024-05-01,Uttar Pradesh,North,Lucknow,Summer,28.9,32.9,74.9,130.3,31.5,12.9,0.95,33.8,97,PM10
+2024-06-01,Uttar Pradesh,North,Lucknow,Monsoon,69.9,27.8,63.6,128.9,27.5,14.4,0.93,31.9,109,PM10
+2024-07-01,Uttar Pradesh,North,Lucknow,Monsoon,103.5,26.5,58.5,91.4,25.2,9.2,0.88,27.9,58,PM10
+2024-08-01,Uttar Pradesh,North,Lucknow,Monsoon,106.8,28.5,56.1,105,30.9,11.6,0.85,23.2,68,PM10
+2024-09-01,Uttar Pradesh,North,Lucknow,Monsoon,71.4,29.8,71.4,120.3,29.6,13.4,0.87,27.6,83,PM10
+2024-10-01,Uttar Pradesh,North,Lucknow,Post-Monsoon,31.3,25.7,80.1,124.5,30.8,16,0.99,25.7,102,PM10
+2024-11-01,Uttar Pradesh,North,Lucknow,Post-Monsoon,8.2,23,98,153.3,35.9,11.6,1.08,27.6,114,PM10
+2024-12-01,Uttar Pradesh,North,Lucknow,Winter,4,21.3,97.1,173,42.9,17.4,1.08,25.3,136,PM10
+2025-01-01,Uttar Pradesh,North,Lucknow,Winter,16,20.3,90.7,182.2,43.3,15.3,1.08,24.4,145,PM10
+2025-02-01,Uttar Pradesh,North,Lucknow,Winter,21.6,23.1,94.3,161.7,38.7,12.6,1.03,29.5,140,PM10
+2025-03-01,Uttar Pradesh,North,Lucknow,Summer,11.9,27.3,80.5,144.3,40.2,11.9,1.03,33,106,PM10
+2025-04-01,Uttar Pradesh,North,Lucknow,Summer,20.9,26.8,81.6,147,32.7,12.1,0.96,36.3,117,PM10
+2025-05-01,Uttar Pradesh,North,Lucknow,Summer,28,33,69.9,114.1,29.4,12,0.92,33.3,93,PM10
+2025-06-01,Uttar Pradesh,North,Lucknow,Monsoon,95.4,28.9,73.2,112.5,29.3,12.4,0.86,30,72,PM10
+2025-07-01,Uttar Pradesh,North,Lucknow,Monsoon,97.4,29,55.3,110.8,23.6,10.1,0.79,25.1,64,PM10
+2025-08-01,Uttar Pradesh,North,Lucknow,Monsoon,122.6,27.5,61.3,106.4,21.4,12.3,0.9,25.2,73,PM10
+2025-09-01,Uttar Pradesh,North,Lucknow,Monsoon,75.2,28.3,64.2,124,27.2,10.6,0.94,29.3,79,PM10
+2025-10-01,Uttar Pradesh,North,Lucknow,Post-Monsoon,23.8,27.9,86.7,150.6,29.8,12.8,0.93,29.9,108,PM10
+2025-11-01,Uttar Pradesh,North,Lucknow,Post-Monsoon,18.2,25.7,95.3,159.7,41.2,11.6,1.03,27.4,121,PM10
+2025-12-01,Uttar Pradesh,North,Lucknow,Winter,6.8,22.1,98.2,186.7,38.6,14.2,1.18,28.3,148,PM10
+2020-01-01,Uttarakhand,North,Dehradun,Winter,34.7,13.4,37.9,76.4,19,6.1,0.52,26.1,74,PM10
+2020-02-01,Uttarakhand,North,Dehradun,Winter,24.8,17,39.6,66.3,19.9,9.2,0.45,24.4,74,PM10
+2020-03-01,Uttarakhand,North,Dehradun,Summer,9.6,19.6,43.4,67.3,16.2,6,0.58,24,67,PM10
+2020-04-01,Uttarakhand,North,Dehradun,Summer,17.7,22.1,36.2,54.7,14.3,9.1,0.49,28,50,PM10
+2020-05-01,Uttarakhand,North,Dehradun,Summer,42.8,24.8,30,61.2,16.2,6.6,0.44,28.6,51,PM10
+2020-06-01,Uttarakhand,North,Dehradun,Monsoon,108.4,22.6,25.1,48.6,13.2,8.5,0.33,21,35,PM10
+2020-07-01,Uttarakhand,North,Dehradun,Monsoon,128.6,21.3,28.6,44.8,8.9,6.7,0.43,20.1,37,PM10
+2020-08-01,Uttarakhand,North,Dehradun,Monsoon,127,19.8,16.5,41.4,13.9,6.5,0.35,17.7,36,PM10
+2020-09-01,Uttarakhand,North,Dehradun,Monsoon,88.2,19.4,26.7,42.6,11.1,3.7,0.35,22.8,36,PM10
+2020-10-01,Uttarakhand,North,Dehradun,Post-Monsoon,58,21.3,30.9,63.3,12.7,7.4,0.5,22,54,PM10
+2020-11-01,Uttarakhand,North,Dehradun,Post-Monsoon,33.5,17.2,43,79.1,19.1,8.1,0.59,19.2,76,PM10
+2020-12-01,Uttarakhand,North,Dehradun,Winter,13.2,15.2,52,66.3,15.7,8.4,0.57,20.2,95,PM10
+2021-01-01,Uttarakhand,North,Dehradun,Winter,20.3,15.6,33.7,71.4,16.7,8.3,0.52,21,71,PM10
+2021-02-01,Uttarakhand,North,Dehradun,Winter,17.2,14.4,40.1,71,15.8,5.2,0.54,22.6,83,PM10
+2021-03-01,Uttarakhand,North,Dehradun,Summer,19.6,20.3,31.6,62.4,18.6,5.4,0.53,23.1,59,PM10
+2021-04-01,Uttarakhand,North,Dehradun,Summer,22.4,23.7,36.5,52.4,12.8,8.6,0.53,23.2,60,PM10
+2021-05-01,Uttarakhand,North,Dehradun,Summer,27.7,26.2,33.9,64.4,14.9,5.7,0.57,26.3,60,PM10
+2021-06-01,Uttarakhand,North,Dehradun,Monsoon,118.5,21.7,25.8,44.3,12.6,3.1,0.38,21.6,35,PM10
+2021-07-01,Uttarakhand,North,Dehradun,Monsoon,139.1,21.1,23.7,46.8,10,6.7,0.41,15.5,35,PM10
+2021-08-01,Uttarakhand,North,Dehradun,Monsoon,121.6,17.6,33.5,50.6,10.9,3.9,0.35,19.3,37,PM10
+2021-09-01,Uttarakhand,North,Dehradun,Monsoon,88.9,20.5,32.2,57.6,7.4,9.2,0.43,19.6,51,PM10
+2021-10-01,Uttarakhand,North,Dehradun,Post-Monsoon,41.1,20.2,31.4,65.3,13.1,6.2,0.5,18.5,63,PM10
+2021-11-01,Uttarakhand,North,Dehradun,Post-Monsoon,20.8,17.4,29.6,62.4,17.3,7.1,0.49,22.3,57,PM10
+2021-12-01,Uttarakhand,North,Dehradun,Winter,4,13.8,48.8,62.4,19.9,7,0.54,18.8,92,PM10
+2022-01-01,Uttarakhand,North,Dehradun,Winter,22.8,13.8,37.6,68.2,20.6,6.1,0.5,19.8,72,PM10
+2022-02-01,Uttarakhand,North,Dehradun,Winter,11.6,16.4,38.4,64.5,17.5,4.5,0.58,19.9,78,PM10
+2022-03-01,Uttarakhand,North,Dehradun,Summer,6.3,17.3,32.1,69.6,16.4,8.8,0.54,23.4,69,PM10
+2022-04-01,Uttarakhand,North,Dehradun,Summer,22.7,24.3,33.9,55.8,19,8.5,0.45,24,58,PM10
+2022-05-01,Uttarakhand,North,Dehradun,Summer,47.4,26.4,35.6,47.2,10.6,2.6,0.52,29.2,56,PM10
+2022-06-01,Uttarakhand,North,Dehradun,Monsoon,116.5,23.2,22.1,50.7,13.3,2,0.46,23,35,PM10
+2022-07-01,Uttarakhand,North,Dehradun,Monsoon,127,21.4,27,47.3,13.1,7.7,0.47,21,45,PM10
+2022-08-01,Uttarakhand,North,Dehradun,Monsoon,131.2,22.1,30.7,37.3,9.1,4.5,0.45,18.9,35,PM10
+2022-09-01,Uttarakhand,North,Dehradun,Monsoon,93.9,20.9,27.1,48.2,14.6,5.5,0.45,18,35,PM10
+2022-10-01,Uttarakhand,North,Dehradun,Post-Monsoon,46.8,20.6,28.4,56.6,12.7,4.1,0.49,19.8,49,PM10
+2022-11-01,Uttarakhand,North,Dehradun,Post-Monsoon,7.1,18,31.3,63.2,19.3,8.3,0.47,19.9,57,PM10
+2022-12-01,Uttarakhand,North,Dehradun,Winter,10.4,14.3,38.7,64.2,17.4,6.9,0.58,17.6,76,PM10
+2023-01-01,Uttarakhand,North,Dehradun,Winter,16.6,13.3,35.9,66.8,16,2.3,0.47,20.7,77,PM10
+2023-02-01,Uttarakhand,North,Dehradun,Winter,29.1,16.7,31.2,66.2,16.3,5.5,0.55,22.6,70,PM10
+2023-03-01,Uttarakhand,North,Dehradun,Summer,21.1,23.4,31.7,58.2,16.7,7.2,0.46,23.6,55,PM10
+2023-04-01,Uttarakhand,North,Dehradun,Summer,19.5,22.3,34.6,60.3,15.2,7.9,0.51,24.6,53,PM10
+2023-05-01,Uttarakhand,North,Dehradun,Summer,28.6,22.9,31.7,63.2,15.8,6.7,0.49,25.3,52,PM10
+2023-06-01,Uttarakhand,North,Dehradun,Monsoon,117.3,23.1,26,36,9.5,5.6,0.46,17,35,PM10
+2023-07-01,Uttarakhand,North,Dehradun,Monsoon,137.6,21.4,21.7,41.9,10.7,4,0.37,18,35,PM10
+2023-08-01,Uttarakhand,North,Dehradun,Monsoon,116.6,18.2,27.6,42,13,3.6,0.41,13.5,35,PM10
+2023-09-01,Uttarakhand,North,Dehradun,Monsoon,73.4,21.7,26,51.7,11.5,3.4,0.53,17.3,35,PM10
+2023-10-01,Uttarakhand,North,Dehradun,Post-Monsoon,31.5,19,35.1,60.3,13.7,4.1,0.39,22.9,49,PM10
+2023-11-01,Uttarakhand,North,Dehradun,Post-Monsoon,31.4,17.7,36.3,68.8,14.3,6.5,0.54,17.9,49,PM10
+2023-12-01,Uttarakhand,North,Dehradun,Winter,27.5,14,42.4,78,15.1,6.8,0.47,18.1,80,PM10
+2024-01-01,Uttarakhand,North,Dehradun,Winter,29.6,11.5,37.9,71.1,21.2,10.7,0.51,19.5,72,PM10
+2024-02-01,Uttarakhand,North,Dehradun,Winter,4.9,15.4,38.6,56.9,17.3,4.7,0.45,18.5,74,PM10
+2024-03-01,Uttarakhand,North,Dehradun,Summer,16.8,22.8,37.9,62,17.4,8.2,0.53,21.2,60,PM10
+2024-04-01,Uttarakhand,North,Dehradun,Summer,32.6,22.5,29.8,55.9,16,5.4,0.47,28,62,PM10
+2024-05-01,Uttarakhand,North,Dehradun,Summer,46.2,24.9,25.9,50.9,11.1,7.2,0.55,28.5,56,PM10
+2024-06-01,Uttarakhand,North,Dehradun,Monsoon,103.8,22.7,29.6,40.1,14.6,6.7,0.4,21.3,35,PM10
+2024-07-01,Uttarakhand,North,Dehradun,Monsoon,144.6,21.1,27,47.8,15.4,5.9,0.4,20,39,PM10
+2024-08-01,Uttarakhand,North,Dehradun,Monsoon,113.7,19.7,25.6,43.3,16.8,4.1,0.37,22.4,35,PM10
+2024-09-01,Uttarakhand,North,Dehradun,Monsoon,98.9,21,37.7,57.4,9.3,5.5,0.42,18.2,42,PM10
+2024-10-01,Uttarakhand,North,Dehradun,Post-Monsoon,45.3,19.5,31.2,51.1,14.4,4.4,0.48,20.9,41,PM10
+2024-11-01,Uttarakhand,North,Dehradun,Post-Monsoon,4,19,33.3,65.5,17.5,5.8,0.53,20,76,PM10
+2024-12-01,Uttarakhand,North,Dehradun,Winter,9.5,14.4,39.4,69.3,16.3,9,0.46,18.1,73,PM10
+2025-01-01,Uttarakhand,North,Dehradun,Winter,25.5,14,43.4,49.2,20.2,4.6,0.52,24,76,PM10
+2025-02-01,Uttarakhand,North,Dehradun,Winter,4,15.6,33,70.6,18.6,8.2,0.58,21.3,86,PM10
+2025-03-01,Uttarakhand,North,Dehradun,Summer,4,22.6,28.2,47.6,10.7,5.6,0.4,21.9,35,PM10
+2025-04-01,Uttarakhand,North,Dehradun,Summer,18.4,26.5,33.9,51.3,12.3,6.9,0.5,24.5,61,PM10
+2025-05-01,Uttarakhand,North,Dehradun,Summer,59.4,25.7,33.3,41.7,11.3,3.9,0.38,26.3,55,PM10
+2025-06-01,Uttarakhand,North,Dehradun,Monsoon,97,21.3,24.3,52.6,6.9,6.2,0.4,22.3,39,PM10
+2025-07-01,Uttarakhand,North,Dehradun,Monsoon,125.4,20.2,21.8,44.6,10.8,5.6,0.3,17.5,37,PM10
+2025-08-01,Uttarakhand,North,Dehradun,Monsoon,121.7,19.5,24.2,42.4,14.1,5.4,0.38,15.7,35,PM10
+2025-09-01,Uttarakhand,North,Dehradun,Monsoon,87.7,20.1,29,38.7,10.7,3.1,0.36,21.1,36,PM10
+2025-10-01,Uttarakhand,North,Dehradun,Post-Monsoon,56.8,19.9,38.3,53.4,9.5,5.5,0.46,19.9,57,PM10
+2025-11-01,Uttarakhand,North,Dehradun,Post-Monsoon,13.4,18.5,37.2,65.9,19.7,7.4,0.54,19,57,PM10
+2025-12-01,Uttarakhand,North,Dehradun,Winter,8.8,13.3,41.2,70.8,16.9,5.5,0.45,19.7,80,PM10
+2020-01-01,West Bengal,East,Kolkata,Winter,22.5,22.8,84.7,132.2,36.1,11,0.96,26.4,125,PM10
+2020-02-01,West Bengal,East,Kolkata,Winter,15.7,24.9,79.4,150.5,35.6,11.7,1,27.4,115,PM10
+2020-03-01,West Bengal,East,Kolkata,Summer,31.2,29.1,72.7,129.2,33.8,12.6,0.94,32.9,99,PM10
+2020-04-01,West Bengal,East,Kolkata,Summer,17.9,31.2,65.4,113,29.6,12.3,0.75,29.4,75,PM10
+2020-05-01,West Bengal,East,Kolkata,Summer,51.5,32.5,56.3,116.8,31.1,11.3,0.9,36.2,80,PM10
+2020-06-01,West Bengal,East,Kolkata,Monsoon,137,30.9,53,102.6,23.2,8,0.76,24.7,71,PM10
+2020-07-01,West Bengal,East,Kolkata,Monsoon,156.1,29.1,52.2,83,20,12.1,0.66,22.9,40,PM10
+2020-08-01,West Bengal,East,Kolkata,Monsoon,147.5,25.8,49.8,99,25.9,9.9,0.68,24.9,56,PM10
+2020-09-01,West Bengal,East,Kolkata,Monsoon,112.8,28.1,52.7,91.2,22.6,8.6,0.76,27.3,57,PM10
+2020-10-01,West Bengal,East,Kolkata,Post-Monsoon,66.9,27.6,67.8,119.4,30.3,11.4,0.9,23.6,90,PM10
+2020-11-01,West Bengal,East,Kolkata,Post-Monsoon,31.7,26.8,82.8,142.5,33.4,13.4,1.03,26.6,103,PM10
+2020-12-01,West Bengal,East,Kolkata,Winter,24.2,22.3,77.2,144.9,34.4,14.1,0.97,21.3,117,PM10
+2021-01-01,West Bengal,East,Kolkata,Winter,33.3,23.6,79,138.4,30.8,10.1,0.82,28.1,109,PM10
+2021-02-01,West Bengal,East,Kolkata,Winter,13.7,24.3,72.9,132,33.6,11.6,0.94,25.2,114,PM10
+2021-03-01,West Bengal,East,Kolkata,Summer,30.7,28.3,71,118.9,33.7,11.8,0.86,24.9,86,PM10
+2021-04-01,West Bengal,East,Kolkata,Summer,21.1,30.7,70.1,108.4,26.9,12,0.84,29.8,80,PM10
+2021-05-01,West Bengal,East,Kolkata,Summer,45.6,33.9,59.4,108.8,30.2,9.6,0.89,28.2,82,PM10
+2021-06-01,West Bengal,East,Kolkata,Monsoon,139,29.9,54.1,102.8,18.4,9.5,0.71,27.8,60,PM10
+2021-07-01,West Bengal,East,Kolkata,Monsoon,172.9,29.2,43,94.6,12.8,10.2,0.71,24.8,54,PM10
+2021-08-01,West Bengal,East,Kolkata,Monsoon,159.4,26.8,47.6,89.3,22.6,9,0.69,24.5,56,PM10
+2021-09-01,West Bengal,East,Kolkata,Monsoon,106.4,27.7,55.7,101.6,19.5,12.4,0.73,25.9,65,PM10
+2021-10-01,West Bengal,East,Kolkata,Post-Monsoon,40.3,26.2,58.1,125.5,32.6,10.8,0.77,27.5,79,PM10
+2021-11-01,West Bengal,East,Kolkata,Post-Monsoon,25.9,26.3,79.6,134.2,34.8,16.6,0.97,25.6,99,PM10
+2021-12-01,West Bengal,East,Kolkata,Winter,39.8,23.5,79.6,136.8,34,12.9,1.11,26.4,117,PM10
+2022-01-01,West Bengal,East,Kolkata,Winter,17.3,23.3,81.3,136.4,30.6,11.9,0.9,23,116,PM10
+2022-02-01,West Bengal,East,Kolkata,Winter,18.1,22.1,76.6,130.3,31.7,11.8,0.82,27.1,106,PM10
+2022-03-01,West Bengal,East,Kolkata,Summer,26.9,28.3,57.2,126.8,24.3,10.6,0.87,26.2,87,PM10
+2022-04-01,West Bengal,East,Kolkata,Summer,20.5,33.3,63,118.5,22.6,10,0.82,30.2,83,PM10
+2022-05-01,West Bengal,East,Kolkata,Summer,54.6,33.9,59,104.5,25.4,10,0.81,29.6,75,PM10
+2022-06-01,West Bengal,East,Kolkata,Monsoon,143.9,30.9,52.7,82.4,29.4,11.8,0.75,29.6,57,PM10
+2022-07-01,West Bengal,East,Kolkata,Monsoon,165.3,31.6,50.7,90.2,17.3,9.3,0.55,22.9,48,PM10
+2022-08-01,West Bengal,East,Kolkata,Monsoon,154.5,27.8,57.2,83.8,18.6,8.6,0.72,22.6,45,PM10
+2022-09-01,West Bengal,East,Kolkata,Monsoon,115.6,26.8,47,92.5,26.3,10.7,0.74,22.8,46,PM10
+2022-10-01,West Bengal,East,Kolkata,Post-Monsoon,42.8,26,53.7,120.4,32.5,9.2,0.88,21.4,85,PM10
+2022-11-01,West Bengal,East,Kolkata,Post-Monsoon,24.1,28.6,78.8,122.7,32.4,12.1,0.94,27.7,96,PM10
+2022-12-01,West Bengal,East,Kolkata,Winter,10.2,25,77.3,141.7,30.5,14.6,0.91,26.6,120,PM10
+2023-01-01,West Bengal,East,Kolkata,Winter,26.9,21.6,75.8,141.3,32.6,13.1,0.94,20.6,98,PM10
+2023-02-01,West Bengal,East,Kolkata,Winter,32.8,25.6,73.3,150.1,33.4,15.2,0.85,33.8,107,PM10
+2023-03-01,West Bengal,East,Kolkata,Summer,16.9,28.8,64.5,111.9,27.3,11.3,0.78,27.9,79,PM10
+2023-04-01,West Bengal,East,Kolkata,Summer,33.3,29.7,75.8,98.7,26.1,12.9,0.8,32.1,81,PM10
+2023-05-01,West Bengal,East,Kolkata,Summer,55.6,32.6,58.4,105.1,23.8,12,0.79,31.7,76,PM10
+2023-06-01,West Bengal,East,Kolkata,Monsoon,129.1,28.9,49,93.4,22.8,13.2,0.77,24,57,PM10
+2023-07-01,West Bengal,East,Kolkata,Monsoon,135.1,29,54.2,84.5,19,7.6,0.65,24.3,55,PM10
+2023-08-01,West Bengal,East,Kolkata,Monsoon,151.3,29.2,44.7,83.8,21.1,9.9,0.7,22.4,47,PM10
+2023-09-01,West Bengal,East,Kolkata,Monsoon,134.9,30.3,52.8,92.5,25,10.3,0.78,23.6,65,PM10
+2023-10-01,West Bengal,East,Kolkata,Post-Monsoon,58.8,28.3,68.6,109.3,26.4,9.4,0.89,25.6,76,PM10
+2023-11-01,West Bengal,East,Kolkata,Post-Monsoon,41.2,24.5,72.2,121.2,35,8.8,0.88,24.1,79,PM10
+2023-12-01,West Bengal,East,Kolkata,Winter,4,23.2,78.7,129.7,34.5,11,0.84,27.4,120,PM10
+2024-01-01,West Bengal,East,Kolkata,Winter,40.6,22.6,72,125.6,32.6,11.1,0.93,24,102,PM10
+2024-02-01,West Bengal,East,Kolkata,Winter,12.5,24.3,74.6,126.7,35.9,11.7,0.79,25.9,103,PM10
+2024-03-01,West Bengal,East,Kolkata,Summer,14.6,28.8,75.1,130.2,32.8,10.8,0.87,27.8,91,PM10
+2024-04-01,West Bengal,East,Kolkata,Summer,30.1,31.3,66,113.1,21.6,12,0.81,32.5,89,PM10
+2024-05-01,West Bengal,East,Kolkata,Summer,28.2,33.9,54.2,100.4,26.4,11.6,0.8,33.2,73,PM10
+2024-06-01,West Bengal,East,Kolkata,Monsoon,138.1,31.8,46.8,92.3,18,13.1,0.67,30.9,60,PM10
+2024-07-01,West Bengal,East,Kolkata,Monsoon,179.2,27.6,49.6,83.2,21.5,9.5,0.6,21.1,43,PM10
+2024-08-01,West Bengal,East,Kolkata,Monsoon,156.8,27.3,47.7,74.8,16.8,10.1,0.7,23.7,46,PM10
+2024-09-01,West Bengal,East,Kolkata,Monsoon,101.4,28.6,46.6,93,21.6,9.5,0.66,24.7,54,PM10
+2024-10-01,West Bengal,East,Kolkata,Post-Monsoon,51.9,28.6,63.9,109.9,27.3,9.4,0.74,22.6,83,PM10
+2024-11-01,West Bengal,East,Kolkata,Post-Monsoon,25.1,25.5,75.3,126.8,30.4,11.9,0.97,24.9,96,PM10
+2024-12-01,West Bengal,East,Kolkata,Winter,4,22.1,75.5,135.7,31.2,12.1,0.89,24,113,PM10
+2025-01-01,West Bengal,East,Kolkata,Winter,31.3,24.2,69.5,125.5,31.6,13.2,0.88,22.9,110,PM10
+2025-02-01,West Bengal,East,Kolkata,Winter,25.6,23.3,72.3,134.5,26.2,12.3,0.82,26.2,109,PM10
+2025-03-01,West Bengal,East,Kolkata,Summer,26.2,29,68.2,110.3,30.3,10.6,0.73,25.3,66,PM10
+2025-04-01,West Bengal,East,Kolkata,Summer,10.8,31.4,54.1,92.1,25.5,10.7,0.96,32.7,74,PM10
+2025-05-01,West Bengal,East,Kolkata,Summer,49.5,34.1,52.6,111.8,25.7,11,0.69,33.2,78,PM10
+2025-06-01,West Bengal,East,Kolkata,Monsoon,128.1,32.2,49.8,99.5,18.6,8.2,0.69,28.1,50,PM10
+2025-07-01,West Bengal,East,Kolkata,Monsoon,147.9,29.2,42.7,72.3,20.6,7.9,0.64,23.3,37,PM10
+2025-08-01,West Bengal,East,Kolkata,Monsoon,138.8,26.8,41.4,87.7,19.1,12,0.66,24,39,PM10
+2025-09-01,West Bengal,East,Kolkata,Monsoon,104.6,29.8,41,88.7,22.3,11,0.71,23.3,48,PM10
+2025-10-01,West Bengal,East,Kolkata,Post-Monsoon,48.8,24.3,61.1,117.8,27.7,7.2,0.87,26.3,85,PM10
+2025-11-01,West Bengal,East,Kolkata,Post-Monsoon,33.6,26.5,65,120.5,28.5,10.7,0.83,27.7,76,PM10
+2025-12-01,West Bengal,East,Kolkata,Winter,11.1,22.9,81.6,140.2,33.2,11.1,0.99,24.7,119,PM10

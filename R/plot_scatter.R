@@ -1,6 +1,6 @@
 plot_scatter <- function(data) {
   scatter_data <- data %>%
-    tidyr::pivot_longer(cols = c(pm2_5, pm10, no2, co), names_to = "pollutant", values_to = "value")
+    tidyr::pivot_longer(cols = c(pm2_5, pm10, no2, so2, co, o3), names_to = "pollutant", values_to = "value")
   ggplot2::ggplot(scatter_data, ggplot2::aes(x = value, y = aqi, color = pollutant)) +
     ggplot2::geom_point(alpha = 0.7) +
     ggplot2::geom_smooth(method = "lm", se = FALSE, linewidth = 0.8) +
